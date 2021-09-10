@@ -240,4 +240,4 @@ const main = async () => {
   // console.log(await addTeacherNear(s, 'certified', 10));
 };
 
-main();
+// main();

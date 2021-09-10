@@ -3,6 +3,6 @@ const controller = require('./controller');
 
 const router = express.Router();
 
-router.get('/:teacherType/:distMax', controller.teachersNear);
+router.post('/:teacherType/:distMax', controller.teachersNear);
 
 module.exports = router;

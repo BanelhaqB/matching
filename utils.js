@@ -3,7 +3,7 @@
 const ObjectsToCsv = require('objects-to-csv');
 const csvParser = require('csv-parser');
 const fs = require('fs');
-// const { resolve } = require('path');
+const { resolve } = require('path');
 // const scrap = require('../scrap');
 
 // cheerio = cheerioAdv.wrap(cheerio);
@@ -31,8 +31,8 @@ exports.readCSV = async (path, separator) => {
 // exports.scrapTemplate = async (url, fct, resolve) => {
 //   scrap.get({
 //     url: url,
-//     // referer:
-//     //   'https://dentalversender.de/praxisbedarf/verbrauchsmaterial/?cat=21679',
+//     referer:
+//       'https://data.heroku.com/dataclips/uxipvjjzpyuvvrguqnvmhvigmjpm?sharing=true',
 //     onSuccess: async ($, response, html, config) => {
 //       if (response.statusCode !== 200) {
 //         console.error(
