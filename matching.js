@@ -65,7 +65,6 @@ const distanceBetween = (lat1, lng1, lat2, lng2) => {
 };
 
 const filterTeachers = (s, teachers, distLimit) => {
-  console.log(1);
   let teachersNear = _.map(teachers, function (t) {
     if (
       t.dist <= distLimit &&
