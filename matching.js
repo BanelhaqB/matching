@@ -65,10 +65,11 @@ const distanceBetween = (lat1, lng1, lat2, lng2) => {
 };
 
 const filterTeachers = (s, teachers, distLimit) => {
+  console.log(1);
   let teachersNear = _.map(teachers, function (t) {
     if (
       t.dist <= distLimit &&
-      t.subjects.includes(convertSubject(s.subject)) &&
+      t.subjects.includes(s.subject) &&
       t.availability.includes(convertdispo(s.dispos))
     )
       return t;
@@ -98,7 +99,7 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
   const teachers = await teachersNear(s, teachersType, distLimit);
 
   const data = {};
-  console.log(data, teachersType, 'yoopies', teachersType !== 'yoopies');
+
   if (teachersType !== 'yoopies') {
     data[`liste-${teachersType}`] = `${teachers.length} profs: ${_.orderBy(
       teachers,
