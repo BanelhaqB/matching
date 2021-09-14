@@ -1,4 +1,5 @@
 const matching = require('./matching');
+const crons = require('./crons');
 // console.log(matching.addTeacherNear);
 
 exports.teachersNear = async (req, res, next) => {
@@ -15,3 +16,7 @@ exports.teachersNear = async (req, res, next) => {
     data,
   });
 };
+
+// exports.cron = async (req, res, next) => {
+//   crons.appCron(req.params.typeCron);
+// };

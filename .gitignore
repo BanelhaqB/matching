@@ -2,3 +2,9 @@ node_modules
 .DS_Store
 tmp
 dev-data
+data/yoopies/sitemaps
+data/voscours/sitemaps
+data/dataclips/dataclip-cours
+data/dataclips/dataclip-prospects
+data/dataclips/dataclip-teachers
+data/dataclips/dataclip-waiting
