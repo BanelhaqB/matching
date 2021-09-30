@@ -3,6 +3,7 @@ const matching = require('./matching');
 // console.log(matching.addTeacherNear);
 
 exports.teachersNear = async (req, res, next) => {
+  console.log(req.params.teacherType);
   const data = await matching.addTeacherNear(
     req.body,
     req.params.teacherType,

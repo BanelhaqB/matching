@@ -2,18 +2,28 @@ const utils = require('./utils/utils');
 const _ = require('lodash');
 const fs = require('fs').promises;
 
-const filterTeachers = (s, teachers, distLimit) => {
-  let teachersNear = _.map(teachers, function (t) {
-    if (
-      t.dist <= distLimit &&
-      t.subjects.includes(s.subject) &&
-      t.availability.includes(utils.convertdispo(s.dispos)) &&
-      t.cours < 4
-    )
-      return t;
-  });
+const filterTeachers = (s, teachers, distLimit, yoopies) => {
+  let teachersNear = [];
+  if (!yoopies) {
+    teachersNear = _.map(teachers, function (t) {
+      if (
+        t.dist <= distLimit &&
+        t.subjects.includes(s.subject) &&
+        t.availability.includes(utils.convertdispo(s.dispos)) &&
+        t.cours < 4
+      )
+        return t;
+    });
 
-  teachersNear = _.without(teachersNear, undefined);
+    teachersNear = _.without(teachersNear, undefined);
+  } else {
+    teachersNear = _.map(teachers, function (t) {
+      if (t.dist <= distLimit && t.subjects.includes(s.subject)) return t;
+    });
+
+    teachersNear = _.without(teachersNear, undefined);
+  }
+
   // console.log(teachersNear);
   return teachersNear;
 };
@@ -59,15 +69,12 @@ const teachersNear = async (s, teachersType, distLimit) => {
       });
       break;
     case 'yoopies':
-      teachers = _.filter(allTeachers, {
-        status: 'on',
-        Certification: 'CERTIFIED',
-      });
+      teachers = await utils.readCSV(`data/yoopies/teachers-yoopies.csv`, ',');
       break;
     default:
       break;
   }
-
+  console.log(teachers);
   teachers.map((t, idx) => {
     t.dist = utils.distanceBetween(s.lat, s.lng, t.lat, t.lng);
   });
@@ -91,7 +98,7 @@ const teachersNear = async (s, teachersType, distLimit) => {
 
   // console.log(teachers);
   return teachersType === 'yoopies'
-    ? teachers
+    ? filterTeachers(s, teachers, distLimit, 'yoopies')
     : filterTeachers(s, teachers, distLimit);
 };
 

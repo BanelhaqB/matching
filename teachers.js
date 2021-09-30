@@ -102,10 +102,7 @@ const scrapPhone = async (id) => {
   return new Promise(async (resolve) => {
     scrap.post({
       url: 'https://yoopies.fr/graphql',
-      body:
-        '{"operationName":"phoneVerifGetThread","variables":{"id":' +
-        id +
-        '},"query":"query phoneVerifGetThread($id: Int!) {\\n  ad(id: $id) {\\n user {\\n phone\\n phoneE164\\n firstName\\n lastName\\n id\\n __typename\\n }\\n __typename\\n }\\n }\\n"}',
+      body: '{"operationName":"phoneVerifGetThread","variables":{"id":1000342},"query":"query phoneVerifGetThread($id: Int!) {\\n  ad(id: $id) {\\n user {\\n phone\\n phoneE164\\n firstName\\n lastName\\n id\\n __typename\\n }\\n __typename\\n }\\n }\\n"}',
       headers: {
         Bearer:
           'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAiOjE2NjIwNjAxOTMsInVzZXJuYW1lIjoicGF1bGluZS5wZXJpbnBAZ21haWwuY29tIiwiaWQiOjUyOTIzNTksImlhdCI6IjE2MzA1MDMyNDEifQ.hRt1HCc4AUK4NsT_I3YC9pEjwjBiESshKdQH2GKaMTE9iilZgcJ8EJxGRStpUklyK0H0ugu8ivYLSnCKnqh_TRAaIix0RFPd8D4W2X4WEPumaC5S-GBpn3GJvAMxen8bYBX90HQ5HDFiAzqxm_a2tuBP-v4gxf1F1F1pUz6YfMvd7LVOfaB-Ew6a16_qwOVAxHrxFPPhREAPPgv0SGW0wFm5-IKpSQznVWvcBJjBWncYNgSl36kNbBWizFoU64D-xeXNHDdYUlfXtrf3LgjCAyvk7TvIDfiZvkDkgrfv_OW9InB1RBp_jSmLMILh06bdQjxNajP_7UeCiwMrrGQyb_b_4QsrWKuANiGtHcJZZHyOdTMZSjlHpoB6ZjRfpJKz9skB9tf5vOJ8w_JSFkDaWXmRZTVB8XLweoIRMAv_vaqB4pNYRRufk-THNVUMtlpVlwnQbmIjxPxnMJs0zFWxSWggSE5sA6p0gpnnD-9XjBv03IgbWMb6966dOFEsMRLxc0N2D4IJRoDhGCejguae0qM3m1NGNWijtcTOLMh4ByykKuPhQEjN9D63zQl9_PHfgWIIGID4ZIT8x-SLO2tl5qH-oUKYa7MzP_RCoom5NFoU-1UbPJasugRINLe_RNJzIyqF_EJlo6aBYAR67Jq0hsIZXhsY3fM3BrOZYfrdOdg',
@@ -159,7 +156,7 @@ const main = async () => {
   // --------------------------------------------------------------
   // scrap name - phone new ids
   // --------------------------------------------------------------
-  console.log(await scrapPhone(1000196));
+  console.log(await scrapPhone(1000342));
   // --------------------------------------------------------------
   // scrap all data new ids
   // --------------------------------------------------------------
