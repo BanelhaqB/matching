@@ -208,10 +208,10 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
     data[`liste-${teachersType}-3-url`] = _.orderBy(teachers, ['dist'])[2]
       ? _.orderBy(teachers, ['dist'])[2].url
       : '--';
-    data[`allprofs`] = _.map(
+    data[`allprofs`] = `${_.map(
       _.orderBy(teachers, ['dist']),
-      'phone_number'
-    ).join();
+      (t) => `${t.slug},${t.firstname},${t.phone_number}`
+    ).join(';')}`;
   }
 
   return data;
