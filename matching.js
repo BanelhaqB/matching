@@ -74,7 +74,7 @@ const teachersNear = async (s, teachersType, distLimit) => {
     default:
       break;
   }
-  console.log(teachers);
+  // console.log(teachers);
   teachers.map((t, idx) => {
     t.dist = utils.distanceBetween(s.lat, s.lng, t.lat, t.lng);
   });
@@ -164,6 +164,7 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
     data[`prof-${teachersType}-3-url`] = _.orderBy(teachers, ['dist'])[2]
       ? `https://www.meetinclass.com/${_.orderBy(teachers, ['dist'])[2].slug}`
       : '--';
+    data[`allprofs`] = _.map(_.orderBy(teachers, ['dist']), 'email').join();
   } else {
     data[`liste-${teachersType}`] = `${teachers.length} profs: ${_.orderBy(
       teachers,
@@ -171,36 +172,46 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
     )
       .map((t) => `${t.slug} - ${Math.floor(t.dist * 100) / 100}km`)
       .join(' | ')}`;
-    data[`liste-${teachersType}-1-slug`] = _.orderBy(teachers, [
-      'dist',
-    ])[0].slug;
-    data[`liste-${teachersType}-1-firstname`] = _.orderBy(teachers, [
-      'dist',
-    ])[0].firstname;
-    data[`liste-${teachersType}-1-phone`] = _.orderBy(teachers, [
-      'dist',
-    ])[0].phone_number;
-    data[`liste-${teachersType}-1-url`] = _.orderBy(teachers, ['dist'])[0].url;
-    data[`liste-${teachersType}-2-slug`] = _.orderBy(teachers, [
-      'dist',
-    ])[1].slug;
-    data[`liste-${teachersType}-2-firstname`] = _.orderBy(teachers, [
-      'dist',
-    ])[1].firstname;
-    data[`liste-${teachersType}-2-phone`] = _.orderBy(teachers, [
-      'dist',
-    ])[1].phone_number;
-    data[`liste-${teachersType}-2-url`] = _.orderBy(teachers, ['dist'])[1].url;
-    data[`liste-${teachersType}-3-slug`] = _.orderBy(teachers, [
-      'dist',
-    ])[2].slug;
-    data[`liste-${teachersType}-3-firstname`] = _.orderBy(teachers, [
-      'dist',
-    ])[2].firstname;
-    data[`liste-${teachersType}-3-phone`] = _.orderBy(teachers, [
-      'dist',
-    ])[2].phone_number;
-    data[`liste-${teachersType}-3-url`] = _.orderBy(teachers, ['dist'])[2].url;
+    data[`liste-${teachersType}-1-slug`] = _.orderBy(teachers, ['dist'])[0]
+      ? _.orderBy(teachers, ['dist'])[0].slug
+      : '--';
+    data[`liste-${teachersType}-1-firstname`] = _.orderBy(teachers, ['dist'])[0]
+      ? _.orderBy(teachers, ['dist'])[0].firstname
+      : '--';
+    data[`liste-${teachersType}-1-phone`] = _.orderBy(teachers, ['dist'])[0]
+      ? _.orderBy(teachers, ['dist'])[0].phone_number
+      : '--';
+    data[`liste-${teachersType}-1-url`] = _.orderBy(teachers, ['dist'])[0]
+      ? _.orderBy(teachers, ['dist'])[0].url
+      : '--';
+    data[`liste-${teachersType}-2-slug`] = _.orderBy(teachers, ['dist'])[1]
+      ? _.orderBy(teachers, ['dist'])[1].slug
+      : '--';
+    data[`liste-${teachersType}-2-firstname`] = _.orderBy(teachers, ['dist'])[1]
+      ? _.orderBy(teachers, ['dist'])[1].firstname
+      : '--';
+    data[`liste-${teachersType}-2-phone`] = _.orderBy(teachers, ['dist'])[1]
+      ? _.orderBy(teachers, ['dist'])[1].phone_number
+      : '--';
+    data[`liste-${teachersType}-2-url`] = _.orderBy(teachers, ['dist'])[1]
+      ? _.orderBy(teachers, ['dist'])[1].url
+      : '--';
+    data[`liste-${teachersType}-3-slug`] = _.orderBy(teachers, ['dist'])[2]
+      ? _.orderBy(teachers, ['dist'])[2].slug
+      : '--';
+    data[`liste-${teachersType}-3-firstname`] = _.orderBy(teachers, ['dist'])[2]
+      ? _.orderBy(teachers, ['dist'])[2].firstname
+      : '--';
+    data[`liste-${teachersType}-3-phone`] = _.orderBy(teachers, ['dist'])[2]
+      ? _.orderBy(teachers, ['dist'])[2].phone_number
+      : '--';
+    data[`liste-${teachersType}-3-url`] = _.orderBy(teachers, ['dist'])[2]
+      ? _.orderBy(teachers, ['dist'])[2].url
+      : '--';
+    data[`allprofs`] = _.map(
+      _.orderBy(teachers, ['dist']),
+      'phone_number'
+    ).join();
   }
 
   return data;
