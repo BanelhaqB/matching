@@ -13,10 +13,10 @@ const _ = require('lodash');
 // ----------------------------   UTILS    -------------------------------
 // -----------------------------------------------------------------------
 
-exports.convertToCSV = async (obj, path) => {
+exports.convertToCSV = async (obj, path, newFile) => {
   const csv = new ObjectsToCsv(obj);
 
-  await csv.toDisk(path, { append: true });
+  await csv.toDisk(path, { append: !newFile });
 };
 
 exports.convertToCSVUpdate = async (obj, path) => {
@@ -43,6 +43,7 @@ exports.scrapTemplate = async (url, fct, resolve, config) => {
   scrap.get({
     url,
     referer: url,
+    headers: config ? config.headers : '',
     onSuccess: async ($, response, html, config) => {
       if (response.statusCode !== 200) {
         console.error(
@@ -360,6 +361,15 @@ exports.dataclip = async (type) => {
       resolve
     );
   });
+};
+
+exports.getDayToday = () => {
+  const dateObj = new Date();
+  const month = dateObj.getUTCMonth() + 1; //months from 1-12
+  const day = dateObj.getUTCDate();
+  const year = dateObj.getUTCFullYear();
+
+  return `${day}:${month}:${year}`;
 };
 
 // -----------------------------------------------------------------------

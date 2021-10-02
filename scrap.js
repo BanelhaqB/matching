@@ -11,7 +11,8 @@ const scrap = function (req, config) {
       url: config.url,
       headers: {
         Referer: config.referer ? config.referer : config.url,
-        Bearer: config.headers.Bearer ? config.headers.Bearer : '',
+        Bearer: config ? config.headers.Bearer : '',
+        // cookie: config.headers.cookie ? config.headers.cookie : '',
         'User-Agent': randomUA.getRandom(),
         'Content-Type': `application/${config.contentType}`,
         // proxy: 'http://138.68.173.29:3128',

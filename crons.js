@@ -3,7 +3,77 @@ const _ = require('lodash');
 const Cron = require('cron').CronJob;
 
 const appCron = async (type, startMin) => {
+  console.log(
+    `Cron : ${process.env.CRON} - ON - Running every hours at ${process.env.START}min`
+  );
+
   var dataclipsJob = new Cron(
+    `${startMin} * * * *`,
+    async () => {
+      console.log('-----------------------');
+      console.log('prospects...');
+      await utils.dataclip('prospects');
+      console.log('prospects OK!');
+
+      console.log('teachers...');
+      await utils.dataclip('teachers');
+      console.log('teachers OK!');
+
+      console.log('cours...');
+      await utils.dataclip('cours');
+      console.log('cours OK!');
+
+      console.log('waiting...');
+      await utils.dataclip('waiting');
+      console.log('waiting OK!');
+      console.log('-----------------------');
+      console.log("-- Everthing's OK 👌 --");
+      const date = new Date()
+        .toISOString()
+        .replace('T', ' ')
+        .replace('.', ' |');
+      console.log(date);
+      console.log('-----------------------');
+    },
+    null,
+    true,
+    'Europe/Paris'
+  );
+
+  var XMLJob = new Cron(
+    `${startMin} * * * *`,
+    async () => {
+      console.log('-----------------------');
+      console.log('prospects...');
+      await utils.dataclip('prospects');
+      console.log('prospects OK!');
+
+      console.log('teachers...');
+      await utils.dataclip('teachers');
+      console.log('teachers OK!');
+
+      console.log('cours...');
+      await utils.dataclip('cours');
+      console.log('cours OK!');
+
+      console.log('waiting...');
+      await utils.dataclip('waiting');
+      console.log('waiting OK!');
+      console.log('-----------------------');
+      console.log("-- Everthing's OK 👌 --");
+      const date = new Date()
+        .toISOString()
+        .replace('T', ' ')
+        .replace('.', ' |');
+      console.log(date);
+      console.log('-----------------------');
+    },
+    null,
+    true,
+    'Europe/Paris'
+  );
+
+  var updateYoopiesJob = new Cron(
     `${startMin} * * * *`,
     async () => {
       console.log('-----------------------');
@@ -45,9 +115,5 @@ const appCron = async (type, startMin) => {
       break;
   }
 };
-
-console.log(
-  `Cron : ${process.env.CRON} - ON - Running every hours at ${process.env.START}min`
-);
 
 appCron(process.env.CRON, process.env.START);
