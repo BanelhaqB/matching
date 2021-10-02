@@ -164,7 +164,10 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
     data[`prof-${teachersType}-3-url`] = _.orderBy(teachers, ['dist'])[2]
       ? `https://www.meetinclass.com/${_.orderBy(teachers, ['dist'])[2].slug}`
       : '--';
-    data[`allprofs`] = _.map(_.orderBy(teachers, ['dist']), 'email').join();
+    data[`allprofs`] = `${_.map(
+      _.orderBy(teachers, ['dist']),
+      (t) => `${t.slug},${t.firstname},${t.email}`
+    ).join(';')}`;
   } else {
     data[`liste-${teachersType}`] = `${teachers.length} profs: ${_.orderBy(
       teachers,
