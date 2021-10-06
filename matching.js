@@ -69,7 +69,7 @@ const teachersNear = async (s, teachersType, distLimit) => {
       });
       break;
     case 'yoopies':
-      teachers = await utils.readCSV(`data/yoopies/teachers-yoopies.csv`, ',');
+      teachers = await utils.readCSV(`data/yoopies/data-yoopies.csv`, ',');
       break;
     default:
       break;
@@ -176,7 +176,7 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
       .map((t) => `${t.slug} - ${Math.floor(t.dist * 100) / 100}km`)
       .join(' | ')}`;
     data[`liste-${teachersType}-1-slug`] = _.orderBy(teachers, ['dist'])[0]
-      ? _.orderBy(teachers, ['dist'])[0].slug
+      ? _.orderBy(teachers, ['dist'])[0].id
       : '--';
     data[`liste-${teachersType}-1-firstname`] = _.orderBy(teachers, ['dist'])[0]
       ? _.orderBy(teachers, ['dist'])[0].firstname
@@ -188,7 +188,7 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
       ? _.orderBy(teachers, ['dist'])[0].url
       : '--';
     data[`liste-${teachersType}-2-slug`] = _.orderBy(teachers, ['dist'])[1]
-      ? _.orderBy(teachers, ['dist'])[1].slug
+      ? _.orderBy(teachers, ['dist'])[1].id
       : '--';
     data[`liste-${teachersType}-2-firstname`] = _.orderBy(teachers, ['dist'])[1]
       ? _.orderBy(teachers, ['dist'])[1].firstname
@@ -200,7 +200,7 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
       ? _.orderBy(teachers, ['dist'])[1].url
       : '--';
     data[`liste-${teachersType}-3-slug`] = _.orderBy(teachers, ['dist'])[2]
-      ? _.orderBy(teachers, ['dist'])[2].slug
+      ? _.orderBy(teachers, ['dist'])[2].id
       : '--';
     data[`liste-${teachersType}-3-firstname`] = _.orderBy(teachers, ['dist'])[2]
       ? _.orderBy(teachers, ['dist'])[2].firstname
@@ -213,7 +213,7 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
       : '--';
     data[`allprofs`] = `${_.map(
       _.orderBy(teachers, ['dist']),
-      (t) => `${t.slug},${t.firstname},${t.phone_number}`
+      (t) => `${t.id},${t.firstname},${t.phone_number}`
     ).join(';')}`;
   }
 

@@ -245,7 +245,7 @@ const scrapData = async (url, prenom, nom, tel, id) => {
       await utils.convertToCSV(
         [prof],
         `data/yoopies/data/new/new-data-${utils.getDayToday()}.csv`,
-        true
+        false
       );
       await utils.convertToCSV(
         [prof],
