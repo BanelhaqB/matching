@@ -42,10 +42,7 @@ exports.getAllData = async (req, res, next) => {
 };
 
 exports.getAllContact = async (req, res, next) => {
-  console.log(req.params.teacherType);
-  console.log(req.params.teacherType);
-
-  const data = (
+  const allData = (
     await utils.readCSV(
       `data/${req.params.teacherType}/data/data-${req.params.teacherType}.csv`,
       ','
@@ -62,7 +59,13 @@ exports.getAllContact = async (req, res, next) => {
     };
   });
 
-  console.log(data);
+  const data = [];
+
+  allData.forEach((t) => {
+    if (t.phone_number !== 'Téléphone cahché') data.push(t);
+  });
+
+  console.log(data, data.length);
 
   res.status(200).json({
     status: 'success',
@@ -112,7 +115,7 @@ exports.getNewKPI = async (req, res, next) => {
   try {
     data = JSON.parse(
       await fs.readFile(
-        `data/${req.params.teacherType}/data/kpi/kpi-${req.params.d}:${req.params.m}:${req.params.y}.json`
+        `data/${req.params.teacherType}/data/kpi/kpi-${req.query.d}:${req.query.m}:${req.query.y}.json`
       )
     );
 
