@@ -73,11 +73,11 @@ exports.getAllContact = async (req, res, next) => {
 exports.getNewContact = async (req, res, next) => {
   console.log(req.params.teacherType);
   console.log(req.body);
-
+  let data = -1;
   try {
-    const data = (
+    data = (
       await utils.readCSV(
-        `data/${req.params.teacherType}/data/new/new-data-${req.body.d}:${req.body.m}:${req.body.y}.csv`,
+        `data/yoopies/data/new/new-data-${req.query.d}:${req.query.m}:${req.query.y}.csv`,
         ','
       )
     ).map((e) => {
@@ -98,8 +98,8 @@ exports.getNewContact = async (req, res, next) => {
   console.log(data);
 
   res.status(200).json({
-    status: data ? 'success' : 'failed',
-    data: data ? data : '--',
+    status: 'success',
+    data,
   });
 };
 
@@ -112,7 +112,7 @@ exports.getNewKPI = async (req, res, next) => {
   try {
     data = JSON.parse(
       await fs.readFile(
-        `data/${req.params.teacherType}/data/kpi/kpi-${req.body.d}:${req.body.m}:${req.body.y}.json`
+        `data/${req.params.teacherType}/data/kpi/kpi-${req.params.d}:${req.params.m}:${req.params.y}.json`
       )
     );
 
