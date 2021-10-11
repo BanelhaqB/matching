@@ -69,7 +69,7 @@ const teachersNear = async (s, teachersType, distLimit) => {
       });
       break;
     case 'yoopies':
-      teachers = await utils.readCSV(`data/yoopies/data-yoopies.csv`, ',');
+      teachers = await utils.readCSV(`data/yoopies/data/data-yoopies.csv`, ',');
       break;
     default:
       break;
