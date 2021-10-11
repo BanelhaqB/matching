@@ -324,7 +324,7 @@ exports.distanceBetween = (lat1, lng1, lat2, lng2) => {
       Math.sin(lat1) * Math.sin(lat2) +
         Math.cos(lat1) * Math.cos(lat2) * Math.cos(lng2 - lng1)
     );
-
+  console.log(dist);
   return dist;
 };
 
