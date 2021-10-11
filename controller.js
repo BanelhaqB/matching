@@ -154,6 +154,20 @@ exports.getAllKPI = async (req, res, next) => {
   });
 };
 
+exports.getAllNewFiles = async (req, res, next) => {
+  console.log(req.params.teacherType);
+
+  const allFiles = fs_sync
+    .readdirSync(`data/${req.params.teacherType}/data/kpi/`)
+    .map((e) => e.substring(4, e.length - 5));
+
+  console.log(allFiles);
+  res.status(200).json({
+    status: 'success',
+    data: allFiles,
+  });
+};
+
 // exports.update = async (req, res, next) => {
 //   const kpi = await scraping.update(req.params.plateforme);
 
