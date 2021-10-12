@@ -1,5 +1,6 @@
 // const scrap = require('./scrap');
-// const utils = require('./utils/utils');
+const utils = require('./utils/utils');
+const _ = require('lodash');
 
 // const getCSV = async () => {
 //   return new Promise((resolve) =>
@@ -28,3 +29,59 @@
 // };
 
 // getCSV();
+
+const cleanCSV = async () => {
+  const data = await utils.readCSV(
+    'data/yoopies/data/data-yoopies-Fiiii.csv',
+    ','
+  );
+
+  console.log('cleaning data...');
+  const nd = _.map(data, function (t) {
+    return {
+      id: t.id,
+      url: t.url,
+      prenom: t.firstname,
+      nom: t.lastname,
+      tel: t.phone_number,
+      age: t.age,
+      experience: t.experience,
+      description: t.description,
+      science: t.science,
+      langues: t.langues,
+      info: t.info,
+      musique: t.musique,
+      aidedevoirs: t.aidedevoirs,
+      lat: t.lat,
+      lgt: t.lng,
+      ville: t.city,
+      disponible: t.avaible,
+      verified: t.verified,
+      subjects: utils.converstYoopiesSubject(
+        t.science * 1,
+        t.langues * 1,
+        t.info * 1,
+        t.musique * 1,
+        t.aidedevoirs * 1
+      ),
+    };
+  });
+
+  //   console.log(nd);
+
+  let idx = 0;
+  //   console.log(nd[0], nd[25208], nd[25209]);
+  for await (const t of nd) {
+    // console.log(t);
+    // if ((idx >= 25196 && idx <= 25201) || idx === 1) console.log(t);
+    // t.id = t.url.split('/')[t.url.split('/').length - 1];
+
+    await utils.convertToCSV([t], 'data/yoopies/data/data-yoopies-Finale.csv');
+
+    idx++;
+    // console.log(idx, '/', data.length);
+  }
+  //   console.log(data.length, '--->', nd.length);
+};
+
+cleanCSV();

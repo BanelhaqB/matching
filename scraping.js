@@ -241,7 +241,15 @@ const scrapData = async (url, prenom, nom, tel, id) => {
           : false,
       };
 
-      //   console.log(prof);
+      prof.subjects = utils.converstYoopiesSubject(
+        prof.science * 1,
+        prof.langues * 1,
+        prof.info * 1,
+        prof.musique * 1,
+        prof.aidedevoirs * 1
+      );
+
+      console.log(prof);
       await utils.convertToCSV(
         [prof],
         `data/yoopies/data/new/new-data-${utils.getDayToday()}.csv`,
@@ -265,15 +273,16 @@ const scrapData = async (url, prenom, nom, tel, id) => {
 
 const getData = async (url) => {
   const dataPhone = await scrapPhone(url.id);
-  const data = await scrapData(
-    url.url,
-    dataPhone.firstName,
-    dataPhone.lastName,
-    dataPhone.phoneE164 ? dataPhone.phoneE164 : 'Téléphone cahché',
-    url.id
-  );
-
-  return data;
+  if (dataPhone.phoneE164) {
+    await scrapData(
+      url.url,
+      dataPhone.firstName,
+      dataPhone.lastName,
+      dataPhone.phoneE164 ? dataPhone.phoneE164 : 'Téléphone cahché',
+      url.id
+    );
+  }
+  return '';
 };
 
 const scrapAllNew = async (plateforme) => {
