@@ -51,11 +51,11 @@ exports.getAllContact = async (req, res, next) => {
     return {
       id: e.id,
       url: e.url,
-      firstname: e.firstname,
-      lastname: e.lastname,
-      phone: e.phone_number,
+      prenom: e.prenom,
+      nom: e.nom,
+      tel: e.tel,
       subjects: e.subjects,
-      city: e.city,
+      ville: e.ville,
     };
   });
 
