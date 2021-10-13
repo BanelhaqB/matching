@@ -273,15 +273,15 @@ const scrapData = async (url, prenom, nom, tel, id) => {
 
 const getData = async (url) => {
   const dataPhone = await scrapPhone(url.id);
-  if (dataPhone.phoneE164) {
-    await scrapData(
-      url.url,
-      dataPhone.firstName,
-      dataPhone.lastName,
-      dataPhone.phoneE164 ? dataPhone.phoneE164 : 'Téléphone cahché',
-      url.id
-    );
-  }
+
+  await scrapData(
+    url.url,
+    dataPhone.firstName,
+    dataPhone.lastName,
+    dataPhone.phoneE164 ? dataPhone.phoneE164 : 'Téléphone cahché',
+    url.id
+  );
+
   return '';
 };
 
@@ -354,12 +354,12 @@ const update = async (plateforme) => {
   return kpi;
 };
 
-const main = async (plateforme) => {
-  switch (process.env.ACTION) {
+exports.update = async (plateforme, action) => {
+  switch (action) {
     case 'sitemap':
       await scrapXML(plateforme);
       break;
-    case 'update':
+    case 'data':
       await update(plateforme);
       break;
     default:
@@ -367,4 +367,4 @@ const main = async (plateforme) => {
   }
 };
 
-main('yoopies');
+update('yoopies', process.env.ACTION);

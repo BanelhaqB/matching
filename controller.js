@@ -25,9 +25,6 @@ exports.teachersNear = async (req, res, next) => {
 };
 
 exports.getAllData = async (req, res, next) => {
-  console.log(req.params.teacherType);
-  console.log(req.params.teacherType);
-
   const data = await utils.readCSV(
     `data/${req.params.teacherType}/data/data-${req.params.teacherType}.csv`,
     ','
@@ -160,9 +157,22 @@ exports.getAllKPI = async (req, res, next) => {
 exports.getAllNewFiles = async (req, res, next) => {
   console.log(req.params.teacherType);
 
-  const allFiles = fs_sync
+  let allFiles = fs_sync
     .readdirSync(`data/${req.params.teacherType}/data/kpi/`)
-    .map((e) => e.substring(4, e.length - 5));
+    .map((e) => {
+      return {
+        date: `${e.split('-')[1].split('.')[0].split(':')[0]}/${
+          e.split('-')[1].split('.')[0].split(':')[1]
+        }/${e.split('-')[1].split('.')[0].split(':')[2]}`,
+        dateISO: new Date(
+          `${e.split('-')[1].split('.')[0].split(':')[1] * 1 - 1}/${
+            e.split('-')[1].split('.')[0].split(':')[0] * 1 + 1
+          }/${e.split('-')[1].split('.')[0].split(':')[2]}`
+        ),
+      };
+    });
+
+  allFiles = _.orderBy(allFiles, 'dateISO', 'desc');
 
   console.log(allFiles);
   res.status(200).json({

@@ -1,521 +1,524 @@
 id,email,firstname,lastname,address,lat,lng,subject,level
-d99e3026-cb41-4d7f-bacf-cda2d6c8c088,knassima@hotmail.fr,rayan,youcef,"93100 Montreuil, France",48.863812,2.448451,BIOLOGY,CINQUIEME
 340f8487-9e5a-4c39-814b-047917e9575b,mounabenftima81@gmail.com,Aïcha,Ladhari,"94290 Villeneuve-le-Roi, France",48.7364524,2.4214133,BIOLOGY,CINQUIEME
+d99e3026-cb41-4d7f-bacf-cda2d6c8c088,knassima@hotmail.fr,rayan,youcef,"93100 Montreuil, France",48.863812,2.448451,BIOLOGY,CINQUIEME
 32ebcd1f-6820-4410-b11f-f59083c23ff5,dalila.raini2000@yahoo.com,Rabah,Raini,"Tigery, France",48.6391678,2.5061432,BIOLOGY,TERMINALE
 3bd42309-6f7a-4730-aee9-6d1d446b04b7,rod57.admin@free.fr,Jossua,DELLA VITTORIA,110 rue de Halling 57570 Rodemack,49.47031,6.2332748,ENGLISH,CE1
 9147f590-67b5-47b0-b0df-8bc271c3beb7,amina.amouri87@yahoo.fr,Sami,Amouri,31300 touliuse,43.6051074,1.3903425,ENGLISH,CE1
-1545cc55-f247-43e5-934d-e1b8962fc4e2,brigitte.pasquier3@gmail.com,Mathis,Fleury Pasquier,"1880 route de Saint Jeannet, 06700 Saint Laurent du Var",43.6836316,7.1794259,ENGLISH,CINQUIEME
-7d861f87-bf99-4390-a329-6e575c640c39,grimzette@gmail.com,Deline,PERRON,117 Castagnins 06500 Menton,43.7828772,7.4787817,ENGLISH,CINQUIEME
 79f5c74c-9e0a-40de-ba83-2550c7c81a68,andadyya@gmail.com,Alexandre,Parveaux,22 chemin Cantemerle 31450 Belberaud,43.5037079,1.5715576,ENGLISH,CINQUIEME
-103bd740-0342-4c3a-9efc-eb1e6b89d5e1,sandrinelauby@wanadoo.fr,Theo,Lauby,7 allée du monteil 8727 bonnac la cote,45.9524515,1.2948699,ENGLISH,CINQUIEME
-8c6bf485-51f6-4325-958e-2865e39a7ff9,ccereto@free.fr,Timothé,Roblin Cereto,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,ENGLISH,CINQUIEME
 c53cb300-4faf-4855-b5ba-6003b4c0569e,melanie.reh@laposte.net,Léandre,Jamelot,27 rue des Forges 35630 Hédé,48.2919918,-1.8004913,ENGLISH,CINQUIEME
 92dbf861-4799-48f7-8cb9-3f9f520ba049,stephanie.mechin@free.fr,Milia,Mechin,26 bis rue des bevenieres,47.4602375,0.7040611,ENGLISH,CINQUIEME
-9820b49a-9e41-4442-a731-bb14454cfde4,tefa740@gmail.com,Ruben,Varela,12 rue jean canavesse,43.721574,7.2498629,ENGLISH,CINQUIEME
+1545cc55-f247-43e5-934d-e1b8962fc4e2,brigitte.pasquier3@gmail.com,Mathis,Fleury Pasquier,"1880 route de Saint Jeannet, 06700 Saint Laurent du Var",43.6836316,7.1794259,ENGLISH,CINQUIEME
 fffc16fd-b038-402e-880e-66ce03ad6dce,sanabou@wanadoo.fr,Arthur,Azzopardi,35 Avenue Raymond Feraud 06200 nice,43.6820639,7.2287551,ENGLISH,CINQUIEME
+9820b49a-9e41-4442-a731-bb14454cfde4,tefa740@gmail.com,Ruben,Varela,12 rue jean canavesse,43.721574,7.2498629,ENGLISH,CINQUIEME
+7d861f87-bf99-4390-a329-6e575c640c39,grimzette@gmail.com,Deline,PERRON,117 Castagnins 06500 Menton,43.7828772,7.4787817,ENGLISH,CINQUIEME
+8c6bf485-51f6-4325-958e-2865e39a7ff9,ccereto@free.fr,Timothé,Roblin Cereto,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,ENGLISH,CINQUIEME
+103bd740-0342-4c3a-9efc-eb1e6b89d5e1,sandrinelauby@wanadoo.fr,Theo,Lauby,7 allée du monteil 8727 bonnac la cote,45.9524515,1.2948699,ENGLISH,CINQUIEME
 9cd80dcf-be6a-42a3-8faf-cdfdc21657dd,zahrab1881@gmail.com,Kahina,Saieb,"Nice, France",43.7101728,7.261953200000001,ENGLISH,CM1
 dc1dc6a1-11a4-4ee9-bd7e-e435b69bf595,djamila.hamoum@yahoo.fr,Elias,Nafa,8 rue Frédéric Passy 21850 saint Apollinaire,47.3268532,5.0784821,ENGLISH,CM1
 6499482e-2c81-494d-9e5a-afa7758047f1,fati.ouba37@gmail.com,Bilel,Hichchou,14 rue Aristide Briand  37000 Tours,47.3783339,0.7006759,ENGLISH,CM2
 35465ddf-37af-4ca0-ad42-eefaf96d42f8,l.saillard.ls@gmail.com,Maeva,Saillard,2route de la graviere bleue 33480avensan,45.0393566,-0.7448532,ENGLISH,CP
-ad73f9dc-651b-496e-88bf-298ce02dc305,leroux.menezes@gmail.com,Elea,Menezes,"1 allée Lamartine,  37340 ambillou",47.453488,0.447207,ENGLISH,PREMIERE
 de930473-66b6-4992-8874-5288e31333a4,severinepoisson@live.fr,Camille,Da Ascencao,86170 neuville de poitou,46.685934,0.246918,ENGLISH,PREMIERE
 3147c4fe-868a-40f1-925b-cb2e3cb15a48,laure.fuertes@gmail.com,Clara,FUERTES,"7 route de Saint Simon, 31100 TOULOUSE",43.5595941,1.3676822,ENGLISH,PREMIERE
 4f388ff3-9c55-4e86-8b23-4cd73b0fb302,sronadia@yahoo.fr,Soumeya,SRO,6 allée Pierre Meunier 21160 marsannay la cote,47.2825689,5.00684,ENGLISH,PREMIERE
+ad73f9dc-651b-496e-88bf-298ce02dc305,leroux.menezes@gmail.com,Elea,Menezes,"1 allée Lamartine,  37340 ambillou",47.453488,0.447207,ENGLISH,PREMIERE
+da162a40-095c-41b3-afc7-a4ed06906e33,vtcnicois@gmail.com,Nesrine,Benmaghsoula,Residence le domi villa 59 24 chemin de saquier 06200 nice,43.7192003,7.1933273,ENGLISH,QUATRIEME
+3fcf192b-0337-4163-abb1-5303db00c631,donia.amami@hotmail.fr,BREMBILLA-AMAMI,Chiara,Saint-Louis Montcalm,48.894146,2.33945,ENGLISH,QUATRIEME
+8fcb1ca3-3382-44d9-8b5e-2a443adbba0e,ghalmiaicha8@gmail.com,Ahmed,Ghalmi,"Rue du Faubourg Poissonnière, 75010 Paris",48.8713495,2.3484105,ENGLISH,QUATRIEME
+0bd0886a-2838-4037-9eb3-1e8128a16012,sabmilin@yahoo.fr,Ewen,Milin Muller,17 chemin de gahete 31700 Mondonville,43.6647013,1.3011868,ENGLISH,QUATRIEME
 0452e356-632d-4d6a-be06-d1ed78c554f3,auroremaloni@yahoo.fr,Lucie,Naegelen,1 en secs près 57530 courcelles-chaussy,49.1115095,6.3931343,ENGLISH,QUATRIEME
 d110f9d1-15a5-4dba-9404-63f3249bfce1,brice.duhr@sfr.fr,Thiebauld,DUHR,11  route de Paris 57160 ROZERIEULLES,49.1113177,6.0960345,ENGLISH,QUATRIEME
-da162a40-095c-41b3-afc7-a4ed06906e33,vtcnicois@gmail.com,Nesrine,Benmaghsoula,Residence le domi villa 59 24 chemin de saquier 06200 nice,43.7192003,7.1933273,ENGLISH,QUATRIEME
-486b9795-0945-4aff-abe5-f45f579bd54e,malika.menali@gmail.com,Ibrahim,Menahou,1 boucle de la Sidérurgie 57310 Guénangee,49.2970163,6.2112257,ENGLISH,QUATRIEME
-0bd0886a-2838-4037-9eb3-1e8128a16012,sabmilin@yahoo.fr,Ewen,Milin Muller,17 chemin de gahete 31700 Mondonville,43.6647013,1.3011868,ENGLISH,QUATRIEME
-8fcb1ca3-3382-44d9-8b5e-2a443adbba0e,ghalmiaicha8@gmail.com,Ahmed,Ghalmi,"Rue du Faubourg Poissonnière, 75010 Paris",48.8713495,2.3484105,ENGLISH,QUATRIEME
 ee1e25e3-29c6-4c31-8145-aacd7bfae9f0,nleonard@wanadoo.fr,Louka,Léonard,"2, Rue Louis de Funès 76570 PAVILLY",49.5663736,0.9611142,ENGLISH,QUATRIEME
-3fcf192b-0337-4163-abb1-5303db00c631,donia.amami@hotmail.fr,BREMBILLA-AMAMI,Chiara,Saint-Louis Montcalm,48.894146,2.33945,ENGLISH,QUATRIEME
+486b9795-0945-4aff-abe5-f45f579bd54e,malika.menali@gmail.com,Ibrahim,Menahou,1 boucle de la Sidérurgie 57310 Guénangee,49.2970163,6.2112257,ENGLISH,QUATRIEME
 c91f6b1e-a913-472e-8d3a-a508c9cafd0e,yamina.lebaron@laposte.net,LOU,LEBARON,4 rue des érables 86340 Fleuré,46.4803376,0.5235983,ENGLISH,SECONDE
-ff23cca8-e9a3-423e-9a16-e2902bf882e4,gougetcaroline@yahoo.fr,Garance,Gouget,107 aller Odette fourquet 38530 Pontcharra,45.431229,6.018084,ENGLISH,SECONDE
-d919f5a6-6ec0-42b3-b27e-0d3e55e66fae,salima.habib@hotmail.fr,Hanna,Thevenin,Impasse des deux cyprès résidence Le calme 06200 Nice,43.6859693,7.2297644,ENGLISH,SECONDE
-9765f3e8-c9c4-48b7-8bc8-9fdae3fb607b,cecilia.savigny@hotmail.fr,Gabin,Bailleul,5 rue Georges Melies 37520 La Riche,47.3902061,0.6555991,ENGLISH,SECONDE
-e29b59fa-e1e6-4d0d-8b93-768ed1892210,fatimasid57525@gmail.com,Serine,Bekhti,1 impasse de la gérance 57300 hagondange,49.25418,6.168126,ENGLISH,SECONDE
 69162c97-fe13-4701-8194-d8f18269a3b1,melduthu@hotmail.fr,Mewen,Duthu,78 route d'ahuy 21000 dijon,47.3467103,5.0354229,ENGLISH,SECONDE
+e29b59fa-e1e6-4d0d-8b93-768ed1892210,fatimasid57525@gmail.com,Serine,Bekhti,1 impasse de la gérance 57300 hagondange,49.25418,6.168126,ENGLISH,SECONDE
+ff23cca8-e9a3-423e-9a16-e2902bf882e4,gougetcaroline@yahoo.fr,Garance,Gouget,107 aller Odette fourquet 38530 Pontcharra,45.431229,6.018084,ENGLISH,SECONDE
 6e41fa61-4a35-4077-a0ed-2122f5d2e118,suzannejacolin@wanadoo.fr,Chloe,Jacolin,136 chemin du verger 38220 st pierre de mesage,45.0559254,5.7617459,ENGLISH,SECONDE
-eca80a15-a57a-4f18-a2b9-9733feb2b3af,jihad.ahayik@gmail.com,Kelyane,Diallo,417 avenue de pessicart 06100 nice,43.7291926,7.2374331,ENGLISH,SIXIEME
+9765f3e8-c9c4-48b7-8bc8-9fdae3fb607b,cecilia.savigny@hotmail.fr,Gabin,Bailleul,5 rue Georges Melies 37520 La Riche,47.3902061,0.6555991,ENGLISH,SECONDE
+d919f5a6-6ec0-42b3-b27e-0d3e55e66fae,salima.habib@hotmail.fr,Hanna,Thevenin,Impasse des deux cyprès résidence Le calme 06200 Nice,43.6859693,7.2297644,ENGLISH,SECONDE
 5f3d5a90-eb97-4366-8e3d-2f320550c277,desireebignonderepas@gmail.com,Léandro,BIGNON DEREPAS,56 A route des celliers 38450 VIF,45.0476765,5.6600569,ENGLISH,SIXIEME
-eaec3d78-27fb-4f9d-b5cd-4fda75852d47,sgermond37@gmail.com,Lucas,Germond,37260 Artannes sur Indre,47.273383,0.5991109,ENGLISH,SIXIEME
-864fc60d-b840-410c-b551-a087d73bc995,aline.marinimartinez33@gmail.com,Morgane,MARINI MARTINEZ,3D Rue de tagon 33380 Biganos,44.6560641,-0.9929711,ENGLISH,SIXIEME
 20308f83-2ce6-48bf-830f-6af525558830,m.rousseaux87@gmail.com,Eleonor,PIRES ROUSSEAUX,Salle Paulette Aragon,48.979945,2.181078,ENGLISH,SIXIEME
+864fc60d-b840-410c-b551-a087d73bc995,aline.marinimartinez33@gmail.com,Morgane,MARINI MARTINEZ,3D Rue de tagon 33380 Biganos,44.6560641,-0.9929711,ENGLISH,SIXIEME
+eca80a15-a57a-4f18-a2b9-9733feb2b3af,jihad.ahayik@gmail.com,Kelyane,Diallo,417 avenue de pessicart 06100 nice,43.7291926,7.2374331,ENGLISH,SIXIEME
+eaec3d78-27fb-4f9d-b5cd-4fda75852d47,sgermond37@gmail.com,Lucas,Germond,37260 Artannes sur Indre,47.273383,0.5991109,ENGLISH,SIXIEME
 1437a578-c0ec-40c0-a911-f86041496f55,cheroux.christelle@orange.fr,Erwan,Bernard,Quartier La Source 1 rue des joncs 31270 FROUZINS,43.5271971,1.32319,ENGLISH,TERMINALE
-80190866-6439-4bb8-9f51-10224ed0e624,audelacharriere@gmail.com,Eloise,Danoy,34880,49.0645,-122.257952,ENGLISH,TERMINALE
-a33f2500-cc78-47af-bd2d-57f6ebbd991e,anissa.fali@yahoo.fr,Mélina,SARDAB,"95110 Sannois, France",48.9721835,2.256169,ENGLISH,TERMINALE
 4ef00051-4c62-4219-8930-1c0cefa4f1ad,franck.schmitt58@sfr.fr,Sabrina,Schmitt,11 rue des pins crusnes,49.4271166,5.9311566,ENGLISH,TERMINALE
+80190866-6439-4bb8-9f51-10224ed0e624,audelacharriere@gmail.com,Eloise,Danoy,34880,49.0645,-122.257952,ENGLISH,TERMINALE
 bbcd6ddf-b22b-441c-80b3-be46b1b2291c,hazebrouckb@free.fr,Arthur,Hazebrouck,18 rue du merlot 31470 fonsorbes,43.5339295,1.2057362,ENGLISH,TERMINALE
 0c771cbb-d169-4e99-88ec-973efb024134,aspasi57@outlook.fr,Thomas,GAGLIARDONE,7 Haute Rue 57140 NORROY-LE-VENEUR,49.1840724,6.0949638,ENGLISH,TERMINALE
+a33f2500-cc78-47af-bd2d-57f6ebbd991e,anissa.fali@yahoo.fr,Mélina,SARDAB,"95110 Sannois, France",48.9721835,2.256169,ENGLISH,TERMINALE
 8cdc6d46-6e85-4008-895b-a7f0623cc49f,fred.batier@gmail.com,Mathéo,Batier,"Tigery, France",48.6391678,2.5061432,ENGLISH,TERMINALE_STI2D
+f582e566-07f2-4f0c-b60e-87ebbe72a71e,sronadia@yahoo.fr,Safwane,SRO,6 allée Pierre Meunier 21160 marsannay la côte,47.2825689,5.00684,ENGLISH,TROISIEME
+44279146-6619-4ab5-9fb3-f09da64f2782,helene.crochet@orange.fr,Lois,Crochet,8 rue vochave 87000 Limoges,45.82953,1.2524628,ENGLISH,TROISIEME
+8c07514e-3614-4467-875f-22fae15aaefb,malika.menali@gmail.com,Sanaa,Menahou,1 boucle de la Sidérurgie 57310 Guénange,49.2970163,6.2112257,ENGLISH,TROISIEME
 d5ba83c1-50a7-44cd-bfe1-2221e49aa508,belyemna_na@yahoo.fr,Sarra,Rivoire,"7rue Georges Brassens,33310",44.8863665,-0.5149287,ENGLISH,TROISIEME
+65439474-7c40-4095-a8ec-af8067560842,cecile.eva1@live.it,Mouhamed,Niasse,Posabitat promenade du Gué Maheu 35300 Fougères,48.341313,-1.2028028,ENGLISH,TROISIEME
+8b2a34d0-0bef-487a-941e-c7e5828aebad,marionbastien77@yahoo.fr,AIDAN,Neil,Rue De la grand mare Jaunay Clan,46.6874248,0.3736645,ENGLISH,TROISIEME
 c34c50d4-d281-4fb1-9979-eb486b30ed4a,lineute54@gmail.com,Ilan,Broyez,4 Rue du Vignoble 54360 Damelevieres,48.5561272,6.3863358,ENGLISH,TROISIEME
 7e366992-4021-4347-941e-5305ed36e20f,paola.pellicane@neuf.fr,Maelys,Mayoux,93 avenue générale de gaule 06670 levens,43.8594552,7.2298695,ENGLISH,TROISIEME
-44279146-6619-4ab5-9fb3-f09da64f2782,helene.crochet@orange.fr,Lois,Crochet,8 rue vochave 87000 Limoges,45.82953,1.2524628,ENGLISH,TROISIEME
-8b2a34d0-0bef-487a-941e-c7e5828aebad,marionbastien77@yahoo.fr,AIDAN,Neil,Rue De la grand mare Jaunay Clan,46.6874248,0.3736645,ENGLISH,TROISIEME
-65439474-7c40-4095-a8ec-af8067560842,cecile.eva1@live.it,Mouhamed,Niasse,Posabitat promenade du Gué Maheu 35300 Fougères,48.341313,-1.2028028,ENGLISH,TROISIEME
-f582e566-07f2-4f0c-b60e-87ebbe72a71e,sronadia@yahoo.fr,Safwane,SRO,6 allée Pierre Meunier 21160 marsannay la côte,47.2825689,5.00684,ENGLISH,TROISIEME
-8c07514e-3614-4467-875f-22fae15aaefb,malika.menali@gmail.com,Sanaa,Menahou,1 boucle de la Sidérurgie 57310 Guénange,49.2970163,6.2112257,ENGLISH,TROISIEME
 87602b0e-1d88-48a3-8070-d581a5bec787,aurelie.combas@free.fr,Zoé,RICHARD,Notre Dame Sainte Famille,48.973092,2.254368,GERMAN,SECONDE
 c93a3349-8002-46db-bc34-c65b752bc719,lyly95.bourenane@gmail.com,lyna,bourenane,Notre Dame Sainte Famille,48.973092,2.254368,GERMAN,SECONDE
 61a438c6-aa3f-4f9c-87ff-3bc932a3e80a,mounabenftima81@gmail.com,Halima,Ladhari,"94290 Villeneuve-le-Roi, France",48.7364524,2.4214133,GUITAR,CM2
 a0f008cc-f2e3-437f-a4a6-1259ec622dac,bactanita@gmail.com,Tony,Bacta,Notre Dame Sainte Famille,48.973092,2.254368,HISTORY_GEOGRAPHY,TROISIEME
+47e506fb-4369-41ce-b1b6-5c6d70960a48,cababu@yahoo.fr,Romain,CASANO,620 avenue saint Philippe 06410 Biot,43.6195395,7.0770729,HOMEWORK_HELP,CE1
 d4ca1bbb-3dfc-4541-9fd7-1c1893038808,virgie.51@hotmail.fr,Timéa,De Carvalho,9 rue des chênes 63700 YOUX,46.1410155,2.8192074,HOMEWORK_HELP,CE1
 60d232db-f546-4425-827d-af9603eb16be,lucia38@live.fr,Chloé,Teixeira,69 rue du docteur jollans 38590 sillans,45.3404516,5.3904331,HOMEWORK_HELP,CE1
-47e506fb-4369-41ce-b1b6-5c6d70960a48,cababu@yahoo.fr,Romain,CASANO,620 avenue saint Philippe 06410 Biot,43.6195395,7.0770729,HOMEWORK_HELP,CE1
 50190459-0b97-4836-a3d4-623b4d70a028,fredfulbert@ocea.net,Samuel,FULBERT,17 TER RUE DU LUC 33600 PESSAC,44.7975046,-0.6363081,HOMEWORK_HELP,CE2
-1dedef7f-c85f-4f2d-908b-e3c05b429b49,cayenneokombi@gmail.com,Saint eliele,Okombi,14 place Jean baptiste carpeaux 37000 tours,47.3730367,0.6810611,HOMEWORK_HELP,CE2
-5b708ab9-7f3e-42ee-89a9-c18f1a73564b,kaanurayceliktas@gmail.com,Selen,Celiktas,58 avenue leon blum 87350 panazol,45.8330623,1.3048404,HOMEWORK_HELP,CE2
-4e8b6cad-c023-44a9-bb61-5a4b5b3afa7c,najouam@hotmail.fr,FARRES,MAJRI,98 Chemin des Romarins ST LAURENT DU VAR,43.6648213,7.1816321,HOMEWORK_HELP,CE2
-1df80240-c083-4a69-98e7-d2059d411885,tissots6@gmx.fr,Alexis,André,1 chemin des Champs 33480 Castelnau-de-Médoc,45.0296021,-0.810339,HOMEWORK_HELP,CE2
-543f2e9e-0754-4777-994f-47c5de626d2b,ciargn-dvr@yahoo.fr,Aaron,CIANI,"Tigery, France",48.6391678,2.5061432,HOMEWORK_HELP,CE2
-172f0c19-85a5-4bc5-bb2b-03457e471584,habiba.elalaoui43@gmail.com,Ilyana,El alaoui,2 rue de dieppe 21000 Dijon,47.3280022,5.0694504,HOMEWORK_HELP,CE2
-f50d4660-2e28-4b4d-b82f-29169e5a126d,zara469@gmail.com,Si-Ayordine,ES-SOUFI,14 Rue Du Commandant Charcot 33160 Saint Médard En Jalles,44.8644728,-0.7257725,HOMEWORK_HELP,CE2
-e7ff116a-530d-46c6-9aaa-9a7ea959c613,najia33140@hotmail.fr,Youness,Youness,33rue Pierre curie résidence Pierre curie appartement 20 bâtiment A 33140villenave d ornon,44.761452,-0.577653,HOMEWORK_HELP,CE2
 e9a4ebc1-a5a5-4be3-85e9-b44bfed29b48,michele.barbaro@hotmail.fr,Raphaël,Arséguel,7 rue des Lavandières 31270 Villeneuve Tolosane,43.522404,1.3422328,HOMEWORK_HELP,CE2
 e5892093-689b-4251-96ab-7858434c93be,sandradacosta33140@gmail.com,Kylian,De Amorim costa,3rue de la mousson 33140,44.7620628,-0.5530133,HOMEWORK_HELP,CE2
+1df80240-c083-4a69-98e7-d2059d411885,tissots6@gmx.fr,Alexis,André,1 chemin des Champs 33480 Castelnau-de-Médoc,45.0296021,-0.810339,HOMEWORK_HELP,CE2
+4e8b6cad-c023-44a9-bb61-5a4b5b3afa7c,najouam@hotmail.fr,FARRES,MAJRI,98 Chemin des Romarins ST LAURENT DU VAR,43.6648213,7.1816321,HOMEWORK_HELP,CE2
+172f0c19-85a5-4bc5-bb2b-03457e471584,habiba.elalaoui43@gmail.com,Ilyana,El alaoui,2 rue de dieppe 21000 Dijon,47.3280022,5.0694504,HOMEWORK_HELP,CE2
+e7ff116a-530d-46c6-9aaa-9a7ea959c613,najia33140@hotmail.fr,Youness,Youness,33rue Pierre curie résidence Pierre curie appartement 20 bâtiment A 33140villenave d ornon,44.761452,-0.577653,HOMEWORK_HELP,CE2
+2e52f3c7-f83b-4634-8dbf-90f20d72a56d,loreneliss@gmail.com,Adrien,Bouyssou,7 Impasse de la Tour 31750 escalquens,43.5196417,1.5661389,HOMEWORK_HELP,CE2
+1dedef7f-c85f-4f2d-908b-e3c05b429b49,cayenneokombi@gmail.com,Saint eliele,Okombi,14 place Jean baptiste carpeaux 37000 tours,47.3730367,0.6810611,HOMEWORK_HELP,CE2
+543f2e9e-0754-4777-994f-47c5de626d2b,ciargn-dvr@yahoo.fr,Aaron,CIANI,"Tigery, France",48.6391678,2.5061432,HOMEWORK_HELP,CE2
+5b708ab9-7f3e-42ee-89a9-c18f1a73564b,kaanurayceliktas@gmail.com,Selen,Celiktas,58 avenue leon blum 87350 panazol,45.8330623,1.3048404,HOMEWORK_HELP,CE2
+f50d4660-2e28-4b4d-b82f-29169e5a126d,zara469@gmail.com,Si-Ayordine,ES-SOUFI,14 Rue Du Commandant Charcot 33160 Saint Médard En Jalles,44.8644728,-0.7257725,HOMEWORK_HELP,CE2
 b976624f-91b8-4928-965f-d62fe83d6f0a,cindy06@ymail.com,Ethan,Gabison,520 route de Bellet 06200 Nice,43.7320077,7.2186351,HOMEWORK_HELP,CE2
 d84d8353-afaf-47ac-96ec-6e0103730a9f,loreneliss@gmail.com,Thibault,Bouyssou,7 Impasse la Tour 31750 escalquens,43.5196417,1.5661389,HOMEWORK_HELP,CE2
-2e52f3c7-f83b-4634-8dbf-90f20d72a56d,loreneliss@gmail.com,Adrien,Bouyssou,7 Impasse de la Tour 31750 escalquens,43.5196417,1.5661389,HOMEWORK_HELP,CE2
-1c1e0dc3-e434-4333-828e-f654c1c3b30e,shadouna11@gmail.com,Jude,HADJAZZEM,"Lyon 8e Arrondissement, 69008 Lyon, France",45.7365036,4.8693851,HOMEWORK_HELP,CINQUIEME
+117d4589-e363-468c-a37f-ce73708c77e3,rezaknabila13@gmail.com,Cheurfi,Achref,"13009 Marseille, France",43.2290357,5.4463322,HOMEWORK_HELP,CINQUIEME
+3b843b1b-71fc-4c7d-90af-a57eca99ac2f,constanceblauwart59@gmail.com,Aymerick,Blauwart,"Escaudain, France",50.334246,3.344325,HOMEWORK_HELP,CINQUIEME
 dbd56124-025f-4fb1-af3a-15c676765d0f,tetydeborah@gmail.com,Néhémie,"Tety,One Tho",64Bis rue de Courcelles,48.8776212,2.3065866,HOMEWORK_HELP,CINQUIEME
 e50c911f-9aa9-491e-b6b0-940953f0ddd1,alizerroukiayman@gmail.com,Abdelillah,Ali Zerrouki,"3 All. Hector Berlioz, 91200 Athis-Mons, France",48.7035515,2.3854278,HOMEWORK_HELP,CINQUIEME
-3b843b1b-71fc-4c7d-90af-a57eca99ac2f,constanceblauwart59@gmail.com,Aymerick,Blauwart,"Escaudain, France",50.334246,3.344325,HOMEWORK_HELP,CINQUIEME
-94cb36a6-ec09-4d4b-9c1a-6d2daed12100,erikalpontesgrey@hotmail.com,Wendy,Grey,"91830 Le Coudray-Montceaux, France",48.56590300000001,2.485767,HOMEWORK_HELP,CINQUIEME
-117d4589-e363-468c-a37f-ce73708c77e3,rezaknabila13@gmail.com,Cheurfi,Achref,"13009 Marseille, France",43.2290357,5.4463322,HOMEWORK_HELP,CINQUIEME
 6c7841b9-0f43-4805-821c-96efd762dc26,ctarda@hotmail.com,Jude,HADJAZZEM,"Lyon 8e Arrondissement, 69008 Lyon, France",45.7365036,4.8693851,HOMEWORK_HELP,CINQUIEME
+1c1e0dc3-e434-4333-828e-f654c1c3b30e,shadouna11@gmail.com,Jude,HADJAZZEM,"Lyon 8e Arrondissement, 69008 Lyon, France",45.7365036,4.8693851,HOMEWORK_HELP,CINQUIEME
+94cb36a6-ec09-4d4b-9c1a-6d2daed12100,erikalpontesgrey@hotmail.com,Wendy,Grey,"91830 Le Coudray-Montceaux, France",48.56590300000001,2.485767,HOMEWORK_HELP,CINQUIEME
 8bb07405-df2b-4746-973f-14006558c584,leilamelliti.rachadi@outlook.fr,Leila,Melliti,"91350 Grigny, France",48.6592968,2.3896859,HOMEWORK_HELP,CINQUIEME
-c9981785-0d0b-4538-805b-38babfc9d7ec,natashaina@hotmail.fr,Johan,Gallego,719 route de st pierre 38850 paladru,45.4824975,5.5658264,HOMEWORK_HELP,CINQUIEME
 54fde1a1-4f31-4e7c-a64c-702ecfbcce4e,lebars.dominique@sfr.fr,Djibrill,Sarr,12 rue du chêne micault 35340 Liffré,48.2094527,-1.5168063,HOMEWORK_HELP,CINQUIEME
-0fb8d007-9a15-44e6-ada4-55e40026d3f9,natashaina@hotmail.fr,Miguel,Gallego,719 route de st pierre 38850 paladru,45.4824975,5.5658264,HOMEWORK_HELP,CM1
+c9981785-0d0b-4538-805b-38babfc9d7ec,natashaina@hotmail.fr,Johan,Gallego,719 route de st pierre 38850 paladru,45.4824975,5.5658264,HOMEWORK_HELP,CINQUIEME
 0169a8f9-4e3f-4282-8524-40e860d0537e,lilatighidet1@gmail.com,Lyna,Touaty,"95390 Saint-Prix, France",49.0064412,2.2625186,HOMEWORK_HELP,CM1
 aa9ed96b-8781-4d37-9df5-60e0e6b71343,nora.yabri@live.fr,Noham,Nechadi,27 rue du haut jardin 57580 sorbey,49.045103,6.317356,HOMEWORK_HELP,CM1
-b79cb960-2b55-45a2-9af5-e1d12864d6c8,erikalpontesgrey@hotmail.com,Glossoa,Kelly Anne,"91830 Le Coudray-Montceaux, France",48.56590300000001,2.485767,HOMEWORK_HELP,CM2
-57f9593f-ad2f-4e07-980f-19233e8f88c8,c_kima@hotmail.fr,Souleymane,Jaaouani,4 rue du 8 mai 1945 82200 moissac,44.1010739,1.097448,HOMEWORK_HELP,CM2
-321f52ee-db1b-4508-b748-882656c7e5e0,sali076@outlook.fr,Inaya,Dalvard,7 impasse georges sand 31600 lherm,43.4332887,1.2330731,HOMEWORK_HELP,CM2
-9680370b-cca4-404a-87af-b3227d60e090,shadouna11@gmail.com,Shaden,HADJAZZEM,"Lyon 8e Arrondissement, 69008 Lyon, France",45.7365036,4.8693851,HOMEWORK_HELP,CM2
+0fb8d007-9a15-44e6-ada4-55e40026d3f9,natashaina@hotmail.fr,Miguel,Gallego,719 route de st pierre 38850 paladru,45.4824975,5.5658264,HOMEWORK_HELP,CM1
 35502fd7-ffff-46d8-8ea7-da6d688fa9f8,anirmous@laposte.net,Rayan,Moustahcin,20 rue jules et Aline AVIGDOR 06300 Nice,43.7097552,7.2859939,HOMEWORK_HELP,CM2
 51007ea9-ca38-4ca9-8050-83bb7c5faf01,to5yashis@hotmail.fr,Adam,Bakkouri-Cherif,154 avenue Cyrille Besset 06100 Nice,43.7241131,7.2480145,HOMEWORK_HELP,CM2
-b4cbfa4c-73c1-41f9-a857-8191856f38e1,fouffa1976@hotmail.fr,Lina,Bargachi,80 boulevard gambetta  06000 nice,43.704607,7.2563093,HOMEWORK_HELP,CM2
 dfbf14c6-06d4-422b-bccf-163a44a2bacc,najethmane@gmail.com,Mayssa,Benaissa,20grqnd rue saint Nazaire se pezan,43.6446084,4.1196557,HOMEWORK_HELP,CM2
+b4cbfa4c-73c1-41f9-a857-8191856f38e1,fouffa1976@hotmail.fr,Lina,Bargachi,80 boulevard gambetta  06000 nice,43.704607,7.2563093,HOMEWORK_HELP,CM2
+321f52ee-db1b-4508-b748-882656c7e5e0,sali076@outlook.fr,Inaya,Dalvard,7 impasse georges sand 31600 lherm,43.4332887,1.2330731,HOMEWORK_HELP,CM2
+9680370b-cca4-404a-87af-b3227d60e090,shadouna11@gmail.com,Shaden,HADJAZZEM,"Lyon 8e Arrondissement, 69008 Lyon, France",45.7365036,4.8693851,HOMEWORK_HELP,CM2
+b79cb960-2b55-45a2-9af5-e1d12864d6c8,erikalpontesgrey@hotmail.com,Glossoa,Kelly Anne,"91830 Le Coudray-Montceaux, France",48.56590300000001,2.485767,HOMEWORK_HELP,CM2
+57f9593f-ad2f-4e07-980f-19233e8f88c8,c_kima@hotmail.fr,Souleymane,Jaaouani,4 rue du 8 mai 1945 82200 moissac,44.1010739,1.097448,HOMEWORK_HELP,CM2
+14efae41-7614-4b7d-b953-c1d75f2fb630,saada-malika@hotmail.fr,Dalyl,CYPRIEN,29 rue monseigneur Alfred Daumas 06300 Nice,43.7115847,7.2904441,HOMEWORK_HELP,CP
+30243195-fdbd-4b67-b247-8ab54977264b,nawellas@gmail.com,Lina,Mou,Rue des Horticulteurs 57100 Thionville,49.3531419,6.1462101,HOMEWORK_HELP,CP
 d3281f6d-6509-4fd9-9195-34fe5c0d5711,cathyannex3@gmail.com,Hayden,Alves,2.rue des frères 34570 pignan,43.5840289,3.7621785,HOMEWORK_HELP,CP
 4bbcee2a-1dd0-462e-9871-544698f1aa3d,rim021.saafi@gmail.com,Moussa,Saafi,14 rue miron 06000 nice,43.7062136,7.267351,HOMEWORK_HELP,CP
 fc92b684-897b-4215-abd0-08ed41ae6fc3,nel.rob@live.fr,MARJORIE,DUBERVILLE,5 rue de l'éolienne 33530 bassens,44.9077926,-0.5048933,HOMEWORK_HELP,CP
 3e66d36a-82eb-44f8-bf88-e1d97f8261a7,msilvaoliveira86@gmail.com,Gustavo,Da Silva Pereira,Salle Paulette Aragon,48.979945,2.181078,HOMEWORK_HELP,CP
-14efae41-7614-4b7d-b953-c1d75f2fb630,saada-malika@hotmail.fr,Dalyl,CYPRIEN,29 rue monseigneur Alfred Daumas 06300 Nice,43.7115847,7.2904441,HOMEWORK_HELP,CP
-30243195-fdbd-4b67-b247-8ab54977264b,nawellas@gmail.com,Lina,Mou,Rue des Horticulteurs 57100 Thionville,49.3531419,6.1462101,HOMEWORK_HELP,CP
-5ed0250d-f0d4-40c2-950c-d90873669013,rim021.saafi@gmail.com,Sirine,Saafi,14 rue miron 06000 nice,43.7062136,7.267351,HOMEWORK_HELP,QUATRIEME
-20ccaca7-84c4-4948-97c5-2604cc05ad31,leila57ben@gmail.com,Delya,Ben hmid,2b rue d'Hayange 57190 Florange,49.3156899,6.1081053,HOMEWORK_HELP,QUATRIEME
-537f0f6c-962d-4612-8519-a9c4705124c7,chaib.touria@gmai.com,Mariam,Laayouni,226 avenue des droits de l'homme 34000 Montpellier,43.60356,3.8950937,HOMEWORK_HELP,QUATRIEME
 35230301-dfd7-49f4-9ae4-31733029243e,ima7891@live.fr,Neyla,Bouchikhi,"Évry, Évry-Courcouronnes, France",48.629828,2.441782,HOMEWORK_HELP,QUATRIEME
+20ccaca7-84c4-4948-97c5-2604cc05ad31,leila57ben@gmail.com,Delya,Ben hmid,2b rue d'Hayange 57190 Florange,49.3156899,6.1081053,HOMEWORK_HELP,QUATRIEME
+5ed0250d-f0d4-40c2-950c-d90873669013,rim021.saafi@gmail.com,Sirine,Saafi,14 rue miron 06000 nice,43.7062136,7.267351,HOMEWORK_HELP,QUATRIEME
+537f0f6c-962d-4612-8519-a9c4705124c7,chaib.touria@gmai.com,Mariam,Laayouni,226 avenue des droits de l'homme 34000 Montpellier,43.60356,3.8950937,HOMEWORK_HELP,QUATRIEME
 c8e20453-f6f2-423a-8a75-59f37f371e87,lylia91130@hotmail.com,Elyes,AYOUB,"Évry, Évry-Courcouronnes, France",48.629828,2.441782,HOMEWORK_HELP,QUATRIEME
-73cf3a98-d0f4-4d84-9ff4-59a67cdb7121,tetydeborah@gmail.com,Renelle,Tety,64Bis Rue de Courcelles,48.8776212,2.3065866,HOMEWORK_HELP,SECONDE
 2869befd-d8b0-45b7-815c-55109d653136,dugat@free.fr,Oscar,Gatelier,76 rue Michel Foucault 86000 Poitiers,46.5564444,0.3942416,HOMEWORK_HELP,SECONDE
+73cf3a98-d0f4-4d84-9ff4-59a67cdb7121,tetydeborah@gmail.com,Renelle,Tety,64Bis Rue de Courcelles,48.8776212,2.3065866,HOMEWORK_HELP,SECONDE
 97d097f6-5b83-46f7-aa98-ffe7ca31d251,bazilblotie@yahoo.fr,Leanville,martine,"45 Rue Condorcet, 59200 Tourcoing, France",50.7265525,3.1651873,HOMEWORK_HELP,SIXIEME
+d480d80a-4817-4f71-9306-7191e6227d1b,otmane35@gmail.com,Rozaina,Otmane,9 rue de l'herbager 35740,48.1512278,-1.7615673,HOMEWORK_HELP,TERMINALE
 c59fd293-15a2-4d16-b2b4-6cc66e3e612a,cissedjeneba09@gmail.com,Imane Zeinab,Mme Cissé,3 rue Paul Cheveux 57050,49.1362684,6.1622727,HOMEWORK_HELP,TERMINALE
 34593bf1-5f21-4ab0-a0cc-c5d540a4c5f1,touati2014@outlook.fr,Anissa,ghernout,19 rue carmagnole liberté,45.1495333,5.7239973,HOMEWORK_HELP,TERMINALE
-d480d80a-4817-4f71-9306-7191e6227d1b,otmane35@gmail.com,Rozaina,Otmane,9 rue de l'herbager 35740,48.1512278,-1.7615673,HOMEWORK_HELP,TERMINALE
 e97b7b66-e1a5-4642-a85c-a971b46ba2f3,madloumamina83@gmail.com,Marwan,Djillali,7rue guiglionda des saint agathe 06300,43.7358487,7.2975749,HOMEWORK_HELP,TROISIEME
-06798afc-a483-4e59-bf04-7498e39c3f00,behillil43@gmail.com,Jibril,Aslakah,157 boulevard Paul langevin 37700 saint Pierre des corps,47.3920523,0.7375737,HOMEWORK_HELP,TROISIEME
 4f0021e9-46c7-451c-8cbe-3d64db834ab6,cathyannex3@gmail.com,Thibault,Alves,"2,rue des frères 34570 pignan",43.5840289,3.7621785,HOMEWORK_HELP,TROISIEME
 80ec534c-9b89-452e-b246-b52379b6268d,natashaina@hotmail.fr,Shaina,Gallego,719 route de st pierre 38850 paladru,45.4824975,5.5658264,HOMEWORK_HELP,TROISIEME
-38b2227c-1c98-4ef3-b0f4-2ad669eb5f75,amel_chafii@hotmail.fr,liyam,ouabel,62 avenue Pierre semard,43.6562141,6.9277482,LITTERATURE,CE1
+06798afc-a483-4e59-bf04-7498e39c3f00,behillil43@gmail.com,Jibril,Aslakah,157 boulevard Paul langevin 37700 saint Pierre des corps,47.3920523,0.7375737,HOMEWORK_HELP,TROISIEME
+a8da2646-7dbc-4530-a83b-267e11d9548e,rod57.admin@free.fr,Jossua,DELLA VITTORIA,110 rue de Halling 57570 Rodemack,49.47031,6.2332748,LITTERATURE,CE1
 c76bd851-3c13-49fc-8159-2edabde9a4c5,rhamla1975@gmail.com,Mohamed,Hamla,2 rue niepce 06000 nice,43.7046854,7.2691212,LITTERATURE,CE1
 5b9a5914-a9b8-4d42-8f5b-021f20075246,pascae.merlet@sfr.fr,Mila,MERLET,68 waldeck Rousseau 33140 Villenave d Ornon,44.7626579,-0.5724431,LITTERATURE,CE1
-577948f3-3234-42cc-9343-605429ce1e83,carolinebick24@gmail.com,Allison,Bick,113 avenue des nations,49.3618404,6.1975831,LITTERATURE,CE1
 5cf23959-7337-4a3f-928b-cb58ceec6fe6,ricci_laetitia@yahoo.fr,Kesia,Damarre Ricci,Le chêne vert bat b4 av Denis delahaye 06340 la trinité,43.7490481,7.3226818,LITTERATURE,CE1
-a8da2646-7dbc-4530-a83b-267e11d9548e,rod57.admin@free.fr,Jossua,DELLA VITTORIA,110 rue de Halling 57570 Rodemack,49.47031,6.2332748,LITTERATURE,CE1
+38b2227c-1c98-4ef3-b0f4-2ad669eb5f75,amel_chafii@hotmail.fr,liyam,ouabel,62 avenue Pierre semard,43.6562141,6.9277482,LITTERATURE,CE1
+577948f3-3234-42cc-9343-605429ce1e83,carolinebick24@gmail.com,Allison,Bick,113 avenue des nations,49.3618404,6.1975831,LITTERATURE,CE1
+9dd3090e-daf1-4f02-9e20-77cc42c3f366,cdkido@gmail.com,Noa,Philippe/DELERIN,2 allée du père popielusko 35136 saint jacques de la lande,48.0666347,-1.7193681,LITTERATURE,CE2
 d1625402-be7c-4951-9a34-b6fcd35baaf8,ikramfarsi@hotmail.fr,Lylia,Abboubi,2 impasse des Carignan lotissement vignes vielles 34570 saint Paul et valmalle,43.6269378,3.6727297,LITTERATURE,CE2
-4cd103cc-0e16-459b-925a-c049879318f4,lydia1985@live.fr,Lina,ous,"16 Rue de la Renardière, 94300 Vincennes, France",48.8505077,2.449963700000001,LITTERATURE,CE2
 75add0c2-0976-4504-8ab1-c79d141b3eb4,elobing78@yahoo.fr,Delphin,MOULOUNDA,6 allée Rosa Bonheur 37380 monnaie,47.4977713,0.7839985,LITTERATURE,CE2
 e2f98125-d804-4e93-928f-60faf2fce323,jacimom@hotmail.fr,Jalil,Feddal,7 rue erik satie 33200 bordeaux,44.8449724,-0.6304917,LITTERATURE,CE2
-9dd3090e-daf1-4f02-9e20-77cc42c3f366,cdkido@gmail.com,Noa,Philippe/DELERIN,2 allée du père popielusko 35136 saint jacques de la lande,48.0666347,-1.7193681,LITTERATURE,CE2
+4cd103cc-0e16-459b-925a-c049879318f4,lydia1985@live.fr,Lina,ous,"16 Rue de la Renardière, 94300 Vincennes, France",48.8505077,2.449963700000001,LITTERATURE,CE2
 db6e0da8-f26b-4589-9461-ce670a56b1e4,teodorczuksandrine@gmail.com,Zoé,Teodorczuk,15 rue edouard scoffier,43.7038018,7.2923068,LITTERATURE,CINQUIEME
-c5649846-ddb3-494c-8f5f-76c98c6b6712,virginie.quesson@gmail.com,pablo,lebret,14 rue de paris,48.851849,2.3277929,LITTERATURE,CINQUIEME
-6203935c-0cf3-4c0b-a5fa-551171b51e5d,gabc06@hotmail.fr,Gabriel,Cattenati,Avenue de la libéralisation st Laurent du var,43.6590128,7.1972195,LITTERATURE,CINQUIEME
-4ba47c22-c20a-4152-8016-1669d9bbefe5,luisa.sakhri@foodex.fr,AMINE,KABBOURI,"Crosne, France",48.720171,2.461891,LITTERATURE,CINQUIEME
-360a7d56-759a-40a7-8ca2-ba33342713c3,verovidaillac@wanadoo.fr,Camille,RABAUD,17 lotissement la châtaigneraie 33370 TRESSES,44.850024,-0.453246,LITTERATURE,CINQUIEME
-ea37180a-3586-461f-b2a5-b88f6ad5dd0e,khenatamokhtaria@gmail.com,Sofiane,Khenata,174 avenue Jean jaures 21000 Dijon,47.3017372,5.0212187,LITTERATURE,CINQUIEME
-3a09466d-ddf4-4acf-8b31-f21803a13355,natacha.didier@yahoo.fr,Liam,Tayeb,"646 chemin de leouve, 06570",43.6793872,7.1317284,LITTERATURE,CINQUIEME
-893a814e-fb20-4ecd-8d05-b6849c2dbd59,magali.sailler@orange.fr,Fleur,Digard,268 rue des tisseuses 38430 st jean de moirans,45.3438156,5.5733242,LITTERATURE,CINQUIEME
-f791fe9a-34c7-4217-96b0-801c2ac33459,malekkadouci@hotmail.fr,Liliana,Ristic Kadouci,53 rue des volontaires 57950 Montigny les metz,49.0868973,6.1558967,LITTERATURE,CINQUIEME
-a86d81d4-c34d-48e7-8f79-448a57ce683f,konatrokia2@gmail.com,Toumani,Toumani,36 rue Victor Hugo 31520 Ramonville St Agne,43.5389367,1.4748366,LITTERATURE,CINQUIEME
-d2764f8d-9559-4d04-9c66-16e1b0466461,isis.ch@wanadoo.fr,Esteban,Gibaud,10 impasse des lilas 87920 condat sur vienne,45.7912237,1.238674,LITTERATURE,CINQUIEME
-3024b8aa-4efd-4a80-8478-41b0424b3242,karimahammany@gmail.com,Malik,Hammany,288 avenue de pessicart 06100 nice,43.7217484,7.2456065,LITTERATURE,CINQUIEME
-07dd5ab6-7907-4f51-b621-2c5acb04cf2a,jasb2jonc@orange.fr,Samael,Brindejonc,265 rue du Saint Michel 54200 TOUL,48.6815902,5.8789897,LITTERATURE,CINQUIEME
-ee9e4d57-3a7c-4c53-b9ca-f0b599871283,nadia.beghour@orange.fr,Kais,Beghour,5 rue Alexis sevene 31600,43.4687985,1.3340554,LITTERATURE,CINQUIEME
 ec1d9113-64c2-497c-aea7-d7ec1542a1c3,naweldo@hotmail.fr,Ilias,Mouddakir,Les grandes Hayes 35132 vezin le coquet,48.1202605,-1.7762691,LITTERATURE,CINQUIEME
-d0eb9b14-c350-427c-85c0-b381b8b29197,salvadorrachel@neuf.fr,Noham,Khattou,23 rue du vallon 57185 clouange,49.267307,6.0964431,LITTERATURE,CINQUIEME
+3024b8aa-4efd-4a80-8478-41b0424b3242,karimahammany@gmail.com,Malik,Hammany,288 avenue de pessicart 06100 nice,43.7217484,7.2456065,LITTERATURE,CINQUIEME
 b78349e6-9439-43ee-bc40-9d63a2142949,ines-bek@hotmail.fr,Samia,Bekkouche,19cheminent Louis auriaconbe apt8 31100 toulouse,43.5618224,1.3951694,LITTERATURE,CINQUIEME
-7d0c6a04-cb43-47ae-b702-cc8bc8b68c4e,abdellahyas@gmail.com,Rania,Laib,06300,43.7194785,7.2936353,LITTERATURE,CINQUIEME
+d2764f8d-9559-4d04-9c66-16e1b0466461,isis.ch@wanadoo.fr,Esteban,Gibaud,10 impasse des lilas 87920 condat sur vienne,45.7912237,1.238674,LITTERATURE,CINQUIEME
+c5649846-ddb3-494c-8f5f-76c98c6b6712,virginie.quesson@gmail.com,pablo,lebret,14 rue de paris,48.851849,2.3277929,LITTERATURE,CINQUIEME
 150c2d25-a6fc-47aa-ac24-d93b21c745dd,gueyen247@gmail.com,Momar,Ndiaye,16 rempart Tivoli/ De guise 61/ 21000 dijon,47.3170032,5.0323228,LITTERATURE,CINQUIEME
-cd28c1a8-6edc-4491-98bb-7a71e3743dd6,watteeuw79@gmail.com,Juliette,Vallet,12 RUE MARCEL VARDELLE,45.8420965,1.2325465,LITTERATURE,CM1
-66959811-18fd-4fdb-9fae-60d7668ff08a,sandrabernard@hotmail.com,Maxime,Beccavin,164 Rue de la madone 34400 lunel viel,43.6730286,4.0927659,LITTERATURE,CM1
-7ca2dad7-53e5-4c1e-9069-62dbc451e451,veronique.klein@airliquide.com,Veronique,Klein,"91370 Verrières-le-Buisson, France",48.746318,2.266838,LITTERATURE,CM1
+893a814e-fb20-4ecd-8d05-b6849c2dbd59,magali.sailler@orange.fr,Fleur,Digard,268 rue des tisseuses 38430 st jean de moirans,45.3438156,5.5733242,LITTERATURE,CINQUIEME
+7d0c6a04-cb43-47ae-b702-cc8bc8b68c4e,abdellahyas@gmail.com,Rania,Laib,06300,43.7194785,7.2936353,LITTERATURE,CINQUIEME
+360a7d56-759a-40a7-8ca2-ba33342713c3,verovidaillac@wanadoo.fr,Camille,RABAUD,17 lotissement la châtaigneraie 33370 TRESSES,44.850024,-0.453246,LITTERATURE,CINQUIEME
+6203935c-0cf3-4c0b-a5fa-551171b51e5d,gabc06@hotmail.fr,Gabriel,Cattenati,Avenue de la libéralisation st Laurent du var,43.6590128,7.1972195,LITTERATURE,CINQUIEME
+ee9e4d57-3a7c-4c53-b9ca-f0b599871283,nadia.beghour@orange.fr,Kais,Beghour,5 rue Alexis sevene 31600,43.4687985,1.3340554,LITTERATURE,CINQUIEME
+07dd5ab6-7907-4f51-b621-2c5acb04cf2a,jasb2jonc@orange.fr,Samael,Brindejonc,265 rue du Saint Michel 54200 TOUL,48.6815902,5.8789897,LITTERATURE,CINQUIEME
+d0eb9b14-c350-427c-85c0-b381b8b29197,salvadorrachel@neuf.fr,Noham,Khattou,23 rue du vallon 57185 clouange,49.267307,6.0964431,LITTERATURE,CINQUIEME
+3a09466d-ddf4-4acf-8b31-f21803a13355,natacha.didier@yahoo.fr,Liam,Tayeb,"646 chemin de leouve, 06570",43.6793872,7.1317284,LITTERATURE,CINQUIEME
+a86d81d4-c34d-48e7-8f79-448a57ce683f,konatrokia2@gmail.com,Toumani,Toumani,36 rue Victor Hugo 31520 Ramonville St Agne,43.5389367,1.4748366,LITTERATURE,CINQUIEME
+f791fe9a-34c7-4217-96b0-801c2ac33459,malekkadouci@hotmail.fr,Liliana,Ristic Kadouci,53 rue des volontaires 57950 Montigny les metz,49.0868973,6.1558967,LITTERATURE,CINQUIEME
+ea37180a-3586-461f-b2a5-b88f6ad5dd0e,khenatamokhtaria@gmail.com,Sofiane,Khenata,174 avenue Jean jaures 21000 Dijon,47.3017372,5.0212187,LITTERATURE,CINQUIEME
+4ba47c22-c20a-4152-8016-1669d9bbefe5,luisa.sakhri@foodex.fr,AMINE,KABBOURI,"Crosne, France",48.720171,2.461891,LITTERATURE,CINQUIEME
+9618b7ac-257f-4bcb-a368-4b525c486b88,krincres@hotmail.fr,Dorian,Crestz,21 rue aimé CESAIRE eysines,44.8739363,-0.6614233,LITTERATURE,CM1
+5486844c-0ef2-4f49-8cd9-825d002d0079,lea.ryan@hotmail.fr,Jade,Ahmidi,15 rue Emile Roux 57050 metz,49.1442628,6.1653322,LITTERATURE,CM1
 e022c764-3680-4b58-806e-2faf4577723e,mrylena@hotmail.fr,ADISON,Neves,"14, impasse des marronniers 57300",49.2631894,6.1580095,LITTERATURE,CM1
+cd28c1a8-6edc-4491-98bb-7a71e3743dd6,watteeuw79@gmail.com,Juliette,Vallet,12 RUE MARCEL VARDELLE,45.8420965,1.2325465,LITTERATURE,CM1
+7ca2dad7-53e5-4c1e-9069-62dbc451e451,veronique.klein@airliquide.com,Veronique,Klein,"91370 Verrières-le-Buisson, France",48.746318,2.266838,LITTERATURE,CM1
 85e28ff6-9973-49a6-9bcb-d97113007463,celinegomesdossantos@gmail.com,Diego,Legendre,18 rue des fontaines 21220 semezanges,47.2148226,4.8584505,LITTERATURE,CM1
 bd1782b0-e584-44e9-9c53-8c01e372d2d0,shqipeshkodra80@gmail.com,Mehmet,Shkodra,111avenue ambroize croazat saint martin d'Hères 38400,45.1837969,5.7549142,LITTERATURE,CM1
-5486844c-0ef2-4f49-8cd9-825d002d0079,lea.ryan@hotmail.fr,Jade,Ahmidi,15 rue Emile Roux 57050 metz,49.1442628,6.1653322,LITTERATURE,CM1
-89c86e9e-f5d1-445f-bee3-04e5735f4dd4,nathalie.caritoux@gmail.com,Tessa,GOURSOLAS CARITOUX,54 boulevard général louis delfino 06300 Nice,43.7039402,7.2889473,LITTERATURE,CM1
-9618b7ac-257f-4bcb-a368-4b525c486b88,krincres@hotmail.fr,Dorian,Crestz,21 rue aimé CESAIRE eysines,44.8739363,-0.6614233,LITTERATURE,CM1
 cfe27dc6-a0cd-4035-a7e9-8c6fc2f1fa5e,karine.i@wanadoo.fr,Capucine,Dragan,6 rue des Glycines 37260 Monts,47.2735652,0.6589677,LITTERATURE,CM1
-4b71ca28-7385-4c4e-a5d9-15e42c952d57,magi-fouad@live.fr,Loay,Zanine,129 rue yves chauvin monts 37260,47.2755715,0.6505247,LITTERATURE,CM2
-3c7288f8-8681-4c8f-820e-9f9b995eea87,noeclea@hotmail.fr,Noé,Lacheze,10 la grela 33390 st paul,45.147616,-0.5949106,LITTERATURE,CM2
-84b48be9-f78a-424d-9fff-83e5bb3dd1af,edmer78@yahoo.fr,Tasnime,Koubea,,,,LITTERATURE,CM2
-4f04cd84-a247-4917-96da-975e836d50ce,rhamla1975@gmail.com,Abla,Hamla,2 rue niepce 06000 nice,43.7046854,7.2691212,LITTERATURE,CM2
-5576d913-12e4-4fc0-8e6c-ae146f98e994,sophiet78@gmail.com,Jules,Allera,223 avenue de fabron 06200 nice,43.688834,7.2181935,LITTERATURE,CM2
-91a8636c-4655-42e9-ad3b-bc7f8d9fb39a,hhcine@yahoo.fr,Yassine,Makhlouf,Allée Jacques brel Villenave d'Ornon,44.7680916,-0.5617134,LITTERATURE,CM2
-808962b6-15ef-49ff-a722-f29cb241c7a0,wahidaa_78@outlook.fr,Mélissa,STRIEBEL,06100,19.4093682,-99.1719095,LITTERATURE,CM2
-cb16ea4f-5b2d-4f36-a63a-38a8891413a4,sir_juju06@hotmail.fr,Hedi,Bejaoui,62 avenue de pessicart,43.7117412,7.2484788,LITTERATURE,CM2
-5b17cb8f-4ef4-4354-80ec-4e6cbc7253a5,jceliacruz@hotmail.fr,Aaron,MORIN,1 RUE SABLEE 76100,49.4313511,1.0772277,LITTERATURE,CM2
-88cc3ad1-f313-4100-8695-7b12e76c34f2,soraya.ouezani@gmail.com,sid ahmed,ouezzani,16 rue maurice dodéro 38100 grenoble,45.1616822,5.7293141,LITTERATURE,CM2
-84fb9844-4e28-41b6-bed6-274fbd2e51e0,laetitiabaubedet@gmail.com,Cheryne,Pastor,1 ter rue fond bonnet 33240 St Gervais,45.0208412,-0.4506246,LITTERATURE,CM2
+89c86e9e-f5d1-445f-bee3-04e5735f4dd4,nathalie.caritoux@gmail.com,Tessa,GOURSOLAS CARITOUX,54 boulevard général louis delfino 06300 Nice,43.7039402,7.2889473,LITTERATURE,CM1
+66959811-18fd-4fdb-9fae-60d7668ff08a,sandrabernard@hotmail.com,Maxime,Beccavin,164 Rue de la madone 34400 lunel viel,43.6730286,4.0927659,LITTERATURE,CM1
 9942ba8b-1646-4295-9a07-92f246249a2a,najia33140@hotmail.fr,Salma,Salma,33rue Pierre curie résidence Pierre curie appartement 20 bâtiment A 33140villenave d ornon,44.761452,-0.577653,LITTERATURE,CM2
-4ca3cf35-cdde-4ce1-b3be-90c3e15ba169,arzu.seker@outlook.fr,Eyup,Seker,33 avenue de la gardette 33310 lormont,44.8860799,-0.5089876,LITTERATURE,CM2
+84fb9844-4e28-41b6-bed6-274fbd2e51e0,laetitiabaubedet@gmail.com,Cheryne,Pastor,1 ter rue fond bonnet 33240 St Gervais,45.0208412,-0.4506246,LITTERATURE,CM2
+5576d913-12e4-4fc0-8e6c-ae146f98e994,sophiet78@gmail.com,Jules,Allera,223 avenue de fabron 06200 nice,43.688834,7.2181935,LITTERATURE,CM2
+808962b6-15ef-49ff-a722-f29cb241c7a0,wahidaa_78@outlook.fr,Mélissa,STRIEBEL,06100,19.4093682,-99.1719095,LITTERATURE,CM2
+3c7288f8-8681-4c8f-820e-9f9b995eea87,noeclea@hotmail.fr,Noé,Lacheze,10 la grela 33390 st paul,45.147616,-0.5949106,LITTERATURE,CM2
 a80aaa0a-fa24-435d-a8a1-c17db0c914bb,dallya.makilat@yahoo.fr,Lulu,Makilat,16 rue du lauragais 31450 Deyme,43.4830921,1.5288696,LITTERATURE,CM2
-1c673aed-c4ed-440e-aad3-d9c1f91d7f41,marwoneilies@gmail.com,Marwon,Ayache,"74, avenue crampel 31400 Toulouse",43.585139,1.4547594,LITTERATURE,CP
-3f2e87eb-2fa6-414e-b1e4-7a739f950bb4,l.saillard.ls@gmail.com,Maeva,Saillard,l .Saillard. ls@gmail. Com,44.8628623,-0.6412112,LITTERATURE,CP
+4f04cd84-a247-4917-96da-975e836d50ce,rhamla1975@gmail.com,Abla,Hamla,2 rue niepce 06000 nice,43.7046854,7.2691212,LITTERATURE,CM2
+4ca3cf35-cdde-4ce1-b3be-90c3e15ba169,arzu.seker@outlook.fr,Eyup,Seker,33 avenue de la gardette 33310 lormont,44.8860799,-0.5089876,LITTERATURE,CM2
+91a8636c-4655-42e9-ad3b-bc7f8d9fb39a,hhcine@yahoo.fr,Yassine,Makhlouf,Allée Jacques brel Villenave d'Ornon,44.7680916,-0.5617134,LITTERATURE,CM2
+84b48be9-f78a-424d-9fff-83e5bb3dd1af,edmer78@yahoo.fr,Tasnime,Koubea,,,,LITTERATURE,CM2
+5b17cb8f-4ef4-4354-80ec-4e6cbc7253a5,jceliacruz@hotmail.fr,Aaron,MORIN,1 RUE SABLEE 76100,49.4313511,1.0772277,LITTERATURE,CM2
+cb16ea4f-5b2d-4f36-a63a-38a8891413a4,sir_juju06@hotmail.fr,Hedi,Bejaoui,62 avenue de pessicart,43.7117412,7.2484788,LITTERATURE,CM2
+88cc3ad1-f313-4100-8695-7b12e76c34f2,soraya.ouezani@gmail.com,sid ahmed,ouezzani,16 rue maurice dodéro 38100 grenoble,45.1616822,5.7293141,LITTERATURE,CM2
+4b71ca28-7385-4c4e-a5d9-15e42c952d57,magi-fouad@live.fr,Loay,Zanine,129 rue yves chauvin monts 37260,47.2755715,0.6505247,LITTERATURE,CM2
 3f498258-639e-4bf2-87f3-7ed0f1febed1,sabineorgeval@yahoo.fr,eve,orgeval,"99,allée raymond bussières 34070 montpellier",43.5892618,3.8638682,LITTERATURE,CP
-a1f96973-4f8c-4c9b-a222-0c34252ee510,amelhammoud69@gmail.com,imene,hammoud,17 rue des clémentiniers,43.6642608,7.1783139,LITTERATURE,PREMIERE
-30099dc1-b8c8-4d77-8a11-db4921791165,nana.ami1@outlook.fr,Aya,Benkherraz,"34, boulvard Joseph vallier 38000 grenoble",45.1803762,5.7097371,LITTERATURE,PREMIERE
-b7984d7a-63f1-4254-a527-dab219b1a692,diamichel_mails@yahoo.fr,DIA--SYPHENGPHET,Nathan,"95 Av. Emile Zola, 75015 Paris, France",48.8469875,2.2893419,LITTERATURE,PREMIERE
-401e7f52-4395-4d0f-896e-0c8b3c205021,malikachc1974@gmail.com,Chouchane yomna,Yomna,40rue des Mesliers 76500 Elbeuf,49.2842757,0.9940813,LITTERATURE,PREMIERE
+3f2e87eb-2fa6-414e-b1e4-7a739f950bb4,l.saillard.ls@gmail.com,Maeva,Saillard,l .Saillard. ls@gmail. Com,44.8628623,-0.6412112,LITTERATURE,CP
+1c673aed-c4ed-440e-aad3-d9c1f91d7f41,marwoneilies@gmail.com,Marwon,Ayache,"74, avenue crampel 31400 Toulouse",43.585139,1.4547594,LITTERATURE,CP
 0fe4799e-f8b6-426b-8707-2235e29aa131,lamiapelissier@yahoo.fr,Mélina,Pelissier,18 corniche André de Joly,43.6998633,7.2933187,LITTERATURE,PREMIERE
-92b78ccb-003c-4db3-9d24-35776b58e0f6,killy67@live.fr,Léa,Lacoste,32 avenue du général grollier 34570 Pignan,43.5838164,3.7657897,LITTERATURE,PREMIERE
-2d1b45e4-82eb-4151-a095-65f2513636a1,aubrydamsev@gmail.com,Alice,Aubry,14 rue des voyeux.51390 Rosnay,49.2594222,3.8610212,LITTERATURE,PREMIERE
-df8decba-cb2f-4137-8aab-ebf3030a0f03,goergemarcil83@gmail.com,George,Marcil,بونتواز، فرنسا,49.050966,2.100645,LITTERATURE,PREMIERE
+69d9bba5-d761-4313-bf12-034c5b8a51bd,fouzia.kabba@laposts.net,Achraf,Achraf,3rue theophile gautier 63000,45.7572756,3.0951161,LITTERATURE,PREMIERE
+a1f96973-4f8c-4c9b-a222-0c34252ee510,amelhammoud69@gmail.com,imene,hammoud,17 rue des clémentiniers,43.6642608,7.1783139,LITTERATURE,PREMIERE
+b7984d7a-63f1-4254-a527-dab219b1a692,diamichel_mails@yahoo.fr,DIA--SYPHENGPHET,Nathan,"95 Av. Emile Zola, 75015 Paris, France",48.8469875,2.2893419,LITTERATURE,PREMIERE
 130dfa74-9082-4bb3-a5ac-e9a40c0ad8cc,f.zhgaba1@gmail.com,Edri,Zhgaba,10 bulevard winston Churchill 21000,47.3517415,5.0522813,LITTERATURE,PREMIERE
 c0717816-f857-4dd2-b7ef-a51736875660,loft76000@yahoo.fr,Jad,Bidar,13 bis rue du Nord 76000 Rouen,49.4487787,1.1034902,LITTERATURE,PREMIERE
-4143f6ab-d110-4ef9-bd7d-3297cc7e91a6,sakhoyarie2000@gmail.com,Kadiatou Yarie,Diallo,CHRS les lucioles rue de la vernusse 18000 Bourges,47.0519369,2.4052691,LITTERATURE,PREMIERE
+df8decba-cb2f-4137-8aab-ebf3030a0f03,goergemarcil83@gmail.com,George,Marcil,بونتواز، فرنسا,49.050966,2.100645,LITTERATURE,PREMIERE
 e5e62a64-6ade-483c-9abc-1643b0d52eca,bur57annie@gmail.com,Claude,Bur,23avenue des nations yutz,49.3559608,6.1847413,LITTERATURE,PREMIERE
-69d9bba5-d761-4313-bf12-034c5b8a51bd,fouzia.kabba@laposts.net,Achraf,Achraf,3rue theophile gautier 63000,45.7572756,3.0951161,LITTERATURE,PREMIERE
-f5d72086-0004-4399-a17f-9f34c4e7efb7,leila57ben@gmail.com,Ayoub,Ben hmid,2b rue d'Hayange 57190 Florange,49.3156899,6.1081053,LITTERATURE,QUATRIEME
-6587e461-5a4c-48f8-8837-312498af5c9b,f.bouchekhou@gmail.com,Ilyas,Abderrezak,"95390 Saint-Prix, France",49.006469,2.262489,LITTERATURE,QUATRIEME
-42696719-2192-4eae-83a1-c1f07ab0012d,geofathia@gmail.com,Isra,Isra,38 rue Alain savary 31270 Cugnaux,43.5413593,1.3407754,LITTERATURE,QUATRIEME
-f985994c-63a3-4e04-83ab-07f15d5e7937,stelaviolon@yahoo.fr,Gabriel,Violon,"45 avenue de Toulouse, 31240 L'union",43.6562412,1.4786471,LITTERATURE,QUATRIEME
-8f27bd44-af19-4e97-ab0e-1bec552032e2,stoufaemira@laposte.net,Émira,Bejaoui,9 chemin du chapitre  Grenoble,45.1757878,5.7399088,LITTERATURE,QUATRIEME
-2dcec6fc-f8ff-4342-99be-d4ae07a944f6,marion.mazzone@gmail.com,Maloine,Elycia,30 avenue de Valence 38360,45.215617,5.661631,LITTERATURE,QUATRIEME
-ac87a239-07b5-4457-a8fd-83e905a089fc,bahi.chaima33@gmail.com,Maïssa,Bahi,162 rue rimbaud 33620 cavignac,45.100203,-0.39002,LITTERATURE,QUATRIEME
-19e0603a-9169-4333-9f90-abbc8f800d7d,christel.bompais@mac.com,Alisson,DREVET,"Sèvres, France",48.8212407,2.2109771,LITTERATURE,QUATRIEME
-e625d181-c2ca-462d-9d50-277aee8f06d5,laurent.febrer@rivedroit.com,INES,FEBRER,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,LITTERATURE,QUATRIEME
-931eb156-59cb-4dc3-b4dd-f00e5db27e00,isasart@hotmail.com,Pierre,Sartelet,8 lotissement Belledonne 38570 Goncelin,45.3449258,5.9803876,LITTERATURE,QUATRIEME
-3fbd69f8-9980-45e2-821a-577a52f9a794,samiab21000@gmail.com,Hajer,Hajer,1rue castelnau 21000 dijon,47.3300421,5.0715013,LITTERATURE,QUATRIEME
-3f902212-2c72-4fca-9715-6ece8e34ecdd,carene.comtois@orange.fr,Tya,Comtois,"3 rue alfred tonnelle, 31470 fonsorbes",43.5375241,1.2206201,LITTERATURE,QUATRIEME
-9ff7f034-ece3-4005-9898-8b484ea10a1e,ayadi.samira12@sfr.fr,Ines,AYADI,1 bis rue irma brunet faure 31170 tournefeuille,43.5677614,1.3296943,LITTERATURE,QUATRIEME
+4143f6ab-d110-4ef9-bd7d-3297cc7e91a6,sakhoyarie2000@gmail.com,Kadiatou Yarie,Diallo,CHRS les lucioles rue de la vernusse 18000 Bourges,47.0519369,2.4052691,LITTERATURE,PREMIERE
+30099dc1-b8c8-4d77-8a11-db4921791165,nana.ami1@outlook.fr,Aya,Benkherraz,"34, boulvard Joseph vallier 38000 grenoble",45.1803762,5.7097371,LITTERATURE,PREMIERE
+92b78ccb-003c-4db3-9d24-35776b58e0f6,killy67@live.fr,Léa,Lacoste,32 avenue du général grollier 34570 Pignan,43.5838164,3.7657897,LITTERATURE,PREMIERE
+2d1b45e4-82eb-4151-a095-65f2513636a1,aubrydamsev@gmail.com,Alice,Aubry,14 rue des voyeux.51390 Rosnay,49.2594222,3.8610212,LITTERATURE,PREMIERE
+401e7f52-4395-4d0f-896e-0c8b3c205021,malikachc1974@gmail.com,Chouchane yomna,Yomna,40rue des Mesliers 76500 Elbeuf,49.2842757,0.9940813,LITTERATURE,PREMIERE
 d33b90f6-6613-457f-9fc6-7c69d49a3d95,franciscadjaz@icloud.com,Sofiane,Djaziri,60 avenue Georges Bizet 76380 Canteleu,49.4580318,1.0354774,LITTERATURE,QUATRIEME
-eb68ce98-c722-4dc7-9907-f56c03067f36,radiacoco17@gmail.com,Yanis,Yanis,31 Rue des Albatros 33440 ambares,44.9213612,-0.4867628,LITTERATURE,QUATRIEME
-b1448ea6-b3bf-4236-8597-e96eb2f2499b,laini.moussa@yahoo.fr,Isael,Bacari,7 rue francis carco 06300 Nice,43.7161984,7.2939852,LITTERATURE,QUATRIEME
-705dbf4a-9bfb-45cb-b718-bdd82e69fced,semia2008@live.fr,Sofia,Mabrouk,730 chemin de Tralatorre 06690 Tourette levens,43.7767543,7.285591,LITTERATURE,QUATRIEME
-940f25b5-db4e-4318-bbbf-5128a5f6c12b,karimahammany@gmail.com,Mehdi,Hammany,288 avenue de pessicart 06100 nice,43.7217484,7.2456065,LITTERATURE,QUATRIEME
-cf3a6132-10c5-4faa-b9a6-ef26c59ba098,soniaarfaoui94@gmail.com,Naela,Mahiou,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,QUATRIEME
-ea7fe015-be90-4f50-8a0d-667584800a84,hegera@gmail.com,Yasmine,Ben Salah,62 avenue de pessicart 06100,43.7117412,7.2484788,LITTERATURE,QUATRIEME
-0063e9f0-16a0-45c9-ab68-801abefd58a8,hladouce21@hotmail.fr,Léa,Ladouce,2 rue des bleuets 21800 Neuilly-Crimolois,47.2786483,5.1165175,LITTERATURE,QUATRIEME
-9caa5c02-eb11-43c8-b649-935c824e7bd0,taleszohra@gmail.com,Evan,Jaussoin,12 impasse aldebaran 34400 Lunel,43.6848557,4.1309573,LITTERATURE,QUATRIEME
 c6834311-027a-4531-bc3a-09dbee80ea70,dalilacha@gmail.com,Enzo,Chalal,10 rue de l'église 27590 Pîtres,49.3189572,1.22566,LITTERATURE,QUATRIEME
+e625d181-c2ca-462d-9d50-277aee8f06d5,laurent.febrer@rivedroit.com,INES,FEBRER,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,LITTERATURE,QUATRIEME
+9caa5c02-eb11-43c8-b649-935c824e7bd0,taleszohra@gmail.com,Evan,Jaussoin,12 impasse aldebaran 34400 Lunel,43.6848557,4.1309573,LITTERATURE,QUATRIEME
+19e0603a-9169-4333-9f90-abbc8f800d7d,christel.bompais@mac.com,Alisson,DREVET,"Sèvres, France",48.8212407,2.2109771,LITTERATURE,QUATRIEME
+8f27bd44-af19-4e97-ab0e-1bec552032e2,stoufaemira@laposte.net,Émira,Bejaoui,9 chemin du chapitre  Grenoble,45.1757878,5.7399088,LITTERATURE,QUATRIEME
+eb68ce98-c722-4dc7-9907-f56c03067f36,radiacoco17@gmail.com,Yanis,Yanis,31 Rue des Albatros 33440 ambares,44.9213612,-0.4867628,LITTERATURE,QUATRIEME
+2dcec6fc-f8ff-4342-99be-d4ae07a944f6,marion.mazzone@gmail.com,Maloine,Elycia,30 avenue de Valence 38360,45.215617,5.661631,LITTERATURE,QUATRIEME
 472ef1d2-5dc1-4e34-9de4-fb69c78583d3,arthuretchristelle.charko@orange.fr,Arthur,Charko dechamp,Res la valette 1 rue des charmes 33410 cadillac,44.6374158,-0.3190598,LITTERATURE,QUATRIEME
-c09f0804-05a7-468d-8760-3533e6bdc597,nounou38600@yahoo.fr,Mohamed,Chemai,2 rue Garibaldi 38600 fontaine,45.1904849,5.6831765,LITTERATURE,SECONDE
+3fbd69f8-9980-45e2-821a-577a52f9a794,samiab21000@gmail.com,Hajer,Hajer,1rue castelnau 21000 dijon,47.3300421,5.0715013,LITTERATURE,QUATRIEME
+ea7fe015-be90-4f50-8a0d-667584800a84,hegera@gmail.com,Yasmine,Ben Salah,62 avenue de pessicart 06100,43.7117412,7.2484788,LITTERATURE,QUATRIEME
+705dbf4a-9bfb-45cb-b718-bdd82e69fced,semia2008@live.fr,Sofia,Mabrouk,730 chemin de Tralatorre 06690 Tourette levens,43.7767543,7.285591,LITTERATURE,QUATRIEME
+cf3a6132-10c5-4faa-b9a6-ef26c59ba098,soniaarfaoui94@gmail.com,Naela,Mahiou,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,QUATRIEME
+b1448ea6-b3bf-4236-8597-e96eb2f2499b,laini.moussa@yahoo.fr,Isael,Bacari,7 rue francis carco 06300 Nice,43.7161984,7.2939852,LITTERATURE,QUATRIEME
+931eb156-59cb-4dc3-b4dd-f00e5db27e00,isasart@hotmail.com,Pierre,Sartelet,8 lotissement Belledonne 38570 Goncelin,45.3449258,5.9803876,LITTERATURE,QUATRIEME
+9ff7f034-ece3-4005-9898-8b484ea10a1e,ayadi.samira12@sfr.fr,Ines,AYADI,1 bis rue irma brunet faure 31170 tournefeuille,43.5677614,1.3296943,LITTERATURE,QUATRIEME
+0063e9f0-16a0-45c9-ab68-801abefd58a8,hladouce21@hotmail.fr,Léa,Ladouce,2 rue des bleuets 21800 Neuilly-Crimolois,47.2786483,5.1165175,LITTERATURE,QUATRIEME
+3f902212-2c72-4fca-9715-6ece8e34ecdd,carene.comtois@orange.fr,Tya,Comtois,"3 rue alfred tonnelle, 31470 fonsorbes",43.5375241,1.2206201,LITTERATURE,QUATRIEME
+6587e461-5a4c-48f8-8837-312498af5c9b,f.bouchekhou@gmail.com,Ilyas,Abderrezak,"95390 Saint-Prix, France",49.006469,2.262489,LITTERATURE,QUATRIEME
+ac87a239-07b5-4457-a8fd-83e905a089fc,bahi.chaima33@gmail.com,Maïssa,Bahi,162 rue rimbaud 33620 cavignac,45.100203,-0.39002,LITTERATURE,QUATRIEME
+f985994c-63a3-4e04-83ab-07f15d5e7937,stelaviolon@yahoo.fr,Gabriel,Violon,"45 avenue de Toulouse, 31240 L'union",43.6562412,1.4786471,LITTERATURE,QUATRIEME
+940f25b5-db4e-4318-bbbf-5128a5f6c12b,karimahammany@gmail.com,Mehdi,Hammany,288 avenue de pessicart 06100 nice,43.7217484,7.2456065,LITTERATURE,QUATRIEME
+42696719-2192-4eae-83a1-c1f07ab0012d,geofathia@gmail.com,Isra,Isra,38 rue Alain savary 31270 Cugnaux,43.5413593,1.3407754,LITTERATURE,QUATRIEME
+f5d72086-0004-4399-a17f-9f34c4e7efb7,leila57ben@gmail.com,Ayoub,Ben hmid,2b rue d'Hayange 57190 Florange,49.3156899,6.1081053,LITTERATURE,QUATRIEME
 9f7434e0-d581-4c8e-9ec4-4d4045b24366,noammel06@yahoo.fr,Noam,Ababsa,72 avenue Henri matisse Nice,43.677715,7.2067704,LITTERATURE,SECONDE
-becf2351-8134-4f54-8c83-cfbd3d8411ca,l.attia81@gmail.com,Mohame-Sabeur,Sallem,"86 route du  val de Gorbio, 06500 menton",43.7764703,7.473486,LITTERATURE,SECONDE
-2e292536-0a6f-4597-9888-510ae4052b40,yonaperez0706@gmail.com,Rivka,Perez,11rue verdi 06000nice,43.6994857,7.2606921,LITTERATURE,SECONDE
-e6cf57c4-869f-4dcd-8b05-167306590ace,fatisofi2010@hotmail.fr,Sofia,Sofia,36 rue docteur bardot 57950,49.0890164,6.1668425,LITTERATURE,SECONDE
-e82d95d0-6156-45ca-8812-3f2aa8a5658e,tanty.tenin@gmail.com,Emile,Kante,12 avenue D'HUISSEAU 45140 INGRÉ,47.9197325,1.8334597,LITTERATURE,SECONDE
-33091df1-07e6-45f2-8895-e63fee356c64,nawal_senechal@yahoo.fr,Jalil Senechal,Jalil,SENECHAL,48.0040447,-69.0357325,LITTERATURE,SECONDE
 c4a1adab-9967-4f2f-b182-0043b9dd00db,hammamisamia633@gmail.com,Emna,Bouazizi,2 rue Toulouse lautrec chamalieres,45.7826068,3.0524379,LITTERATURE,SECONDE
-48d80d17-912f-4ce6-aada-cd7e3f5abd28,aissani.fadila@yahoo.com,Ayman,Aïssani,25 Rue de la faïence 31140 launaguet,43.6562416,1.4558655,LITTERATURE,SECONDE
+2b958614-337f-464a-8105-f07a4a136dde,elsaemma@yahoo.fr,Louane,Pichonneau,7 square de la petite touche 35310 Mordelles,48.0770433,-1.8442519,LITTERATURE,SECONDE
+becf2351-8134-4f54-8c83-cfbd3d8411ca,l.attia81@gmail.com,Mohame-Sabeur,Sallem,"86 route du  val de Gorbio, 06500 menton",43.7764703,7.473486,LITTERATURE,SECONDE
+e8db8c3a-410e-45bf-9bf4-5814c09848b5,stephanie.boidin@free.fr,AGATHE,AGATHE,Notre Dame Sainte Famille,48.973092,2.254368,LITTERATURE,SECONDE
 5fe2072a-1475-4b95-8980-ceeedbd2ef46,schilliger1968@gmail.com,Norah,Schilliger,147 avenue jacques yves Cousteau 06270 Villeneuve Loubet,43.637862,7.1390078,LITTERATURE,SECONDE
 f51f82a9-042f-45c1-95c9-1918c71394bf,hhcine@yahoo.fr,Rayan,Makhlouf,Allée Jacques brel Villenave d'Ornon,44.7680916,-0.5617134,LITTERATURE,SECONDE
+c09f0804-05a7-468d-8760-3533e6bdc597,nounou38600@yahoo.fr,Mohamed,Chemai,2 rue Garibaldi 38600 fontaine,45.1904849,5.6831765,LITTERATURE,SECONDE
+e6cf57c4-869f-4dcd-8b05-167306590ace,fatisofi2010@hotmail.fr,Sofia,Sofia,36 rue docteur bardot 57950,49.0890164,6.1668425,LITTERATURE,SECONDE
+2e292536-0a6f-4597-9888-510ae4052b40,yonaperez0706@gmail.com,Rivka,Perez,11rue verdi 06000nice,43.6994857,7.2606921,LITTERATURE,SECONDE
 1d24938e-d526-42dd-9a5f-6e41c4df22a1,jourdainjl2@yahoo.fr,Anthony,JOURDAIN,Notre Dame Sainte Famille,48.973092,2.254368,LITTERATURE,SECONDE
-e8db8c3a-410e-45bf-9bf4-5814c09848b5,stephanie.boidin@free.fr,AGATHE,AGATHE,Notre Dame Sainte Famille,48.973092,2.254368,LITTERATURE,SECONDE
-2b958614-337f-464a-8105-f07a4a136dde,elsaemma@yahoo.fr,Louane,Pichonneau,7 square de la petite touche 35310 Mordelles,48.0770433,-1.8442519,LITTERATURE,SECONDE
-5b74b1c2-85fc-48aa-9eaf-4f28981ad44a,l.rtam@hotmail.fr,Kenzo,EL HAJJAJY,"20 rue des Bleuets,  21490 Saint Julien",47.4043703,5.1330565,LITTERATURE,SIXIEME
-5d64272a-7b35-4ed8-9e67-f52cbf65fa5d,djoherleila@gmail.com,Célia,BALDELLOU-CALLEJA,25 rue des cheminots 57970 Yutz,49.3608361,6.211642,LITTERATURE,SIXIEME
-6468bf5a-b6ca-4d28-acb6-c21c3f788c60,madjidmb1@hotmail.fr,Rayan,Bechka,1bis rue de la haie broue 76800,49.3917434,1.0589885,LITTERATURE,SIXIEME
+e82d95d0-6156-45ca-8812-3f2aa8a5658e,tanty.tenin@gmail.com,Emile,Kante,12 avenue D'HUISSEAU 45140 INGRÉ,47.9197325,1.8334597,LITTERATURE,SECONDE
+33091df1-07e6-45f2-8895-e63fee356c64,nawal_senechal@yahoo.fr,Jalil Senechal,Jalil,SENECHAL,48.0040447,-69.0357325,LITTERATURE,SECONDE
+48d80d17-912f-4ce6-aada-cd7e3f5abd28,aissani.fadila@yahoo.com,Ayman,Aïssani,25 Rue de la faïence 31140 launaguet,43.6562416,1.4558655,LITTERATURE,SECONDE
 1f59cdfc-2101-4148-aa53-b620c10e4d88,audreysampic@yahoo.fr,Noé,Sampic,700 chemin de l’encours 06480 la colle sur loup,43.6815274,7.1064685,LITTERATURE,SIXIEME
-80c7d61f-f195-4ca3-a093-58023b34018b,marjana06@hotmail.fr,Nizar,El yakoubi,38 route de Turin 06300,43.7129866,7.284818,LITTERATURE,SIXIEME
-94aa682e-6412-4337-8680-40298a0f74a1,aline.marinimartinez33@gmail.com,Morgane,MARINI- MARTINEZ,3D rue de tagon 33380 Biganos,44.6560641,-0.9929711,LITTERATURE,SIXIEME
-157fac10-c170-4afc-a0e1-21d824321102,monira.kherief@laposte.net,Aydan,Muller,22 Rue du Béarn 57070 metz,49.1159486,6.2205611,LITTERATURE,SIXIEME
-fa541f25-1e8a-44a6-b12a-5341b3b76ac2,madjidmb1@hotmail.fr,Rayan,Bech’a,Rue de haie brout,49.4384022,1.1331407,LITTERATURE,SIXIEME
-c0ca1585-9d28-4925-856b-890156c3210c,y.berno@yahoo.fr,Allan,Maresquet,6rue Simone Signoret tour 2 atp 2074 St Etienne du Rouvray 0606933991,49.3978628,1.0705745,LITTERATURE,SIXIEME
-eeb1e277-1246-4c21-84aa-e20bf18aabae,doudoulydia@live.fr,Eyvan,Chambaretaud,3 moulin de la grave 33620 saint mariens,45.1285364,-0.4146666,LITTERATURE,SIXIEME
-7112d975-4966-4708-8e9a-9a5607d5ec49,val.futel@hotmail.fr,stan,Futel,62 route mesnil perruel 76116 st denis le thiboult,49.453492,1.364125,LITTERATURE,SIXIEME
-c8e958ae-0f43-468a-851b-cee0ab8d5f17,afllb@me.com,Victoire,Le berre,40 route de merigot 33450 montussan,44.8864151,-0.4152749,LITTERATURE,SIXIEME
-6da9a719-8bec-4fcb-9d27-5fa054c1450d,hanimcenik95@gmail.com,Yusuf,Karagoz,Notre Dame Sainte Famille,48.973092,2.254368,LITTERATURE,SIXIEME
-660993fd-3b8d-441e-b625-dc2ea24cd52b,hypoplasie@yahoo.fr,Ishak,Menadi,63118,38.5950619,-90.2291565,LITTERATURE,SIXIEME
-dd47f14f-73f7-4667-b0a6-0eb2eadf4c35,farida.amzal@live.fr,Gaya,Amzal,Espace Mozaïk,48.808984,2.190381,LITTERATURE,SIXIEME
-5d2e8a86-ca78-4519-9c38-703ad26925d2,bibait1@yahoo.fr,Youcef,Talbi,"39 boulevard Paul Montel 06200,nice",43.6747524,7.2071783,LITTERATURE,SIXIEME
-5d6a0b87-bbc0-4e91-8f84-289d6abde504,naweldo@hotmail.fr,Ilias,Miuddakir,Les grandes Hayes 35132 vezin le coquet,48.1202605,-1.7762691,LITTERATURE,SIXIEME
-78144b9d-459b-43c2-a481-7079201db9b1,clicli33@hotmail.fr,Souheil,Zouaoui,1 rue Marguerite duras 33440 ambares et lagrave,44.9349214,-0.4811254,LITTERATURE,SIXIEME
-477f0245-47b2-47db-bf86-5bc0d1e2ec7d,malikachc1974@gmail.com,Chouchane zakaria,Chouchane,40rue des Mesliers 76500 Elbeuf,49.2842757,0.9940813,LITTERATURE,SIXIEME
-1716faad-0529-4ec1-aef6-80fcd185b9b7,delphineletournel1979@outlook.com,Nathan,Letournel,9 rue de la Haye 35470 Bain de Bretagne,47.8497257,-1.6827853,LITTERATURE,SIXIEME
-5b29d5a5-5fd8-4632-9362-434731d68ae0,liliane.ambela@yahoo.com,Liliane,Ambela,"Franconville la Garenne, 95130 Franconville, France",48.99071,2.222572,LITTERATURE,SIXIEME
+5b74b1c2-85fc-48aa-9eaf-4f28981ad44a,l.rtam@hotmail.fr,Kenzo,EL HAJJAJY,"20 rue des Bleuets,  21490 Saint Julien",47.4043703,5.1330565,LITTERATURE,SIXIEME
 dedf6c4f-35cb-4f14-9bfa-71832388fef9,samah.ouarrag@hotmail.fr,Noah,Ouarrag,5 mail Françoise dolto 31520 Ramonville,43.5561849,1.4753909,LITTERATURE,SIXIEME
+dd47f14f-73f7-4667-b0a6-0eb2eadf4c35,farida.amzal@live.fr,Gaya,Amzal,Espace Mozaïk,48.808984,2.190381,LITTERATURE,SIXIEME
+6da9a719-8bec-4fcb-9d27-5fa054c1450d,hanimcenik95@gmail.com,Yusuf,Karagoz,Notre Dame Sainte Famille,48.973092,2.254368,LITTERATURE,SIXIEME
+78144b9d-459b-43c2-a481-7079201db9b1,clicli33@hotmail.fr,Souheil,Zouaoui,1 rue Marguerite duras 33440 ambares et lagrave,44.9349214,-0.4811254,LITTERATURE,SIXIEME
+5d2e8a86-ca78-4519-9c38-703ad26925d2,bibait1@yahoo.fr,Youcef,Talbi,"39 boulevard Paul Montel 06200,nice",43.6747524,7.2071783,LITTERATURE,SIXIEME
+7112d975-4966-4708-8e9a-9a5607d5ec49,val.futel@hotmail.fr,stan,Futel,62 route mesnil perruel 76116 st denis le thiboult,49.453492,1.364125,LITTERATURE,SIXIEME
+157fac10-c170-4afc-a0e1-21d824321102,monira.kherief@laposte.net,Aydan,Muller,22 Rue du Béarn 57070 metz,49.1159486,6.2205611,LITTERATURE,SIXIEME
+94aa682e-6412-4337-8680-40298a0f74a1,aline.marinimartinez33@gmail.com,Morgane,MARINI- MARTINEZ,3D rue de tagon 33380 Biganos,44.6560641,-0.9929711,LITTERATURE,SIXIEME
+6b3a8dee-bd86-4120-a9ff-216ade3f5199,lilith21910@hotmail.fr,Timothee,Jeunet,2 il9asse du clos badon 21700agencourt,47.124439,4.985371,LITTERATURE,SIXIEME
+80c7d61f-f195-4ca3-a093-58023b34018b,marjana06@hotmail.fr,Nizar,El yakoubi,38 route de Turin 06300,43.7129866,7.284818,LITTERATURE,SIXIEME
+eeb1e277-1246-4c21-84aa-e20bf18aabae,doudoulydia@live.fr,Eyvan,Chambaretaud,3 moulin de la grave 33620 saint mariens,45.1285364,-0.4146666,LITTERATURE,SIXIEME
 d0d4f683-459c-4815-a227-7a4da28661a0,desireebignonderepas@gmail.com,Léandro,BIGNON DEREPAS,56 A route des celliers 38450 vif,45.0476765,5.6600569,LITTERATURE,SIXIEME
+1716faad-0529-4ec1-aef6-80fcd185b9b7,delphineletournel1979@outlook.com,Nathan,Letournel,9 rue de la Haye 35470 Bain de Bretagne,47.8497257,-1.6827853,LITTERATURE,SIXIEME
+6468bf5a-b6ca-4d28-acb6-c21c3f788c60,madjidmb1@hotmail.fr,Rayan,Bechka,1bis rue de la haie broue 76800,49.3917434,1.0589885,LITTERATURE,SIXIEME
+fa541f25-1e8a-44a6-b12a-5341b3b76ac2,madjidmb1@hotmail.fr,Rayan,Bech’a,Rue de haie brout,49.4384022,1.1331407,LITTERATURE,SIXIEME
+5d6a0b87-bbc0-4e91-8f84-289d6abde504,naweldo@hotmail.fr,Ilias,Miuddakir,Les grandes Hayes 35132 vezin le coquet,48.1202605,-1.7762691,LITTERATURE,SIXIEME
+5d64272a-7b35-4ed8-9e67-f52cbf65fa5d,djoherleila@gmail.com,Célia,BALDELLOU-CALLEJA,25 rue des cheminots 57970 Yutz,49.3608361,6.211642,LITTERATURE,SIXIEME
 209b0480-dfb8-4a6c-ba6a-4075d9f80eac,karine.dhinzelin@hotmail.com,Alessandro,Palmeira,12 avenue angelique braquet nice,43.7125029,7.1935479,LITTERATURE,SIXIEME
 f138c371-ea18-439f-b32a-f62b96b246e2,hinda_06@hotmail.fr,Lylia,Rizzetto,2889 route du vieux village 06440 peillpn,43.7779935,7.3790418,LITTERATURE,SIXIEME
-6b3a8dee-bd86-4120-a9ff-216ade3f5199,lilith21910@hotmail.fr,Timothee,Jeunet,2 il9asse du clos badon 21700agencourt,47.124439,4.985371,LITTERATURE,SIXIEME
 7caa31a9-ad81-4cf8-b62e-13bcd92a43e6,myriam.elcourage@gmail.com,Wissem,EL COURAGE,4 rue de la bergeronnette 35230 BOURGBARRÉ,47.991615,-1.6090799,LITTERATURE,SIXIEME
-9f926038-42a7-46a3-9c5c-6914ee3138b6,benyoussefsonia@yahoo.fr,Ben Youssef,Mayssa,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,TROISIEME
-418462f1-d442-4ecb-ad42-5cac56517a49,sronadia@yahoo.fr,Safwane,SRO,6 allée Pierre Meunier 21160 marsannay la côte,47.2825689,5.00684,LITTERATURE,TROISIEME
+5b29d5a5-5fd8-4632-9362-434731d68ae0,liliane.ambela@yahoo.com,Liliane,Ambela,"Franconville la Garenne, 95130 Franconville, France",48.99071,2.222572,LITTERATURE,SIXIEME
+660993fd-3b8d-441e-b625-dc2ea24cd52b,hypoplasie@yahoo.fr,Ishak,Menadi,63118,38.5950619,-90.2291565,LITTERATURE,SIXIEME
+c0ca1585-9d28-4925-856b-890156c3210c,y.berno@yahoo.fr,Allan,Maresquet,6rue Simone Signoret tour 2 atp 2074 St Etienne du Rouvray 0606933991,49.3978628,1.0705745,LITTERATURE,SIXIEME
+477f0245-47b2-47db-bf86-5bc0d1e2ec7d,malikachc1974@gmail.com,Chouchane zakaria,Chouchane,40rue des Mesliers 76500 Elbeuf,49.2842757,0.9940813,LITTERATURE,SIXIEME
+c8e958ae-0f43-468a-851b-cee0ab8d5f17,afllb@me.com,Victoire,Le berre,40 route de merigot 33450 montussan,44.8864151,-0.4152749,LITTERATURE,SIXIEME
+f9ef004d-8660-456c-9fc4-f115775323cd,natybertron@gmail.com,Léa,LEBESLE,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,TROISIEME
 4d3aacdb-575d-4ba0-8a5c-c9907364bba5,badiaa54@live.fr,Rayen,Bentouati,17 bis rue du château fort 54670 custines,48.7927902,6.1404428,LITTERATURE,TROISIEME
 f0aa69d3-c15c-419f-b440-d0260b54787e,karihome@hotmail.fr,Lielle,Niddam,7 avenue brown sequard,43.7094438,7.2729118,LITTERATURE,TROISIEME
 50bdef4f-cc77-49ea-bc74-2dfb10c12fb7,sosoborin70@gmail.com,Lucas,Rustuel,10ROUTE de DIEPPE 76770malaunay,49.5178599,1.0377922,LITTERATURE,TROISIEME
-6e26abed-dbd4-4caa-976f-8c484c2021c3,myr0378@hotmail.com,Eva,Germain,rue du haut jardin. 57580 sorbey,49.045103,6.317356,LITTERATURE,TROISIEME
 21608600-ebc9-4513-b0a0-6acc9c4a24a1,nathalie.kestemont90@orange.fr,Maximin,GASPERI,152 av de rimiez,43.7442734,7.2688516,LITTERATURE,TROISIEME
+deec1626-063e-40cc-b981-50b90bbbebb3,marissou3112@gmail.com,Inès,Bekaddour,15 rue des lauriers 31650st orens de Gameville,43.54191,1.5455686,LITTERATURE,TROISIEME
+b77b9543-2db3-43d2-a5c9-125f06c00705,to5yashis@hotmail.fr,Shirine,Bakkouri-Cherif,154 avenue Cyrille Besset 06100 Nice,43.7241131,7.2480145,LITTERATURE,TROISIEME
+ff273746-dd3b-4a13-8745-6bf99baa5d73,khalil.38@live.fr,Khalil,Melloul,11 place des jacobins 38130 echirolles,45.1566925,5.7287434,LITTERATURE,TROISIEME
 9154c090-dcf1-4dcc-a9b5-79e65de0508e,lineute54@gmail.com,Ilan,Broyez,4 Rue du Vignoble 54360 Damelevieres,48.5561272,6.3863358,LITTERATURE,TROISIEME
 f6a9c4cd-764e-4507-8e3b-b31eff0b1a75,celona.lea@gmail.com,Enzo,Celona,2 chemin mont fleurie 06600 antibes,43.578969,7.1077356,LITTERATURE,TROISIEME
-03fe2123-4303-48f2-b3b1-fc31b91878ab,0307sam@gmail.com,Sam,d’ Amato,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,TROISIEME
-deec1626-063e-40cc-b981-50b90bbbebb3,marissou3112@gmail.com,Inès,Bekaddour,15 rue des lauriers 31650st orens de Gameville,43.54191,1.5455686,LITTERATURE,TROISIEME
-f9ef004d-8660-456c-9fc4-f115775323cd,natybertron@gmail.com,Léa,LEBESLE,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,TROISIEME
-b77b9543-2db3-43d2-a5c9-125f06c00705,to5yashis@hotmail.fr,Shirine,Bakkouri-Cherif,154 avenue Cyrille Besset 06100 Nice,43.7241131,7.2480145,LITTERATURE,TROISIEME
 c39dfeef-a70b-4f67-a0d3-68a69e76f2cc,isabelle.cuntz@sfr.fr,Clément,Cuntz,3 rue des frères lumière 57155 Marly,49.0575526,6.1678603,LITTERATURE,TROISIEME
-ff273746-dd3b-4a13-8745-6bf99baa5d73,khalil.38@live.fr,Khalil,Melloul,11 place des jacobins 38130 echirolles,45.1566925,5.7287434,LITTERATURE,TROISIEME
+341e5524-1972-4099-a937-32dab957bf4c,maevayvinec@yahoo.fr,Victor,Rabany,"75116 Paris, France",48.8727631,2.272776,LITTERATURE,TROISIEME
+418462f1-d442-4ecb-ad42-5cac56517a49,sronadia@yahoo.fr,Safwane,SRO,6 allée Pierre Meunier 21160 marsannay la côte,47.2825689,5.00684,LITTERATURE,TROISIEME
+6e26abed-dbd4-4caa-976f-8c484c2021c3,myr0378@hotmail.com,Eva,Germain,rue du haut jardin. 57580 sorbey,49.045103,6.317356,LITTERATURE,TROISIEME
 0ce4e892-3d8f-41e7-adbf-0df1b718d402,sophie.flavie@hotmail.fr,Romain,Personnier,3 grande rue 21490 Brétigny,47.397812,5.104694,LITTERATURE,TROISIEME
 79830e0e-9169-48c2-9085-81472adaef70,calixta33@hotmail.fr,Gabriel,Cera Delanchy,34 avenue Georges Clemenceau 33140 Villenave d'ornon,44.7813662,-0.561511,LITTERATURE,TROISIEME
+03fe2123-4303-48f2-b3b1-fc31b91878ab,0307sam@gmail.com,Sam,d’ Amato,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,TROISIEME
 5101e221-33ec-4397-824f-f6be80c46248,mahfoufsarah@me.com,maya,mahfouf,Deux rues Roger Salengro bâtiment à logement huit 33700 Mérignac,44.8388185,-0.6646909,LITTERATURE,TROISIEME
-9245536c-4792-4b9f-abd2-22daf3e95b9c,vanessa.theresineaug@live.fr,Jade,Edwige,7 rue François Villon,43.8621957,4.4507122,MATHS,CE1
-81e914a6-c509-4914-945f-6c4e7d19df7b,sabofreitas@gmail.com,Orhiana,Lenoir,5 avenue munster 45000 Orléans,47.9122642,1.9064127,MATHS,CE1
+9f926038-42a7-46a3-9c5c-6914ee3138b6,benyoussefsonia@yahoo.fr,Ben Youssef,Mayssa,École Collège du Sacré-Cœur,48.725107,2.418142,LITTERATURE,TROISIEME
 12071c2d-616c-4b69-90e6-5ea0c66e046e,galai66@hotmail.fr,Mayssa,Galai,787 route de nice,43.6068863,7.1223636,MATHS,CE1
-e03c6188-4560-4f6d-ba5b-c0c79b3c6b84,benechapal@aol.com,Basile,Chapalain,Mail Anne Catherine,41.849749,-87.922137,MATHS,CE1
 155c0b02-c6fa-4685-9e21-55d521f65493,bilelnour@hotmail.fr,Yahya,Berriri,"83,bd François Grosso 06000 nice",43.7006343,7.2508313,MATHS,CE1
+81e914a6-c509-4914-945f-6c4e7d19df7b,sabofreitas@gmail.com,Orhiana,Lenoir,5 avenue munster 45000 Orléans,47.9122642,1.9064127,MATHS,CE1
+9245536c-4792-4b9f-abd2-22daf3e95b9c,vanessa.theresineaug@live.fr,Jade,Edwige,7 rue François Villon,43.8621957,4.4507122,MATHS,CE1
+e03c6188-4560-4f6d-ba5b-c0c79b3c6b84,benechapal@aol.com,Basile,Chapalain,Mail Anne Catherine,41.849749,-87.922137,MATHS,CE1
 d28604a4-b485-45cb-ba3b-fb10e444c9dd,lili.maat34@gmail.com,Anissa,Maatoug,36 rue Lafayette 34990 Juvignac,43.621595,3.7893012,MATHS,CE2
-8d98e32c-8aa2-4fc6-93c2-4b37056c9013,fatiah57@hotmail.fr,Adam,Meklouki,8 rue de la mertzelle,49.10427,6.7096152,MATHS,CE2
 1613b16f-0cf8-4f2f-8696-8a947700525a,stephanie.pommeraud@outlook.fr,Lucie,Gole Pommeraud,73 ch de terron 06200 nice,43.6917218,7.2162878,MATHS,CE2
-61b4dfd9-7aba-41d0-8471-88800904740e,abidaaliabdou1978@gmai.com,Miyad,Mondoha,25 route de canta galet 06200,43.6978398,7.2299978,MATHS,CE2
 ca6dda64-5eac-403f-8528-662498d90ed5,bentaleb_sihame@yahoo.fr,Lilia,Nasri,16 rue Fodéré 06300 nice,43.6989598,7.2867626,MATHS,CE2
 87bc1b44-a549-4280-a48d-4a9f58f780a7,laure.viant@hotmail.fr,Gabrielle,Viant,26 le grand clos 35520 La Chapelle des fougeretz,48.183783,-1.7603583,MATHS,CE2
-707cd574-840c-4c7b-90bd-7d08dfc91b8d,ne.jma22@hotmail.fr,Hizia,Boukourida,6 b rue de la commune de Paris 57250 Moyeuvre grande,49.2474515,6.0425994,MATHS,CINQUIEME
-e4d64384-1574-40de-8bd4-4097a2db2a05,louizayalaoui@hotmail.fr,Yalaoui,Cylia,"93430 Villetaneuse, France",48.9595253,2.3445514,MATHS,CINQUIEME
+8d98e32c-8aa2-4fc6-93c2-4b37056c9013,fatiah57@hotmail.fr,Adam,Meklouki,8 rue de la mertzelle,49.10427,6.7096152,MATHS,CE2
+61b4dfd9-7aba-41d0-8471-88800904740e,abidaaliabdou1978@gmai.com,Miyad,Mondoha,25 route de canta galet 06200,43.6978398,7.2299978,MATHS,CE2
 b3add006-8c1e-4a25-bb3d-615aade10bee,boutineaucecile30@gmail.com,Paul,Boutineau,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,CINQUIEME
-3d918d0e-8865-4d39-afd0-a54c5e114f6d,natuaesmy98@gmail.com,Vainui,HENIN,62 rue des moulins 21000 DIJON,47.3035168,5.040441,MATHS,CINQUIEME
-2e00811c-649a-4e68-bf1b-d7acde6e559a,heidia.khouchane@laposte.net,Elian,Iguenane,29 rue du Fond Pâté 51100 reims,49.2769556,4.0190663,MATHS,CINQUIEME
-d33bb83d-8d3b-4789-b8c3-068496250ec3,nthomas3010@gmail.com,Zoé,Grandidier,"2431 Route de Cagnes, 06140",43.7048607,7.1334913,MATHS,CINQUIEME
-fcd3c97b-5c14-4b22-98fa-0b63483657c7,amina.ndiaye310@gmail.com,Bokary,Wandianga,14 chemin de maransin 33440 ambares,44.948488,-0.496457,MATHS,CINQUIEME
-8ce456af-4dcd-4678-aef8-9e88846d6b67,duhamel-carole@orange.fr,Loan,Letailleur duhamel,5 rue des primevères 76710 eslettes,49.5460965,1.0479973,MATHS,CINQUIEME
-969afeec-95ce-4f7b-869e-0d4be1d80be2,benezetmarion@gmail.com,Paul,Benezet,43 rue du mont Ventoux 34400 Lunel,43.6827179,4.1284829,MATHS,CINQUIEME
-2b931085-4f17-4c1f-88ef-2a771d910990,hindwawi@hotmail.fr,Feryel,Zouaoui,73 rue pierre et marie curie 57050 metz,49.1419853,6.1691651,MATHS,CINQUIEME
-53ba36a8-22b0-4cc8-a16c-11e8fe10a1b5,melanie.reh@laposte.net,Léandre,Jamelot,27 rue des Forges 35630 Hédé,48.2919918,-1.8004913,MATHS,CINQUIEME
-71c01222-cd68-4f5a-91c1-353717a05713,abarth02.al@gmail.com,Perrine,Fefe,02160,49.2488708,3.9815814,MATHS,CINQUIEME
-0317b2fb-b2c8-4495-8ed7-9c78f48fad55,emmaubry5478@gmail.com,Tristan,Le Doré,Rue des ombelles 54850 MEREVILLE,48.5891242,6.1485463,MATHS,CINQUIEME
-e2a25f63-c9a7-45f0-b4b5-2485649fe0ce,virginie.quesson@gmail.com,pablo,lebret,14 rue de paris,48.851849,2.3277929,MATHS,CINQUIEME
-7d809e2b-9747-4cc7-8d48-60f4bf208d08,vivi7560@hotmail.com,Pauline,TOURNEL,22 rue principale Ars laquenexy,49.0925055,6.2693238,MATHS,CINQUIEME
-15acf06f-4b87-482c-936c-e9695b25dc14,narges1@hotmail.fr,Eden,Boudjaoui,121 rue saint ladre 57950,49.0907737,6.1494342,MATHS,CINQUIEME
-4ae1ebf8-508f-4883-9486-7be1956c871c,bouatitnadia@yahoo.fr,Anys,Bouatit,20 rue de l’artisanat 21560 Couternon,47.3221295,5.1405771,MATHS,CINQUIEME
-ceec113f-8f12-4df6-bb6e-bd0f2af175fb,fannoubk@hotmail.fr,Noah,Di Tommaso,2a chemin de la petite fin 57300 Ay sur moselle,49.2416927,6.2043115,MATHS,CINQUIEME
-33b66cc0-b520-4452-b0b1-f9d06124f42a,neslymine@hotmail.fr,Fatima,Belghaouti,10 rue de la forêt  57290 fameck,49.2937242,6.1120902,MATHS,CINQUIEME
-2819ccd9-2ad8-42a0-afce-e87516296f66,moiisa.51@hotmail.com,Mahé,Dhilly,197 rue Paul vaillant couturier,49.2729955,4.015203,MATHS,CINQUIEME
-d93d2e25-088e-44da-aaa3-d15defe34cc7,kambaalima@yahoo.fr,Gael,Nsangu,"2, rue de l'ancienne gare 35230",47.9949719,-1.665722,MATHS,CINQUIEME
-ee6d467f-8698-47cc-a004-cf00fe36d617,dallya.makilat@yahoo.fr,Nolan,Makilat,16 rue du lauragais 31450 Deyme,43.4830921,1.5288696,MATHS,CINQUIEME
-fe95d0b0-2692-49f8-a2ed-b39181be3897,olivier.clech35@orange.fr,Lena,Clech,Chateaugiron,48.048488,-1.503148,MATHS,CINQUIEME
-0c1a64a7-92ac-4433-b961-723842ae89c0,bouchariaud@yahoo.fr,Emma,Mariaud,5 lotissement presvert 38113 Veurey-Voroize,45.2734281,5.6032718,MATHS,CINQUIEME
 cd659604-1972-4054-bd74-981b20d2cf38,sandra.belloc@hotmail.fr,Marine,Gaudy,11 hameau des vignes 33720podensac,44.6423327,-0.3555194,MATHS,CINQUIEME
+d93d2e25-088e-44da-aaa3-d15defe34cc7,kambaalima@yahoo.fr,Gael,Nsangu,"2, rue de l'ancienne gare 35230",47.9949719,-1.665722,MATHS,CINQUIEME
+2819ccd9-2ad8-42a0-afce-e87516296f66,moiisa.51@hotmail.com,Mahé,Dhilly,197 rue Paul vaillant couturier,49.2729955,4.015203,MATHS,CINQUIEME
+7d809e2b-9747-4cc7-8d48-60f4bf208d08,vivi7560@hotmail.com,Pauline,TOURNEL,22 rue principale Ars laquenexy,49.0925055,6.2693238,MATHS,CINQUIEME
+2b931085-4f17-4c1f-88ef-2a771d910990,hindwawi@hotmail.fr,Feryel,Zouaoui,73 rue pierre et marie curie 57050 metz,49.1419853,6.1691651,MATHS,CINQUIEME
+3d918d0e-8865-4d39-afd0-a54c5e114f6d,natuaesmy98@gmail.com,Vainui,HENIN,62 rue des moulins 21000 DIJON,47.3035168,5.040441,MATHS,CINQUIEME
+969afeec-95ce-4f7b-869e-0d4be1d80be2,benezetmarion@gmail.com,Paul,Benezet,43 rue du mont Ventoux 34400 Lunel,43.6827179,4.1284829,MATHS,CINQUIEME
 5170f8ad-d97e-4573-9fd4-ed7de8193a1c,ikramfarsi@hotmail.fr,Yanis,Abboubi,2 impasse des Carignans lit vignes vielles 34570 saint Paul et valmalle,43.626152,3.675142,MATHS,CINQUIEME
+53ba36a8-22b0-4cc8-a16c-11e8fe10a1b5,melanie.reh@laposte.net,Léandre,Jamelot,27 rue des Forges 35630 Hédé,48.2919918,-1.8004913,MATHS,CINQUIEME
+ceec113f-8f12-4df6-bb6e-bd0f2af175fb,fannoubk@hotmail.fr,Noah,Di Tommaso,2a chemin de la petite fin 57300 Ay sur moselle,49.2416927,6.2043115,MATHS,CINQUIEME
+04d13189-399a-4a06-b36e-95e8fd7529e8,malikndia@yahoo.fr,Bineta,Ndiaye,"91200 Athis-Mons, France",48.7094011,2.3939064,MATHS,CINQUIEME
 44fefada-9cfe-486b-a3f2-4d5373c4a71e,khenatamokhtaria@gmail.com,Sofiane,Khenata,174 avenue Jean jaures 21000 Dijon,47.3017372,5.0212187,MATHS,CINQUIEME
+8ce456af-4dcd-4678-aef8-9e88846d6b67,duhamel-carole@orange.fr,Loan,Letailleur duhamel,5 rue des primevères 76710 eslettes,49.5460965,1.0479973,MATHS,CINQUIEME
+2e00811c-649a-4e68-bf1b-d7acde6e559a,heidia.khouchane@laposte.net,Elian,Iguenane,29 rue du Fond Pâté 51100 reims,49.2769556,4.0190663,MATHS,CINQUIEME
+0317b2fb-b2c8-4495-8ed7-9c78f48fad55,emmaubry5478@gmail.com,Tristan,Le Doré,Rue des ombelles 54850 MEREVILLE,48.5891242,6.1485463,MATHS,CINQUIEME
+0c1a64a7-92ac-4433-b961-723842ae89c0,bouchariaud@yahoo.fr,Emma,Mariaud,5 lotissement presvert 38113 Veurey-Voroize,45.2734281,5.6032718,MATHS,CINQUIEME
+e4d64384-1574-40de-8bd4-4097a2db2a05,louizayalaoui@hotmail.fr,Yalaoui,Cylia,"93430 Villetaneuse, France",48.9595253,2.3445514,MATHS,CINQUIEME
+fcd3c97b-5c14-4b22-98fa-0b63483657c7,amina.ndiaye310@gmail.com,Bokary,Wandianga,14 chemin de maransin 33440 ambares,44.948488,-0.496457,MATHS,CINQUIEME
+e2a25f63-c9a7-45f0-b4b5-2485649fe0ce,virginie.quesson@gmail.com,pablo,lebret,14 rue de paris,48.851849,2.3277929,MATHS,CINQUIEME
 cb54c947-7e0f-464a-a620-85bad662865b,hamlileila302@gmail.com,Abd Al Malik,Hamli,"13180 Gignac-la-Nerthe, France",43.390916,5.233463,MATHS,CINQUIEME
-0274330b-d69b-47e4-8d63-b9615ebfcedb,hwahida6@gmail.com,Nourane,Belarbi,61 av Georges Clemenceau,48.4596112,-2.5009608,MATHS,CM1
-57062a24-a2f1-40f3-9148-816b251bff28,nourddine.aicha@hotmail.com,Younès,Nourddine,6 rue Gaston sebire 76240 le mesnil esnard,49.4209394,1.1340372,MATHS,CM1
+4ae1ebf8-508f-4883-9486-7be1956c871c,bouatitnadia@yahoo.fr,Anys,Bouatit,20 rue de l’artisanat 21560 Couternon,47.3221295,5.1405771,MATHS,CINQUIEME
+707cd574-840c-4c7b-90bd-7d08dfc91b8d,ne.jma22@hotmail.fr,Hizia,Boukourida,6 b rue de la commune de Paris 57250 Moyeuvre grande,49.2474515,6.0425994,MATHS,CINQUIEME
+ee6d467f-8698-47cc-a004-cf00fe36d617,dallya.makilat@yahoo.fr,Nolan,Makilat,16 rue du lauragais 31450 Deyme,43.4830921,1.5288696,MATHS,CINQUIEME
+33b66cc0-b520-4452-b0b1-f9d06124f42a,neslymine@hotmail.fr,Fatima,Belghaouti,10 rue de la forêt  57290 fameck,49.2937242,6.1120902,MATHS,CINQUIEME
+d33bb83d-8d3b-4789-b8c3-068496250ec3,nthomas3010@gmail.com,Zoé,Grandidier,"2431 Route de Cagnes, 06140",43.7048607,7.1334913,MATHS,CINQUIEME
+fe95d0b0-2692-49f8-a2ed-b39181be3897,olivier.clech35@orange.fr,Lena,Clech,Chateaugiron,48.048488,-1.503148,MATHS,CINQUIEME
+71c01222-cd68-4f5a-91c1-353717a05713,abarth02.al@gmail.com,Perrine,Fefe,02160,49.2488708,3.9815814,MATHS,CINQUIEME
+15acf06f-4b87-482c-936c-e9695b25dc14,narges1@hotmail.fr,Eden,Boudjaoui,121 rue saint ladre 57950,49.0907737,6.1494342,MATHS,CINQUIEME
+2a7f2036-5209-49c2-810b-b07bfc8a2441,sonia.berthalon@gmail.com,Pablo,Vachon,4 impasse campagnou 31200 toulouse,43.6350411,1.4454135,MATHS,CM1
 fff48541-36c5-4c1b-947d-21795987d03c,binouroubacar@yahoo.fr,Shaun,Matima,7allee du vignemale appt19/31770 Colomiers,43.6048087,1.3342135,MATHS,CM1
 40bb63ee-f77f-49d2-89b4-fd4ba2fd5445,clarisse.chabal@live.fr,Myla rose,Vignoles,7 villa Tinar Tonaque 09100 Pamiers,43.09852,1.593839,MATHS,CM1
 4d4fce61-fcc3-47e6-88d9-2e7c266de668,atika.chahboune@gmail.com,Sirine,Chahboune,5 rue du général de Gaulle 87410 le Palais-sur-Vienne,45.8593772,1.31649,MATHS,CM1
-d656fffd-8ab5-4b77-9dbf-43a1829c94b4,berangere.lesage@laposte.net,Simon,Sciarrone,Route Canta Galet,43.707,7.2217284,MATHS,CM1
 f66558a6-11a7-42fc-bae2-de6d55c3ea71,larbi022@hotmail.fr,khadidja,mecheref,5 rue des chardonnerets,48.9809396,2.5146224,MATHS,CM1
-2a7f2036-5209-49c2-810b-b07bfc8a2441,sonia.berthalon@gmail.com,Pablo,Vachon,4 impasse campagnou 31200 toulouse,43.6350411,1.4454135,MATHS,CM1
+d656fffd-8ab5-4b77-9dbf-43a1829c94b4,berangere.lesage@laposte.net,Simon,Sciarrone,Route Canta Galet,43.707,7.2217284,MATHS,CM1
+57062a24-a2f1-40f3-9148-816b251bff28,nourddine.aicha@hotmail.com,Younès,Nourddine,6 rue Gaston sebire 76240 le mesnil esnard,49.4209394,1.1340372,MATHS,CM1
+0274330b-d69b-47e4-8d63-b9615ebfcedb,hwahida6@gmail.com,Nourane,Belarbi,61 av Georges Clemenceau,48.4596112,-2.5009608,MATHS,CM1
 b73e0ce0-ce80-425c-a9d8-b703e56c615f,is.myriam@sfr.fr,Maryda,ISSA,12 rue de la mine 35131 pont péan,48.0137956,-1.7099413,MATHS,CM1
-d0ba3ed8-0356-4165-87c5-a07bcd3c76e0,houda.gebril@gmail.com,Gebril,Bounou,33370,49.051472,-122.2998607,MATHS,CM2
 c8f56e5e-ec8b-48b0-9b55-a7d12f392321,nadia.bouraima@gmail.com,Maya,Bakala,7 rue salvador allende 37270 montlouis sur loire,47.3868578,0.8385314,MATHS,CM2
 e7d0381b-96bb-4111-b443-b088ebc1589a,kabdellali21@gmail.com,Rayan,Ketroussi,2 rue marie-rose gineste appt A3-42 étage 4ème  31300 toulouse,43.6017938,1.4085134,MATHS,CM2
-77ddd5bf-a38a-484c-9579-96431ddd9a1e,jceliacruz@hotmail.fr,Aaron,MORIN,1 RUE SABLEE 76100,49.4313511,1.0772277,MATHS,CM2
+0480aca8-41b6-4f21-8251-2d139943b88a,laetitiabaubedet@gmail.com,Cheryne,Pastor,1 ter rue fond bonnet 33240 St Gervais,45.0208412,-0.4506246,MATHS,CM2
+6a735bcc-7a9b-45ab-865a-4635f29c21ab,a@gmail.com,N,E,Rue pastorelli nice,43.7007478,7.2712638,MATHS,CM2
 bcf7a4bd-df90-4d3b-a949-d626ed7c868d,cherrakfaouzia@outlook.fr,MALIKA,Sadok,29 rue bernard delicieux,43.6263797,1.4253076,MATHS,CM2
 73d73e61-f77d-4007-9d36-60a167902be1,daloumi34@gmail.com,Selma,Baghdouche,2 bis des carrières 34680 St gorges d orques,43.628148,3.769968,MATHS,CM2
-f4dee2c0-708f-4501-a15f-6801616f8639,marieedithsolati@gmail.com,Abdelroowan,Terki,Résidence macedo appartement 31bat 3 3 allée  cezanne 33600 Pessac,44.799788,-0.6698028,MATHS,CM2
-6a735bcc-7a9b-45ab-865a-4635f29c21ab,a@gmail.com,N,E,Rue pastorelli nice,43.7007478,7.2712638,MATHS,CM2
+d0ba3ed8-0356-4165-87c5-a07bcd3c76e0,houda.gebril@gmail.com,Gebril,Bounou,33370,49.051472,-122.2998607,MATHS,CM2
 789d9ad1-f25b-4321-ba32-ddca55d459c3,mariloudup@yahoo.fr,Keycie,Koffi,90C rue d auxonne 2100 dijon,47.3114655,5.0516844,MATHS,CM2
-0480aca8-41b6-4f21-8251-2d139943b88a,laetitiabaubedet@gmail.com,Cheryne,Pastor,1 ter rue fond bonnet 33240 St Gervais,45.0208412,-0.4506246,MATHS,CM2
+f4dee2c0-708f-4501-a15f-6801616f8639,marieedithsolati@gmail.com,Abdelroowan,Terki,Résidence macedo appartement 31bat 3 3 allée  cezanne 33600 Pessac,44.799788,-0.6698028,MATHS,CM2
 16ce4c54-1f3c-4391-8e48-93f1546920d8,arzu.seker@outlook.fr,Eyup,Seker,33 avenue de la gardette 33310  Lormont,44.8860799,-0.5089876,MATHS,CM2
-c71776f2-e589-4bf4-a1b9-b13acab9ced1,jadella@orange.fr,Bessma,Fersi,77 allee de la plaine 63000 clermont ferrand,45.7659869,3.1035738,MATHS,CP
+77ddd5bf-a38a-484c-9579-96431ddd9a1e,jceliacruz@hotmail.fr,Aaron,MORIN,1 RUE SABLEE 76100,49.4313511,1.0772277,MATHS,CM2
 f3ce7b86-b158-4d5a-afcb-a9419a50ae59,test@test.com,test,test,test,37.045812,-97.039301,MATHS,CP
 03b097da-eab9-4b51-bba7-f63956eaa97c,l.saillard.ls@gmailgmail.com,Saillard maeva,Saillard,2 route de la graviere bleue 33480avensan,45.0393566,-0.7448532,MATHS,CP
-5b327cf3-ea75-4c0f-9746-8bd59d48cf31,jocelyneandres@laposte.net,Théo,Noumeri,6 rue des Pyramides 57100 thionville,49.3653334,6.1634592,MATHS,PREMIERE
-fdec0ec8-275a-4b6b-abfd-aed94ea54efd,sakhoyarie2000@gmail.com,Kadiatou Yarie,Diallo,CHRS les lucioles rue de la vernusse 18000 Bourges,47.0519369,2.4052691,MATHS,PREMIERE
-f5c37706-2500-49d2-acfe-be2288695286,amelhammoud69@gmail.com,imene,hammoud,17 rue des clémentiniers  06800 cagnes sur mer,43.6642608,7.1783139,MATHS,PREMIERE
-315c3643-8d08-40a7-977b-082287a84f00,neslymine@hotmail.fr,Lylia,Belghaouti,10 rue de la forêt  57290 fameck,49.2937242,6.1120902,MATHS,PREMIERE
-b7f79fa8-9d9c-4019-8513-421701a462a2,guellouh.sihame@gmail.com,Hanna-Sarah,Guellouh,219 avenue Jeanne d'arc 57290 fameck,49.2893848,6.1178897,MATHS,PREMIERE
-a25f1aed-1d81-4003-b1ee-7069595d01f4,obonguimireille@hotmail.fr,Anaelle,Obongui,62 bis rue de courcelles 51100 reims,49.2628949,4.0167735,MATHS,PREMIERE
-809e12d0-fb13-4f32-ab31-3081eb4b8164,jemima35@hotmail.fr,Sara,Mansart,121E avenue du champ paveau Tinqueux,49.2488708,3.9815814,MATHS,PREMIERE
+c71776f2-e589-4bf4-a1b9-b13acab9ced1,jadella@orange.fr,Bessma,Fersi,77 allee de la plaine 63000 clermont ferrand,45.7659869,3.1035738,MATHS,CP
 2b42bb34-4e88-4fa0-970d-a9fbce50014c,cadeliwana@yahoo.fr,Ambroise,Morelet deliencourt,2 le montanaud,45.7551079,1.1051926,MATHS,PREMIERE
-10da20e4-ca20-4f05-86ad-8ef2a424364a,majida_diagne@yahoo.com,Sheïnez,Diagne,789 avenue jean aicard 06700 saint Laurent du var,43.6857425,7.1810235,MATHS,PREMIERE
 410cd72f-58d1-408d-be77-98cf70bcf184,mtitoua@gmail.com,Nihade,Mtitou,10 rue joseph  cugnot 21800 Sennecey-les-Dijon,47.2978785,5.1061775,MATHS,PREMIERE
-ea1c4d6d-66ec-4412-9f55-a34466c0c05d,alexandra.bireche@yahoo.fr,Tom,Royer,"3, rue de la viacelle, 54115 FAVIÈRES",48.4694001,5.956639,MATHS,PREMIERE
+f5c37706-2500-49d2-acfe-be2288695286,amelhammoud69@gmail.com,imene,hammoud,17 rue des clémentiniers  06800 cagnes sur mer,43.6642608,7.1783139,MATHS,PREMIERE
+5b327cf3-ea75-4c0f-9746-8bd59d48cf31,jocelyneandres@laposte.net,Théo,Noumeri,6 rue des Pyramides 57100 thionville,49.3653334,6.1634592,MATHS,PREMIERE
+315c3643-8d08-40a7-977b-082287a84f00,neslymine@hotmail.fr,Lylia,Belghaouti,10 rue de la forêt  57290 fameck,49.2937242,6.1120902,MATHS,PREMIERE
 ea607a19-a3cc-4520-b314-788fabdf8b3d,sylvie.gruer@icloud.com,Camille,Gruer,17 Ter rue de la Guillotière 21560 Arc sur Tille,47.3468515,5.1839526,MATHS,PREMIERE
-000eafbd-0933-4564-ad15-b5bd1a1ff824,nana.nadine@live.fr,Sarah,NUNES,14 rue du puits martel 63100 Clermont Ferrand,45.794618,3.112003,MATHS,PREMIERE
-8f8ec6de-e6d5-4c6f-9af1-324490fa9b2f,apsara@gmx.fr,Édouard,Jeannin,2 c Rue Georges Simenon 21000 Dijon,47.3524691,5.046603,MATHS,PREMIERE
-b21f60df-4243-443a-b93d-0a948c98272d,zoulfa77@gmail.com,Jinane,Zoulfa,"Athis-Mons, France",48.7092979,2.38479,MATHS,PREMIERE
+10da20e4-ca20-4f05-86ad-8ef2a424364a,majida_diagne@yahoo.com,Sheïnez,Diagne,789 avenue jean aicard 06700 saint Laurent du var,43.6857425,7.1810235,MATHS,PREMIERE
+809e12d0-fb13-4f32-ab31-3081eb4b8164,jemima35@hotmail.fr,Sara,Mansart,121E avenue du champ paveau Tinqueux,49.2488708,3.9815814,MATHS,PREMIERE
 241dfd64-2d73-4d23-bbc0-0a59c3bdbb60,famillerg@hotmail.fr,Gaspard,Raymond,1 rue du Chiron rappé 86190 Quinçay,46.6179433,0.207269,MATHS,PREMIERE
+8f8ec6de-e6d5-4c6f-9af1-324490fa9b2f,apsara@gmx.fr,Édouard,Jeannin,2 c Rue Georges Simenon 21000 Dijon,47.3524691,5.046603,MATHS,PREMIERE
+a25f1aed-1d81-4003-b1ee-7069595d01f4,obonguimireille@hotmail.fr,Anaelle,Obongui,62 bis rue de courcelles 51100 reims,49.2628949,4.0167735,MATHS,PREMIERE
+b21f60df-4243-443a-b93d-0a948c98272d,zoulfa77@gmail.com,Jinane,Zoulfa,"Athis-Mons, France",48.7092979,2.38479,MATHS,PREMIERE
+000eafbd-0933-4564-ad15-b5bd1a1ff824,nana.nadine@live.fr,Sarah,NUNES,14 rue du puits martel 63100 Clermont Ferrand,45.794618,3.112003,MATHS,PREMIERE
+fdec0ec8-275a-4b6b-abfd-aed94ea54efd,sakhoyarie2000@gmail.com,Kadiatou Yarie,Diallo,CHRS les lucioles rue de la vernusse 18000 Bourges,47.0519369,2.4052691,MATHS,PREMIERE
+b7f79fa8-9d9c-4019-8513-421701a462a2,guellouh.sihame@gmail.com,Hanna-Sarah,Guellouh,219 avenue Jeanne d'arc 57290 fameck,49.2893848,6.1178897,MATHS,PREMIERE
 7e675845-5ba3-42d4-8137-a1b253b043aa,motard.laetitia@free.fr,Melvyn,Gassis,10 lotissement le parc des cèdres 33370 Fargues Saint Hilaire,44.8224792,-0.4338793,MATHS,PREMIERE
-15ba86df-2f1e-4ad2-bf77-db33fa5cfb6b,c_titia@hotmail.com,Anna-lys,PESLAGES,5impasse Gaston planté,43.6360119,1.4412415,MATHS,QUATRIEME
-3e3d5597-fec0-4297-9e84-d4d60333afbd,carballo.karine@orange.fr,Julia,Carballo Lassauce,11 rue Victor Desvignes 57000 metz,49.1057972,6.1653697,MATHS,QUATRIEME
-bf5375a0-91e5-4957-bead-f7c7fde15fec,stephanieloane@gmail.com,Loane,Selon,1 allée de belle île 35230 Bourgbarré,47.9947385,-1.6218802,MATHS,QUATRIEME
-d299a758-9177-4eb1-ba11-5122812dae59,layron@msn.com,Noemie,Creteur,1 rue PAPON,43.7019042,7.2812114,MATHS,QUATRIEME
-140508ed-e1ae-4bd1-a77e-c38a160465a1,alidrissi45@hotmail.fr,Kayssan,Mebarki,245 boulevard Lafayette  34400 lunel,43.6771736,4.1346206,MATHS,QUATRIEME
-69b1b848-52b3-4ce2-b757-1ed9a972f5ce,maria.popa@hotmail.fr,Adrian,Adrian,"18 rue de VENISE,Reims",49.2488358,4.0354479,MATHS,QUATRIEME
-79543309-a96f-4787-9c23-87aeb6b4b705,hakimabelabbes@aol.com,Chloé,PIFFARD,32 rue Aristide Briand 87100 Limoges,45.8386593,1.2685204,MATHS,QUATRIEME
-fdb15595-604e-4710-9fb6-03bee9fc5894,muriel3316@gmail.com,Jules,Herrero,"18 Route De la Reuille, 33910 SAINT DENIS DE PILE",44.999921,-0.19802,MATHS,QUATRIEME
-e52cc24b-a31d-464a-92d3-1fd97a5ba612,mary.olive@live.fr,Rafael,Barriere,24 lot le clos segransan 33870 vayres,44.888027,-0.30932,MATHS,QUATRIEME
-e5ab8804-d7bf-4430-a6c0-01051d9d9d61,taleszohra@gmail.com,Evan,Jaussoin,12 impasse aldebaran 34400 Lunel,43.6848557,4.1309573,MATHS,QUATRIEME
-8693800c-0773-474e-a8b7-d0baabbb35c3,patriciamontel@free.fr,Sarah,MONTEL,45 allée de Jade 38340 VOREPPE,45.2991239,5.6327205,MATHS,QUATRIEME
-86dd8966-976f-46e8-991d-f5d67051acb7,chaib.touria@gmail.com,Mariam,Laayouni,226 avenue des droits de l'homme 34000 Montpellier,43.60356,3.8950937,MATHS,QUATRIEME
+ea1c4d6d-66ec-4412-9f55-a34466c0c05d,alexandra.bireche@yahoo.fr,Tom,Royer,"3, rue de la viacelle, 54115 FAVIÈRES",48.4694001,5.956639,MATHS,PREMIERE
 1d0573b6-6a4c-4d38-a5db-ad317bc16e87,shadowdoumy2@hotmail.fr,beverly,calvy--moya,12 lotissement les linières 57580 remilly,49.014541,6.3827435,MATHS,QUATRIEME
-2b9c08d3-0248-4096-98a6-03c53cc7ff1c,mldemailly@yahoo.fr,Gabriel,DEMAILLY,29 chemin Dubert - Le Burrat - 31470 BRAGAYRAC,43.4841334,1.0708437,MATHS,QUATRIEME
-5f0f9b2b-3fc8-4187-98db-16a5bcbf8bf5,cecile.musart27@gmail.com,Raphael,Cadic,7 allee de la retraite fontaine les Dijon,47.3365493,5.0234664,MATHS,QUATRIEME
-ffb67513-e388-41d1-ac2a-909b0d23c2df,kirapou@wanadoo.fr,Zoé,Houet,176 bis route de Toulouse  31410 noe,43.3607078,1.2753356,MATHS,QUATRIEME
-91206015-9bf0-48e3-a7c5-e5c3b1ef5046,liliahmr17@gmail.com,Naila,Ben Messaoud Himeur,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,QUATRIEME
-f8f15d6d-9ad1-4e38-9c97-033c9df0cb53,mohammed.amrouche@gmail.com,Zakaria,Amrouche,"41 Av. de la Concorde, 91270 Vigneux-sur-Seine, France",48.70458530000001,2.4235539,MATHS,QUATRIEME
-c2d821e8-6ef4-4ea3-8980-96d1073cea5c,basmahassou@yahoo.fr,Naila,Hassou,1 place de l ÉGLISE de l arîa,46.3189116,-74.2212842,MATHS,QUATRIEME
-decc3bde-71e1-4d2a-a3ac-0ee2c6dcb032,kaoutarmadel@gmail.com,Lina,Madel,12 rue Hippolyte bousquet,48.0223557,-1.7573119,MATHS,QUATRIEME
 be5eaef3-b2ac-4190-a089-1c71d492d902,isabellelombard06@gmail.com,Alexis,Lombard ciocci,20 bld du colonel giaume le Négron 3  06340 la trinité,43.7467756,7.3234302,MATHS,QUATRIEME
+e52cc24b-a31d-464a-92d3-1fd97a5ba612,mary.olive@live.fr,Rafael,Barriere,24 lot le clos segransan 33870 vayres,44.888027,-0.30932,MATHS,QUATRIEME
+bf5375a0-91e5-4957-bead-f7c7fde15fec,stephanieloane@gmail.com,Loane,Selon,1 allée de belle île 35230 Bourgbarré,47.9947385,-1.6218802,MATHS,QUATRIEME
+15ba86df-2f1e-4ad2-bf77-db33fa5cfb6b,c_titia@hotmail.com,Anna-lys,PESLAGES,5impasse Gaston planté,43.6360119,1.4412415,MATHS,QUATRIEME
+c2d821e8-6ef4-4ea3-8980-96d1073cea5c,basmahassou@yahoo.fr,Naila,Hassou,1 place de l ÉGLISE de l arîa,46.3189116,-74.2212842,MATHS,QUATRIEME
+ffb67513-e388-41d1-ac2a-909b0d23c2df,kirapou@wanadoo.fr,Zoé,Houet,176 bis route de Toulouse  31410 noe,43.3607078,1.2753356,MATHS,QUATRIEME
+79543309-a96f-4787-9c23-87aeb6b4b705,hakimabelabbes@aol.com,Chloé,PIFFARD,32 rue Aristide Briand 87100 Limoges,45.8386593,1.2685204,MATHS,QUATRIEME
+d299a758-9177-4eb1-ba11-5122812dae59,layron@msn.com,Noemie,Creteur,1 rue PAPON,43.7019042,7.2812114,MATHS,QUATRIEME
+69b1b848-52b3-4ce2-b757-1ed9a972f5ce,maria.popa@hotmail.fr,Adrian,Adrian,"18 rue de VENISE,Reims",49.2488358,4.0354479,MATHS,QUATRIEME
+decc3bde-71e1-4d2a-a3ac-0ee2c6dcb032,kaoutarmadel@gmail.com,Lina,Madel,12 rue Hippolyte bousquet,48.0223557,-1.7573119,MATHS,QUATRIEME
+f8f15d6d-9ad1-4e38-9c97-033c9df0cb53,mohammed.amrouche@gmail.com,Zakaria,Amrouche,"41 Av. de la Concorde, 91270 Vigneux-sur-Seine, France",48.70458530000001,2.4235539,MATHS,QUATRIEME
+5f0f9b2b-3fc8-4187-98db-16a5bcbf8bf5,cecile.musart27@gmail.com,Raphael,Cadic,7 allee de la retraite fontaine les Dijon,47.3365493,5.0234664,MATHS,QUATRIEME
+86dd8966-976f-46e8-991d-f5d67051acb7,chaib.touria@gmail.com,Mariam,Laayouni,226 avenue des droits de l'homme 34000 Montpellier,43.60356,3.8950937,MATHS,QUATRIEME
+b218a2d9-b022-4153-93ff-c95c9ab61758,fadela2reims@hotmail.fr,Iness,Mekhissi Benabbad,9 rue Maurice Ravel,46.9544715,-0.9954823,MATHS,QUATRIEME
+a5d0ff2c-fd1f-44cb-9e8f-a9f416aea030,bahi.chaima33@gmail.com,Maïssa,Bahi,162 rue rimbaud 33620 cavignac,45.100203,-0.39002,MATHS,QUATRIEME
+3e3d5597-fec0-4297-9e84-d4d60333afbd,carballo.karine@orange.fr,Julia,Carballo Lassauce,11 rue Victor Desvignes 57000 metz,49.1057972,6.1653697,MATHS,QUATRIEME
+58e157ff-4d72-4b4f-9cda-ca2dfc04a171,samahgaieb@hotmail.fr,Amir,Salah,189 boulevard de la madeleine 06000 nice,43.7063994,7.2321372,MATHS,QUATRIEME
+2b9c08d3-0248-4096-98a6-03c53cc7ff1c,mldemailly@yahoo.fr,Gabriel,DEMAILLY,29 chemin Dubert - Le Burrat - 31470 BRAGAYRAC,43.4841334,1.0708437,MATHS,QUATRIEME
+8693800c-0773-474e-a8b7-d0baabbb35c3,patriciamontel@free.fr,Sarah,MONTEL,45 allée de Jade 38340 VOREPPE,45.2991239,5.6327205,MATHS,QUATRIEME
+91206015-9bf0-48e3-a7c5-e5c3b1ef5046,liliahmr17@gmail.com,Naila,Ben Messaoud Himeur,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,QUATRIEME
+140508ed-e1ae-4bd1-a77e-c38a160465a1,alidrissi45@hotmail.fr,Kayssan,Mebarki,245 boulevard Lafayette  34400 lunel,43.6771736,4.1346206,MATHS,QUATRIEME
+fdb15595-604e-4710-9fb6-03bee9fc5894,muriel3316@gmail.com,Jules,Herrero,"18 Route De la Reuille, 33910 SAINT DENIS DE PILE",44.999921,-0.19802,MATHS,QUATRIEME
 e5fd765d-1b58-477f-812b-3663423eadc4,exofourestier@gmail.com,Annfraser,Belia,avenue Léon blum,45.7660037,3.0963099,MATHS,QUATRIEME
 fcdf99a5-432f-469f-8d91-7238a0e04af6,catherine.balaude@gmail.com,Julie,Jarrige Balaude,Étang de Giat 63260 Vensat,46.053131,3.1467869,MATHS,QUATRIEME
+e5ab8804-d7bf-4430-a6c0-01051d9d9d61,taleszohra@gmail.com,Evan,Jaussoin,12 impasse aldebaran 34400 Lunel,43.6848557,4.1309573,MATHS,QUATRIEME
 ec8177e6-4d80-4ab3-9701-75fef56dcb86,bouhotclaire@gmail.com,Mathieu,Dos Santos,15 rue du faubourg athée 21130,47.2280059,5.3634268,MATHS,QUATRIEME
-a5d0ff2c-fd1f-44cb-9e8f-a9f416aea030,bahi.chaima33@gmail.com,Maïssa,Bahi,162 rue rimbaud 33620 cavignac,45.100203,-0.39002,MATHS,QUATRIEME
-b218a2d9-b022-4153-93ff-c95c9ab61758,fadela2reims@hotmail.fr,Iness,Mekhissi Benabbad,9 rue Maurice Ravel,46.9544715,-0.9954823,MATHS,QUATRIEME
-58e157ff-4d72-4b4f-9cda-ca2dfc04a171,samahgaieb@hotmail.fr,Amir,Salah,189 boulevard de la madeleine 06000 nice,43.7063994,7.2321372,MATHS,QUATRIEME
-e3302eae-2e8e-4035-813d-180bc291a6ec,ilham.elasba@laposte.net,Sara,Chiado caponet,63 rue Auguste pegurier 06200,43.6709774,7.2196341,MATHS,SECONDE
-5ca29b73-e344-4ebf-9722-ff36cdbd5566,fatimasid57525@gmail.com,Serine,Bekhti,1 impasse de la gérance 57300 hagondange,49.25418,6.168126,MATHS,SECONDE
-1a860dcd-a0f4-4707-b731-6f8029773402,sandrine.poulet@yahoo.fr,Tom,Carême,23 avenue Marx Dormoy 63000,45.7685703,3.0817043,MATHS,SECONDE
-5ea8ce8b-2351-48c1-ac77-1cd3252616ff,vincent91270@hotmail.com,Allycia,Caiazzo,Centre de loisir Les coquelicots,48.643595,2.506157,MATHS,SECONDE
-af321cb6-5780-4809-b908-390ed13a63ca,valerie.loric@orange.fr,Carla,Ferreira,"6, place barbe à Dijon",47.3290474,5.0383752,MATHS,SECONDE
-d822414e-194d-4a77-980c-de08f0f284e8,kpatapelagie34@gmail.com,tryphene,monney,19 rue de la Méditerranée 51100 Reims,49.2496418,4.0621442,MATHS,SECONDE
-301178fb-a4bc-4ecd-9b4e-de39cbd21dba,neslymine@hotmail.fr,Jasmine,Belghaouti,10 rue de la forêt 57290 fameck,49.2937242,6.1120902,MATHS,SECONDE
-a9d59538-d25b-4beb-bc07-eddd9b640d18,missdje.df@gmail.com,Dieneba,Fofana,"91390 Morsang-sur-Orge, France",48.661766,2.345709,MATHS,SECONDE
-1b65de42-a119-49d6-a372-83a890ec423a,oukrad@hotmail.fr,Shamsy,Oukrad,5c rue,49.150918,6.1509979,MATHS,SECONDE
-0a559397-15c9-4ef1-a92b-a7b3ec11d038,laurencefoni@outlook.com,Clement,Berthoin,Chemin de la campanette,43.6780198,7.1639015,MATHS,SECONDE
-fc05462a-ffaf-4b92-9fa4-93b14ae574ea,salima.habib@hotmail.fr,HANNA,THEVENIN,Impasse des deux cyprès résidence Le calme 06200 Nice,43.6859693,7.2297644,MATHS,SECONDE
-46d59342-5cc5-4954-90d5-f8d4b484e39c,schilliger1968@gmail.com,Norah,Schilliger,147 avenue jacques yves Cousteau 06270 Villeneuve Loubet,43.637862,7.1390078,MATHS,SECONDE
-9b9d4ded-570c-4ba0-905b-2e494d66dcdb,k310.soumaya@gmail.com,Wajdi,Bouothmane,48 bd de la madeleine 06000 Nice,43.6966673,7.2417303,MATHS,SECONDE
-6c266e9e-f3b8-4bff-9f3f-1bb67727eba5,fatimaghernaout@hotmail.fr,Suzie,Bessedik,"95280 Jouy-le-Moutier, France",49.01569500000001,2.047209,MATHS,SECONDE
-36cc7e67-612b-4218-b449-55e2db5f354b,hammamisamia633@gmail.com,Emna,Bouazizi,2 rue Toulouse lautrec chamalieres,45.7826068,3.0524379,MATHS,SECONDE
-df27b2d9-208d-4cb9-a990-358103c9fd11,babykxln@icloud.com,Kelina,Bacar,11 rue  Flameng  bat/b n:213 63000 Clermont-Ferrand,45.7580948,3.0979942,MATHS,SECONDE
-4fe263fd-d7a8-44a1-81f3-e37c57753b0d,farouk.bendamene@orange.fr,Naheel,BENDAMENE,Vaulnaveys le haut 38410,45.119296,5.811073,MATHS,SECONDE
-44fe6540-139d-49b2-88c3-03a861efd8f5,bouchakn@bouyguestelecom.fr,Lina,Lakrouchni,4 rue le vergey,44.6387131,-0.3147554,MATHS,SECONDE
-e34275b1-4d9d-4fb9-90e3-b68afa5d02dc,lm.creation@yahoo.fr,Anaïs,Mader,Rue de la fiche 86130 jaunay Marigny,46.7113464,0.3515592,MATHS,SECONDE
-7db3a407-4bba-4c5f-a5ec-c23cb1e69500,kaouther.belhadj@yahoo.com,Sofiane,Mimouni,7 rue de l'amitié 57280 semecourt,49.1943932,6.1286348,MATHS,SECONDE
 db44f452-8595-4d58-b60c-663dec35d86b,nora.tabti@hotmail.fr,Islem,TABTI,35 Avenue du Lycée 38530,45.433173,6.0163563,MATHS,SECONDE
-e2753912-27cb-4c4f-a464-3d3514bf49b2,cecilemonchaux@orange.fr,Lilou,Monchaux,14 chemin de Brondeau à Pompignac,44.846631,-0.4424958,MATHS,SECONDE
-0d31ca1a-0658-4037-8e2a-b8634935ecfb,jourdainjl2@yahoo.fr,Anthony,JOURDAIN,Notre Dame Sainte Famille,48.973092,2.254368,MATHS,SECONDE
-08d5ec19-6f0c-4cda-937e-a3231224db46,christelle.renaison@free.fr,Wyllem,Renaison,32 avenue voltaire 54300 Lunéville,48.5914353,6.5085665,MATHS,SECONDE
 b1ad831f-5e08-4664-94e7-0beaa8df9b45,noammel06@yahoo.fr,Noam,Ababsa,72 avenue Henri matisse,43.677715,7.2067704,MATHS,SECONDE
-d055fe47-5687-42ec-bf44-70da87d41657,aurelie.krebesz@gmail.com,Aïdan,Krebesz,650 rue du bas 76780 Saint Lucien,49.502554,1.4511436,MATHS,SECONDE
-4f642ff8-0f48-4f8f-9674-1da6c4fe086c,sallybye@hotmail.fr,Ines,El alami,22 rue de nohanent 63100 Clermont Ferrand,45.7836451,3.0732274,MATHS,SECONDE
-cd439bc5-1074-4c33-bca3-31e79724fa49,jmcc@wanadoo.fr,Cerise,Cachemire,10 rue des écoles 21490 Varois et chaignot,47.3527165,5.1317439,MATHS,SECONDE
-e8494331-81de-43fb-8bf0-42e26faf1b47,moinamkou06@yahoo.fr,Rayya,MOHAMED,4 rue d'Armagnac,44.3486732,2.5744918,MATHS,SECONDE
+5ea8ce8b-2351-48c1-ac77-1cd3252616ff,vincent91270@hotmail.com,Allycia,Caiazzo,Centre de loisir Les coquelicots,48.643595,2.506157,MATHS,SECONDE
+301178fb-a4bc-4ecd-9b4e-de39cbd21dba,neslymine@hotmail.fr,Jasmine,Belghaouti,10 rue de la forêt 57290 fameck,49.2937242,6.1120902,MATHS,SECONDE
 ffc5f2a3-91f0-488e-bf99-b1c2ca20015f,sandrineguillier032@gmail.com,Maelys,Peyrot,10 rue de la aireau des bodins,47.449696,0.4526679,MATHS,SECONDE
 862fca06-75e7-4d65-bc16-38083097ad7b,l@free.fr,Z,L,Rue jo Rousseau 21000,47.4043703,5.1330565,MATHS,SECONDE
+36cc7e67-612b-4218-b449-55e2db5f354b,hammamisamia633@gmail.com,Emna,Bouazizi,2 rue Toulouse lautrec chamalieres,45.7826068,3.0524379,MATHS,SECONDE
+5ca29b73-e344-4ebf-9722-ff36cdbd5566,fatimasid57525@gmail.com,Serine,Bekhti,1 impasse de la gérance 57300 hagondange,49.25418,6.168126,MATHS,SECONDE
+d822414e-194d-4a77-980c-de08f0f284e8,kpatapelagie34@gmail.com,tryphene,monney,19 rue de la Méditerranée 51100 Reims,49.2496418,4.0621442,MATHS,SECONDE
+6c266e9e-f3b8-4bff-9f3f-1bb67727eba5,fatimaghernaout@hotmail.fr,Suzie,Bessedik,"95280 Jouy-le-Moutier, France",49.01569500000001,2.047209,MATHS,SECONDE
 1bb90db1-69a4-42ae-b951-4d0ec7b1c8de,audrey.bouches@gmail.com,Emmalise,MONTJEAN,"78440 Fontenay-Saint-Père, France",49.02732899999999,1.757549,MATHS,SECONDE
-0b2972b7-ae3b-416d-8ab9-e25d872427b9,lahchaychi.hoda@orange.fr,Shakur,Boisedu,16 rue des Bouquetins 31200 Toulouse,43.6408728,1.4481132,MATHS,SIXIEME
-3645b299-e0ff-4c56-90c5-4e629cb6fbb6,lauriane.cazorla@free.fr,Axelle,Vonnet,215 avenue de saint pardon  33450 izon,44.9124111,-0.3310742,MATHS,SIXIEME
-641fbab7-d06c-4160-9b4e-08cb62eedb22,melal81@yahoo.fr,nahil,benhella,3 residence en chenois 57535,49.2222354,6.1229545,MATHS,SIXIEME
-3d4dbdd4-60d7-4ae7-b3f1-d0899b14dbac,familleval76@gmail.com,Quentin,Val,"7 rue des grands prix, 76530 Grand Couronne",49.3542822,1.0126467,MATHS,SIXIEME
-ba96f14e-7b78-4614-9af4-e8c2d9cf5f98,sabrina2402@hotmail.com,Younes,Laquérriere,5 rue Albert roussel 76120,49.4046389,1.0447653,MATHS,SIXIEME
-f423fce2-f8f4-4ca0-9d70-60155f1c53b3,fatima.bayssa@hotmail.fr,Lylia,Chichery,16 allee louis madeleine rigault 45650 st jean le blanc,47.8891511,1.9230547,MATHS,SIXIEME
-74c8817f-5a62-44e2-bf9a-e48e3786ac16,samiraetkarim.hariri@sfr.fr,Naïm,Hassak,5 place Xavier Roger 54580 Auboué,49.2125433,5.9786105,MATHS,SIXIEME
-28f2bffd-03a4-446b-b7fc-152fd546d5d8,sandrined87@gmx.fr,manel,dria,48 rue montmailler 87000 limoges,45.8340927,1.253998,MATHS,SIXIEME
-3ee0d53c-0b70-4c31-884a-f586c43c3009,delphinecamus.31@gmail.com,Arthur,CAMUS,9 rue du pic d aneto 31180 Castelmaurou,43.6741559,1.5438432,MATHS,SIXIEME
-5d879a8c-6736-444c-bbaf-faa6f8e88255,karaoglusevilay3@gmail.com,Sudenaz,Karaoglu,Reims,49.258329,4.031696,MATHS,SIXIEME
-37a7a965-713f-4440-a7a9-ae7624ba1ab8,nesrine82.trad@gmail.com,Beya,Lammouchi,17 rue Paul vachet 31400,43.5789963,1.4783346,MATHS,SIXIEME
-d8b3602e-54c0-4abe-a040-3026bce7e5d4,lpor2009@gmail.com,Gabriel,Rouland,20 avenue de Lignan 33370 Fargues saint Hilaire,44.8214714,-0.444176,MATHS,SIXIEME
-923303ee-6855-4f25-9f77-3114fe13ec1b,clicli33@hotmail.fr,Souheil,Zouaoui,1 rue Marguerite duras 33440 ambares et lagrave,44.9349214,-0.4811254,MATHS,SIXIEME
-a58fc9c2-ac0b-4e7d-b40f-b0e6852e9464,anne.sampeur@gmail.com,Céleste,SAMPEUR,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,SIXIEME
+4f642ff8-0f48-4f8f-9674-1da6c4fe086c,sallybye@hotmail.fr,Ines,El alami,22 rue de nohanent 63100 Clermont Ferrand,45.7836451,3.0732274,MATHS,SECONDE
+4fe263fd-d7a8-44a1-81f3-e37c57753b0d,farouk.bendamene@orange.fr,Naheel,BENDAMENE,Vaulnaveys le haut 38410,45.119296,5.811073,MATHS,SECONDE
+1a860dcd-a0f4-4707-b731-6f8029773402,sandrine.poulet@yahoo.fr,Tom,Carême,23 avenue Marx Dormoy 63000,45.7685703,3.0817043,MATHS,SECONDE
+0a559397-15c9-4ef1-a92b-a7b3ec11d038,laurencefoni@outlook.com,Clement,Berthoin,Chemin de la campanette,43.6780198,7.1639015,MATHS,SECONDE
+cd439bc5-1074-4c33-bca3-31e79724fa49,jmcc@wanadoo.fr,Cerise,Cachemire,10 rue des écoles 21490 Varois et chaignot,47.3527165,5.1317439,MATHS,SECONDE
+46d59342-5cc5-4954-90d5-f8d4b484e39c,schilliger1968@gmail.com,Norah,Schilliger,147 avenue jacques yves Cousteau 06270 Villeneuve Loubet,43.637862,7.1390078,MATHS,SECONDE
+a9d59538-d25b-4beb-bc07-eddd9b640d18,missdje.df@gmail.com,Dieneba,Fofana,"91390 Morsang-sur-Orge, France",48.661766,2.345709,MATHS,SECONDE
+e34275b1-4d9d-4fb9-90e3-b68afa5d02dc,lm.creation@yahoo.fr,Anaïs,Mader,Rue de la fiche 86130 jaunay Marigny,46.7113464,0.3515592,MATHS,SECONDE
+9b9d4ded-570c-4ba0-905b-2e494d66dcdb,k310.soumaya@gmail.com,Wajdi,Bouothmane,48 bd de la madeleine 06000 Nice,43.6966673,7.2417303,MATHS,SECONDE
+08d5ec19-6f0c-4cda-937e-a3231224db46,christelle.renaison@free.fr,Wyllem,Renaison,32 avenue voltaire 54300 Lunéville,48.5914353,6.5085665,MATHS,SECONDE
+44fe6540-139d-49b2-88c3-03a861efd8f5,bouchakn@bouyguestelecom.fr,Lina,Lakrouchni,4 rue le vergey,44.6387131,-0.3147554,MATHS,SECONDE
+0d31ca1a-0658-4037-8e2a-b8634935ecfb,jourdainjl2@yahoo.fr,Anthony,JOURDAIN,Notre Dame Sainte Famille,48.973092,2.254368,MATHS,SECONDE
+e3302eae-2e8e-4035-813d-180bc291a6ec,ilham.elasba@laposte.net,Sara,Chiado caponet,63 rue Auguste pegurier 06200,43.6709774,7.2196341,MATHS,SECONDE
+d055fe47-5687-42ec-bf44-70da87d41657,aurelie.krebesz@gmail.com,Aïdan,Krebesz,650 rue du bas 76780 Saint Lucien,49.502554,1.4511436,MATHS,SECONDE
+fc05462a-ffaf-4b92-9fa4-93b14ae574ea,salima.habib@hotmail.fr,HANNA,THEVENIN,Impasse des deux cyprès résidence Le calme 06200 Nice,43.6859693,7.2297644,MATHS,SECONDE
+e2753912-27cb-4c4f-a464-3d3514bf49b2,cecilemonchaux@orange.fr,Lilou,Monchaux,14 chemin de Brondeau à Pompignac,44.846631,-0.4424958,MATHS,SECONDE
+1b65de42-a119-49d6-a372-83a890ec423a,oukrad@hotmail.fr,Shamsy,Oukrad,5c rue,49.150918,6.1509979,MATHS,SECONDE
+e8494331-81de-43fb-8bf0-42e26faf1b47,moinamkou06@yahoo.fr,Rayya,MOHAMED,4 rue d'Armagnac,44.3486732,2.5744918,MATHS,SECONDE
+df27b2d9-208d-4cb9-a990-358103c9fd11,babykxln@icloud.com,Kelina,Bacar,11 rue  Flameng  bat/b n:213 63000 Clermont-Ferrand,45.7580948,3.0979942,MATHS,SECONDE
+7db3a407-4bba-4c5f-a5ec-c23cb1e69500,kaouther.belhadj@yahoo.com,Sofiane,Mimouni,7 rue de l'amitié 57280 semecourt,49.1943932,6.1286348,MATHS,SECONDE
+af321cb6-5780-4809-b908-390ed13a63ca,valerie.loric@orange.fr,Carla,Ferreira,"6, place barbe à Dijon",47.3290474,5.0383752,MATHS,SECONDE
 a42a44c0-7ced-49c9-8845-d4ed6f3329fb,djoherleila@gmail.com,Célia,BALDELLOU-CALLEJA,25 rue des cheminots 57970 Yutz,49.3608361,6.211642,MATHS,SIXIEME
-61f51a39-51a2-4853-8243-0ac5aa471f5f,angdavid@wanadoo.fr,Candice,David Foubert,18 route du neubourg,49.1234232,0.9100415,MATHS,SIXIEME
+f423fce2-f8f4-4ca0-9d70-60155f1c53b3,fatima.bayssa@hotmail.fr,Lylia,Chichery,16 allee louis madeleine rigault 45650 st jean le blanc,47.8891511,1.9230547,MATHS,SIXIEME
+0b2972b7-ae3b-416d-8ab9-e25d872427b9,lahchaychi.hoda@orange.fr,Shakur,Boisedu,16 rue des Bouquetins 31200 Toulouse,43.6408728,1.4481132,MATHS,SIXIEME
+28f2bffd-03a4-446b-b7fc-152fd546d5d8,sandrined87@gmx.fr,manel,dria,48 rue montmailler 87000 limoges,45.8340927,1.253998,MATHS,SIXIEME
+641fbab7-d06c-4160-9b4e-08cb62eedb22,melal81@yahoo.fr,nahil,benhella,3 residence en chenois 57535,49.2222354,6.1229545,MATHS,SIXIEME
+37a7a965-713f-4440-a7a9-ae7624ba1ab8,nesrine82.trad@gmail.com,Beya,Lammouchi,17 rue Paul vachet 31400,43.5789963,1.4783346,MATHS,SIXIEME
+a58fc9c2-ac0b-4e7d-b40f-b0e6852e9464,anne.sampeur@gmail.com,Céleste,SAMPEUR,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,SIXIEME
+3ee0d53c-0b70-4c31-884a-f586c43c3009,delphinecamus.31@gmail.com,Arthur,CAMUS,9 rue du pic d aneto 31180 Castelmaurou,43.6741559,1.5438432,MATHS,SIXIEME
 f1739c78-dd6a-4fd5-93a3-408f4b817e4c,liliane.ambela@yahoo.com,Liliane,Ambela,"Franconville la Garenne, 95130 Franconville, France",48.99071,2.222572,MATHS,SIXIEME
-eccde6e7-7bd7-4326-a523-94bcba0827f1,nawal_senechal@yahoo.fr,Jibril,SENECHAL,"28, Route du Clos du Loup 31180 Castelmaurou",43.6760082,1.5112051,MATHS,TERMINALE
+ba96f14e-7b78-4614-9af4-e8c2d9cf5f98,sabrina2402@hotmail.com,Younes,Laquérriere,5 rue Albert roussel 76120,49.4046389,1.0447653,MATHS,SIXIEME
+61f51a39-51a2-4853-8243-0ac5aa471f5f,angdavid@wanadoo.fr,Candice,David Foubert,18 route du neubourg,49.1234232,0.9100415,MATHS,SIXIEME
+3645b299-e0ff-4c56-90c5-4e629cb6fbb6,lauriane.cazorla@free.fr,Axelle,Vonnet,215 avenue de saint pardon  33450 izon,44.9124111,-0.3310742,MATHS,SIXIEME
+d8b3602e-54c0-4abe-a040-3026bce7e5d4,lpor2009@gmail.com,Gabriel,Rouland,20 avenue de Lignan 33370 Fargues saint Hilaire,44.8214714,-0.444176,MATHS,SIXIEME
+3d4dbdd4-60d7-4ae7-b3f1-d0899b14dbac,familleval76@gmail.com,Quentin,Val,"7 rue des grands prix, 76530 Grand Couronne",49.3542822,1.0126467,MATHS,SIXIEME
+5d879a8c-6736-444c-bbaf-faa6f8e88255,karaoglusevilay3@gmail.com,Sudenaz,Karaoglu,Reims,49.258329,4.031696,MATHS,SIXIEME
+923303ee-6855-4f25-9f77-3114fe13ec1b,clicli33@hotmail.fr,Souheil,Zouaoui,1 rue Marguerite duras 33440 ambares et lagrave,44.9349214,-0.4811254,MATHS,SIXIEME
+74c8817f-5a62-44e2-bf9a-e48e3786ac16,samiraetkarim.hariri@sfr.fr,Naïm,Hassak,5 place Xavier Roger 54580 Auboué,49.2125433,5.9786105,MATHS,SIXIEME
 4fa3e11e-e245-49e0-9c6a-33a6e53b38e7,yassinebelka1@gmail.com,Illyess,Tamseddak,49 rue du mont d’arène,49.2622526,4.0221845,MATHS,TERMINALE
-c68b08f0-bee8-4d0b-bbe3-7dc5ad1b2e6f,nathalie.sartore@sfr.fr,Elisa,Colombani,2 bis boulevard de Montréal 06200 nice,43.6869053,7.2210495,MATHS,TERMINALE
 e44dae26-d765-45ec-a890-1871aace740a,kamel.laaradh@gmail.com,Rayan,LAARADH,11 rue Raymond Bougeot 21300 Chenove,47.2952875,5.0089739,MATHS,TERMINALE
 832e428f-1961-43c9-8287-f19eef154f1a,hk51@hotmail.fr,Maelle,Haouchine,51100,49.2622526,4.0221845,MATHS,TERMINALE
 d54ad2e9-9666-4563-ab04-93c491251be7,jeannegiang@yahoo.fr,Minh,Huynh,15 rue Robert Doisneau.35690 Acigné,48.1396503,-1.5235292,MATHS,TERMINALE
-b4d10f5b-80ef-4ae7-b55c-d2ac48fa380a,nawel.hamam@yahoo.fr,Chahine,Aferkach,"62,bis rue de Courcelles 51100 Reims",49.2628949,4.0167735,MATHS,TERMINALE
-981b295d-0740-44a0-9683-a32aa5f3e9a1,johanne.valenti21@orange.fr,Lubin,Valenti,7 route de Saussy 21380 Messigny et Vantoux,47.4081243,5.0111976,MATHS,TERMINALE
-098ac3f2-73ea-425c-a19d-34dd0466e463,maisonnier.cecile@orange.fr,Raphaël,Brunet,Pouyol 87260 st hilaire bonneval,45.7258881,1.402081,MATHS,TERMINALE
-77117fa8-451e-49e1-bc66-7b87e1440f75,elcham51@gmail.com,Chaima,Ben tayeb,49 rue passe demoiselle,49.2435924,4.0212128,MATHS,TERMINALE
-298ba4ed-4c38-4ca7-87a9-1eef4571fd73,c.broyez@live.fr,Léo,Broyez,51 grand rue 54360 VIGNEULLES,48.56222,6.329839,MATHS,TERMINALE
-3f8a031a-751c-4f27-9360-eaa5163eea20,farida.diaf@yahoo.fr,Jibrail,Bengueddoudj,4 SQUARE PIERRE RUIBET 38500 Voiron,45.3681921,5.589398,MATHS,TERMINALE
 38593adf-7137-43ef-a481-567fe7e70f73,cecile.cayrou@gmail.com,Titouan,CAYROU,Notre Dame Sainte Famille,48.973092,2.254368,MATHS,TERMINALE
+77117fa8-451e-49e1-bc66-7b87e1440f75,elcham51@gmail.com,Chaima,Ben tayeb,49 rue passe demoiselle,49.2435924,4.0212128,MATHS,TERMINALE
 350d160f-dbc2-4984-826e-be65d31628f3,raniamat@hotmail.fr,Lina,Maatouk,8 rue des mûriers 57140 WOIPPY,49.150918,6.1509979,MATHS,TERMINALE
-bc68ebb0-fd00-4531-994e-0e666f541a3b,antoninalex@yahoo.fr,Victor,Antonin,31500,47.3205924,-122.3333742,MATHS,TERMINALE
+098ac3f2-73ea-425c-a19d-34dd0466e463,maisonnier.cecile@orange.fr,Raphaël,Brunet,Pouyol 87260 st hilaire bonneval,45.7258881,1.402081,MATHS,TERMINALE
+981b295d-0740-44a0-9683-a32aa5f3e9a1,johanne.valenti21@orange.fr,Lubin,Valenti,7 route de Saussy 21380 Messigny et Vantoux,47.4081243,5.0111976,MATHS,TERMINALE
+b4d10f5b-80ef-4ae7-b55c-d2ac48fa380a,nawel.hamam@yahoo.fr,Chahine,Aferkach,"62,bis rue de Courcelles 51100 Reims",49.2628949,4.0167735,MATHS,TERMINALE
+298ba4ed-4c38-4ca7-87a9-1eef4571fd73,c.broyez@live.fr,Léo,Broyez,51 grand rue 54360 VIGNEULLES,48.56222,6.329839,MATHS,TERMINALE
 59af124c-c14c-4398-a5d2-80cf73b883e5,r_salas74@hotmail.com,Diego,Plasencia,"Clamart, France",48.799815,2.257289,MATHS,TERMINALE
-fb19cd90-cd28-4818-a90b-989f76944212,naima2931@gmail.com,Billal,Dehbi,4 allée angélique hannetaire 31300 toulouse,43.5997846,1.376258,MATHS,TROISIEME
-56a263c9-3cf6-44ee-9644-cde6ea10763e,nedjmachettouh012@gmail.com,13,Kheloufi,1 rue leon maujean,49.1196614,6.2162952,MATHS,TROISIEME
+c68b08f0-bee8-4d0b-bbe3-7dc5ad1b2e6f,nathalie.sartore@sfr.fr,Elisa,Colombani,2 bis boulevard de Montréal 06200 nice,43.6869053,7.2210495,MATHS,TERMINALE
+bc68ebb0-fd00-4531-994e-0e666f541a3b,antoninalex@yahoo.fr,Victor,Antonin,31500,47.3205924,-122.3333742,MATHS,TERMINALE
+3f8a031a-751c-4f27-9360-eaa5163eea20,farida.diaf@yahoo.fr,Jibrail,Bengueddoudj,4 SQUARE PIERRE RUIBET 38500 Voiron,45.3681921,5.589398,MATHS,TERMINALE
+998d502c-b2af-487e-a762-6cb33dde1857,tarek.trabelsi@hotmail.fr,Tarek,Trabelsi,"Boissy-Saint-Léger, France",48.7544029,2.5060809,MATHS,TERMINALE
+eccde6e7-7bd7-4326-a523-94bcba0827f1,nawal_senechal@yahoo.fr,Jibril,SENECHAL,"28, Route du Clos du Loup 31180 Castelmaurou",43.6760082,1.5112051,MATHS,TERMINALE
+ada90dcc-f7a5-46f8-a4f8-6a256798fcab,corinne090770@gmail.com,Emma,Cami,33240,35.945323,-95.295048,MATHS,TROISIEME
+4c2b7dda-bdfe-4abd-9cd3-64a8535e4fc5,lineute54@gmail.com,Ilan,Broyez,4 Rue du Vignoble 54360 Damelevieres,48.5561272,6.3863358,MATHS,TROISIEME
 226553ec-ab44-4a59-8539-a1c75d1c0225,samiab21000@gmail.com,Lina,Bentaleb,1rue castelnau 2100 dijon,47.3327426,5.0713319,MATHS,TROISIEME
-25bdbee3-e89b-4b14-8ae7-f32cfb42337b,marionchapellier@hotmail.com,Oscar,Canaud,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,TROISIEME
-c2832c8a-68e5-414b-8311-d1f86089ff3c,halima.nel@hotmail.fr,Nelia,Bouragba,31 rue de la garenne 51500 taissy,49.209488,4.1013903,MATHS,TROISIEME
+56a263c9-3cf6-44ee-9644-cde6ea10763e,nedjmachettouh012@gmail.com,13,Kheloufi,1 rue leon maujean,49.1196614,6.2162952,MATHS,TROISIEME
+90f5f71e-297a-4dd0-b9e2-9f034c597dd6,dpigneau@aol.com,Laura,PIGNEAU,"2, rue d’Alsace Lorraine",43.5998723,1.44575,MATHS,TROISIEME
+c3ad0fd8-2897-4781-9ebd-641b25de6a3d,mdvouilloz@gmail.com,Nathan,Vouilloz,286 promenade des pres 06670 Levens,43.846828,7.235567,MATHS,TROISIEME
+c2402ec1-286f-4425-8c3b-5a41f5d75f88,aissa.beng@orange.fr,Jaad,Bengueddach,6 Lotissement les Tamaris 38160 Saint Verand,45.173446,5.332609,MATHS,TROISIEME
+e4a28fe1-13bc-4045-87b8-0dcdbf01ed39,bac_opep@hotmail.fr,Tarek,Bachir,23 impasse jean de bernuy 31100 Toulouse,43.5616222,1.4094351,MATHS,TROISIEME
 d7756b81-f77a-4116-b3c4-1238237b2887,flammouchi@yahoo.fr,Ghalia,Lammouchi,29 rue valade 31000 Toulouse,43.6049999,1.4371802,MATHS,TROISIEME
 8855a602-c586-4f08-aa91-7669f973c1e2,brice.duhr@sfr.fr,Émeline,Duhr,11 route de Paris 57160 ROZERIEULLES,49.1113177,6.0960345,MATHS,TROISIEME
-7e0929f6-e89a-416a-a03c-d3eb1d958adf,beatriceverriere@sfr.fr,Mélissa,Verrière,11rue des clématite 21800 Chevigny st sauveur,47.2983843,5.138096,MATHS,TROISIEME
 f2a4db70-3fca-4665-973e-20ae9228d6e4,sebastienbouzonie@gmail.com,Lilou,Bouzonie,"2 rue de la pêcherie, chez mallet 87420 saint victurnien",45.8672022,1.0143122,MATHS,TROISIEME
-c2402ec1-286f-4425-8c3b-5a41f5d75f88,aissa.beng@orange.fr,Jaad,Bengueddach,6 Lotissement les Tamaris 38160 Saint Verand,45.173446,5.332609,MATHS,TROISIEME
-fec6982d-5484-4203-84df-a6a141880675,fabaloev@hotmail.fr,Louca,Jimenez,33150 cenon,44.8540425,-0.5210565,MATHS,TROISIEME
-e4a28fe1-13bc-4045-87b8-0dcdbf01ed39,bac_opep@hotmail.fr,Tarek,Bachir,23 impasse jean de bernuy 31100 Toulouse,43.5616222,1.4094351,MATHS,TROISIEME
-86959eb0-0475-452c-a717-6f96e206e870,ahlem.baili@gmail.com,Rayan,Baili,36 avenue Flores 06000,43.7163109,7.2793589,MATHS,TROISIEME
-8775a069-d272-48cd-83a0-27518203225a,badiaa54@live.fr,Rayen,Bentouati,17 bis rue du château fort 54670 custines,48.7927902,6.1404428,MATHS,TROISIEME
-38f9b0ae-dc10-4835-8beb-e99d04c38448,mawazini.reem@gmail.com,Mariam,Nayf,7 Avenue de Normandie,43.7048607,7.1334913,MATHS,TROISIEME
-ada90dcc-f7a5-46f8-a4f8-6a256798fcab,corinne090770@gmail.com,Emma,Cami,33240,35.945323,-95.295048,MATHS,TROISIEME
-322874dd-fa7a-4d1f-8d1c-7cf9780a5c16,lauralaury237@gmail.com,Campbell,Gelsomino,71 rue du Maréchal Lyautey 57180 Terville,49.3458978,6.1464881,MATHS,TROISIEME
-a7ad9560-a6c0-4031-b8ed-9066687b8786,rochepatricia33@yahoo.fr,Martha,MATINGOU,4 rue Saint James  33530 Bassens,44.9159455,-0.5174176,MATHS,TROISIEME
-b0896386-edf8-4bc7-a8ed-cbc669a4e7d4,fsahraoui@svp.com,Kamilia,Boukra,13 rue Pauline kergomard 33150 cenon,44.8476146,-0.5085399,MATHS,TROISIEME
-5a1a215c-cf7e-4eaf-b5b3-3149bad25499,rim021.saafi@gmail.com,Nesrine,Saafi,14 rue miron 06000 nice,43.7062136,7.267351,MATHS,TROISIEME
-ea916cc1-be11-49bb-ac7b-26f57c445892,crouzet.christelle9@orange.fr,Amandine,Crouzet,16 rue des arceaux 34160 castries,43.6795341,3.9851123,MATHS,TROISIEME
-bda41d18-8476-427a-a1e3-539e73e71dfb,bourriquetleslie@hotmail.com,Chloé,PASSADE,36 rue du docteur zivré 54340 pompey,48.7639874,6.1114085,MATHS,TROISIEME
-66320371-9e9b-44ed-967c-3ce72ca08154,samahgaieb@hotmail.fr,Ayder,Salah,189 boulevard de la madeleine 06000 nice,43.7063994,7.2321372,MATHS,TROISIEME
-a0ae2ca4-4988-4787-b217-c1f17990ad2f,samahgaieb@hotmail.fr,Amine,Salah,189 boulevard de la madeleine 06000-NICE,43.7063994,7.2321372,MATHS,TROISIEME
-4c2b7dda-bdfe-4abd-9cd3-64a8535e4fc5,lineute54@gmail.com,Ilan,Broyez,4 Rue du Vignoble 54360 Damelevieres,48.5561272,6.3863358,MATHS,TROISIEME
-c3ad0fd8-2897-4781-9ebd-641b25de6a3d,mdvouilloz@gmail.com,Nathan,Vouilloz,286 promenade des pres 06670 Levens,43.846828,7.235567,MATHS,TROISIEME
 386a87f1-04f3-43b9-aa35-a7f41b9e4ca3,marieangecharbonnier3@gmail.com,Julie,Mathieu,40 avenue des cigales,43.7698286,7.1904316,MATHS,TROISIEME
 853a5357-5f01-4410-85a4-fa73d10843d4,formanime.vb@gmail.com,Zoé,Bourdon,1522 rue des Andelys 76520 La Neuville Chant d’oisel,49.3712852,1.2364625,MATHS,TROISIEME
+fec6982d-5484-4203-84df-a6a141880675,fabaloev@hotmail.fr,Louca,Jimenez,33150 cenon,44.8540425,-0.5210565,MATHS,TROISIEME
 32b64ca1-b623-495b-a530-9bca15df14fd,afaf34@icloud.com,Shana,Cortes,Rue olympe de gouges,46.1433179,-1.1579626,MATHS,TROISIEME
+ea916cc1-be11-49bb-ac7b-26f57c445892,crouzet.christelle9@orange.fr,Amandine,Crouzet,16 rue des arceaux 34160 castries,43.6795341,3.9851123,MATHS,TROISIEME
 12c0f5e0-c749-4166-aa66-80b6bd3a7292,makhloufi.aicha@gmail.com,Meddy,Kebir,175 avenue André malraux 57000 Metz,49.0957377,6.1804695,MATHS,TROISIEME
+86959eb0-0475-452c-a717-6f96e206e870,ahlem.baili@gmail.com,Rayan,Baili,36 avenue Flores 06000,43.7163109,7.2793589,MATHS,TROISIEME
+322874dd-fa7a-4d1f-8d1c-7cf9780a5c16,lauralaury237@gmail.com,Campbell,Gelsomino,71 rue du Maréchal Lyautey 57180 Terville,49.3458978,6.1464881,MATHS,TROISIEME
+a7ad9560-a6c0-4031-b8ed-9066687b8786,rochepatricia33@yahoo.fr,Martha,MATINGOU,4 rue Saint James  33530 Bassens,44.9159455,-0.5174176,MATHS,TROISIEME
+a0ae2ca4-4988-4787-b217-c1f17990ad2f,samahgaieb@hotmail.fr,Amine,Salah,189 boulevard de la madeleine 06000-NICE,43.7063994,7.2321372,MATHS,TROISIEME
+8775a069-d272-48cd-83a0-27518203225a,badiaa54@live.fr,Rayen,Bentouati,17 bis rue du château fort 54670 custines,48.7927902,6.1404428,MATHS,TROISIEME
+fb19cd90-cd28-4818-a90b-989f76944212,naima2931@gmail.com,Billal,Dehbi,4 allée angélique hannetaire 31300 toulouse,43.5997846,1.376258,MATHS,TROISIEME
+5a1a215c-cf7e-4eaf-b5b3-3149bad25499,rim021.saafi@gmail.com,Nesrine,Saafi,14 rue miron 06000 nice,43.7062136,7.267351,MATHS,TROISIEME
+66320371-9e9b-44ed-967c-3ce72ca08154,samahgaieb@hotmail.fr,Ayder,Salah,189 boulevard de la madeleine 06000 nice,43.7063994,7.2321372,MATHS,TROISIEME
+bda41d18-8476-427a-a1e3-539e73e71dfb,bourriquetleslie@hotmail.com,Chloé,PASSADE,36 rue du docteur zivré 54340 pompey,48.7639874,6.1114085,MATHS,TROISIEME
+38f9b0ae-dc10-4835-8beb-e99d04c38448,mawazini.reem@gmail.com,Mariam,Nayf,7 Avenue de Normandie,43.7048607,7.1334913,MATHS,TROISIEME
 bc481ac0-7957-4068-a015-0f3b2b34d8a4,droudroune21@aol.com,Margot,Sogny,46 a route de fontaine française 21490,47.353307,5.139532,MATHS,TROISIEME
 736f7506-d4ec-4bf8-a87d-cf7d2e16cec8,sodilachristella@gmail.com,Christella,Nkankama,Salle Gaston Vial,48.697833,2.43314,MATHS,TROISIEME
+25bdbee3-e89b-4b14-8ae7-f32cfb42337b,marionchapellier@hotmail.com,Oscar,Canaud,"École, Collège, Lycée Privés Sainte Elisabeth",48.842817,2.286066,MATHS,TROISIEME
 ea31f0b2-abd4-46fa-ab35-2a4a0ea635aa,panero.7591@gmail.com,Ismael,Belkhettab,"Vigneux-sur-Seine, France",48.700094,2.416924,MATHS,TROISIEME
 4643fc60-6609-488f-993d-7ea2d3e8f45f,fatma.ghazel@hotmail.com,Ahmed,Hedia,"Canton du Kremlin-Bicêtre, France",48.808328,2.3489215,MATHS,TROISIEME
-90f5f71e-297a-4dd0-b9e2-9f034c597dd6,dpigneau@aol.com,Laura,PIGNEAU,"2, rue d’Alsace Lorraine",43.5998723,1.44575,MATHS,TROISIEME
+b0896386-edf8-4bc7-a8ed-cbc669a4e7d4,fsahraoui@svp.com,Kamilia,Boukra,13 rue Pauline kergomard 33150 cenon,44.8476146,-0.5085399,MATHS,TROISIEME
+7e0929f6-e89a-416a-a03c-d3eb1d958adf,beatriceverriere@sfr.fr,Mélissa,Verrière,11rue des clématite 21800 Chevigny st sauveur,47.2983843,5.138096,MATHS,TROISIEME
+c2832c8a-68e5-414b-8311-d1f86089ff3c,halima.nel@hotmail.fr,Nelia,Bouragba,31 rue de la garenne 51500 taissy,49.209488,4.1013903,MATHS,TROISIEME
 1205cc45-3bea-46aa-bc79-6fddd255e050,anirmous@laposte.net,Anir,Moustahcin,20 rue jules et Aline AVIGDOR 06300 Nice,43.7097552,7.2859939,PHYSICS_CHEMISTRY,CINQUIEME
 34d5e332-fd1a-4178-8712-ef3c40904f78,mounabenftima81@gmail.com,Aïcha,Ladhari,"94290 Villeneuve-le-Roi, France",48.7364524,2.4214133,PHYSICS_CHEMISTRY,CINQUIEME
 f9b17967-0b3f-40ba-badc-4a09ed8aa696,najetbelmili@yahoo.fr,Yacine,Mili,45 allée Mercure,43.6223796,3.8188385,PHYSICS_CHEMISTRY,CINQUIEME
-938a3c2a-70ec-4b4c-85d4-54faa5f611b4,dermouti.leila06@gmail.com,Leila,Dermouti,5 rue reine jeanne  06000 nice,43.7055641,7.2592866,PHYSICS_CHEMISTRY,PREMIERE
-7d7a3d78-53c9-4664-bef7-f8fc5a13438b,lenasofy@free.fr,Léonie,PARGUEL,176 chemin du petit lumbin,45.3137117,5.9191625,PHYSICS_CHEMISTRY,PREMIERE
-1f591c11-0e05-4c0a-8db8-da93600233fc,bur57annie@gmail.com,Claude,Bur,23avenue des nations yutz,49.3559608,6.1847413,PHYSICS_CHEMISTRY,PREMIERE
-f898a02c-28e5-4d9b-9f47-83f924032acf,mariaalexia.dales@gmail.com,Auguste,Lietard,100 rue paulin 33000,44.8494338,-0.5869096,PHYSICS_CHEMISTRY,PREMIERE
-b45c6b23-5162-4709-bcf3-1f89e2c175c7,ced-rine@hotmail.fr,Noémie,Tarmis,10 allée du grand mail bâtiment Berry Saint Pierre des corps 37700,47.3928976,0.7241669,PHYSICS_CHEMISTRY,PREMIERE
 e9fbc76d-9a2c-46fe-a2ca-c66f99e77e65,sylvieseb@yahoo.fr,Jade,Van,81 avenue du 11 novembre,46.1755844,-1.1508649,PHYSICS_CHEMISTRY,PREMIERE
-2417f0a0-2e73-4a59-b544-4454e4ed8cc1,diamichel_mails@yahoo.fr,DIA--SYPHENGPHET,Nathan,"95 Av. Emile Zola, 75015 Paris, France",48.8469875,2.2893419,PHYSICS_CHEMISTRY,PREMIERE
-6d9c0ea7-ceb1-4a6a-988a-f50e74b56360,genese.01@hotmail.fr,Jibril,Kongo,Rue du maréchal foch résidence beau site batF4 apt6 33150 cenon,44.8539512,-0.527964,PHYSICS_CHEMISTRY,PREMIERE
 4f432365-4c3f-404a-b355-623f74fc19f0,ancha10sivakumaran@icloud.com,Anchanny,Sivakumaran,Espace Mozaïk,48.808984,2.190381,PHYSICS_CHEMISTRY,PREMIERE
+2417f0a0-2e73-4a59-b544-4454e4ed8cc1,diamichel_mails@yahoo.fr,DIA--SYPHENGPHET,Nathan,"95 Av. Emile Zola, 75015 Paris, France",48.8469875,2.2893419,PHYSICS_CHEMISTRY,PREMIERE
+b45c6b23-5162-4709-bcf3-1f89e2c175c7,ced-rine@hotmail.fr,Noémie,Tarmis,10 allée du grand mail bâtiment Berry Saint Pierre des corps 37700,47.3928976,0.7241669,PHYSICS_CHEMISTRY,PREMIERE
+938a3c2a-70ec-4b4c-85d4-54faa5f611b4,dermouti.leila06@gmail.com,Leila,Dermouti,5 rue reine jeanne  06000 nice,43.7055641,7.2592866,PHYSICS_CHEMISTRY,PREMIERE
+f898a02c-28e5-4d9b-9f47-83f924032acf,mariaalexia.dales@gmail.com,Auguste,Lietard,100 rue paulin 33000,44.8494338,-0.5869096,PHYSICS_CHEMISTRY,PREMIERE
+1f591c11-0e05-4c0a-8db8-da93600233fc,bur57annie@gmail.com,Claude,Bur,23avenue des nations yutz,49.3559608,6.1847413,PHYSICS_CHEMISTRY,PREMIERE
+7d7a3d78-53c9-4664-bef7-f8fc5a13438b,lenasofy@free.fr,Léonie,PARGUEL,176 chemin du petit lumbin,45.3137117,5.9191625,PHYSICS_CHEMISTRY,PREMIERE
 9b5b23ef-68ee-403c-80ed-9fff6776159d,dermouti.leila06@gmail.com,Ĺeila,Dermouti,5 rue reine jeanne 06000 nice,43.7055641,7.2592866,PHYSICS_CHEMISTRY,PREMIERE
-5af741a9-cf44-4229-9138-7bd16f952a7d,ineztaha@gmail.com,Taha,Mouziyane,11 rue prince Maurice 06000 Nice,43.7091929,7.2579949,PHYSICS_CHEMISTRY,QUATRIEME
+6d9c0ea7-ceb1-4a6a-988a-f50e74b56360,genese.01@hotmail.fr,Jibril,Kongo,Rue du maréchal foch résidence beau site batF4 apt6 33150 cenon,44.8539512,-0.527964,PHYSICS_CHEMISTRY,PREMIERE
 86c16219-be43-450c-ac67-7d91ddf5efca,elodieguigal@icloud.com,Gaspard,Guigal,16 allée des magnolias 34090,43.6298147,3.8563739,PHYSICS_CHEMISTRY,QUATRIEME
+6a7da531-404b-4f26-80c4-311f3ab115f8,moirv@hotmail.com,Benjamin,REICHHARDT,24 avenue De Guise - THIONVILLE (57100),49.3647347,6.1639595,PHYSICS_CHEMISTRY,QUATRIEME
 4cd1d5e5-c89c-4d99-97d1-1fa68a5df34f,hegera@gmail.com,Yasmine,Ben Salah,62 avenue de pessicart 06100,43.7117412,7.2484788,PHYSICS_CHEMISTRY,QUATRIEME
 7f85d0b7-82de-4326-99a3-03d8e1a38ce1,laure.beaumal@free.fr,Baptiste,Beaumal Lugand,"14e Arrondissement de Paris, 75014 Paris, France",48.8313922,2.3254388,PHYSICS_CHEMISTRY,QUATRIEME
-6a7da531-404b-4f26-80c4-311f3ab115f8,moirv@hotmail.com,Benjamin,REICHHARDT,24 avenue De Guise - THIONVILLE (57100),49.3647347,6.1639595,PHYSICS_CHEMISTRY,QUATRIEME
-15874fb7-bd50-415a-87ee-17d9420f9e8b,nawal_senechal@yahoo.fr,Jalil,SENECHAL,"28, Route du Clos du Loup 31180 Castelmaurou",43.6760082,1.5112051,PHYSICS_CHEMISTRY,SECONDE
-83bd950d-f693-42bb-9019-ea5a39ad5838,bouchakn@bouyguestelecom.fr,Lina,Lakrouchni,4 rue le vergey 33410 cadilac,44.6387131,-0.3147554,PHYSICS_CHEMISTRY,SECONDE
-7ba81750-9024-4a10-a27c-ccf2d301e8c8,carole.broman@orange.fr,Thaïs,GROBEN,26 rue de la prairie 57220 Holling,49.2629576,6.4955665,PHYSICS_CHEMISTRY,SECONDE
+5af741a9-cf44-4229-9138-7bd16f952a7d,ineztaha@gmail.com,Taha,Mouziyane,11 rue prince Maurice 06000 Nice,43.7091929,7.2579949,PHYSICS_CHEMISTRY,QUATRIEME
 a7d77e94-0c14-4681-98e7-0c75d665ce00,valerie.loric@orange.fr,Carla,Ferreira,21000,42.4474934,-83.1999242,PHYSICS_CHEMISTRY,SECONDE
+83bd950d-f693-42bb-9019-ea5a39ad5838,bouchakn@bouyguestelecom.fr,Lina,Lakrouchni,4 rue le vergey 33410 cadilac,44.6387131,-0.3147554,PHYSICS_CHEMISTRY,SECONDE
+15874fb7-bd50-415a-87ee-17d9420f9e8b,nawal_senechal@yahoo.fr,Jalil,SENECHAL,"28, Route du Clos du Loup 31180 Castelmaurou",43.6760082,1.5112051,PHYSICS_CHEMISTRY,SECONDE
 f28159a0-88a2-4b40-9590-427dfb1c39f5,delph.pichon@gmail.com,Anne,Bedouet,Mauguio 34130,43.6154409,4.010165,PHYSICS_CHEMISTRY,SECONDE
+7ba81750-9024-4a10-a27c-ccf2d301e8c8,carole.broman@orange.fr,Thaïs,GROBEN,26 rue de la prairie 57220 Holling,49.2629576,6.4955665,PHYSICS_CHEMISTRY,SECONDE
 e37dd2cc-00d6-403f-ac3f-7a67f09021e4,malikachc1974@gmail.com,Chouchane zakaria,Zakaria,40rue des Mesliers 76500 Elbeuf,49.2842757,0.9940813,PHYSICS_CHEMISTRY,SIXIEME
 2c17bc60-d8e4-4fc3-8e9f-3e89b13056e3,hypoplasie@yahoo.fr,Syrine,Menadi,63118,38.5950619,-90.2291565,PHYSICS_CHEMISTRY,SIXIEME
 a4e975d7-26bc-445a-b5ca-849600a154e2,rdmanon@hotmail.fr,Gabrielle,Raffaillac,34090,43.1043484,-87.895702,PHYSICS_CHEMISTRY,SIXIEME
+a08ffc30-6363-4214-8160-29e2c95e786d,corinne2018@laposte.net,Robin,Salgueiro,Rue beranger 21000 dijon,47.341687,5.048126,PHYSICS_CHEMISTRY,TERMINALE
+25461134-b36b-43c9-b457-a7df94a1bf10,nathalieberkane@yahoo.fr,Sasha,Arcelin,80 ave de lattre de tassigny 06400 Cannes,43.5633541,7.0093193,PHYSICS_CHEMISTRY,TERMINALE
 c5cf8df3-dfac-493b-8956-fb9e42207080,krommerlydie33@gmail.com,Mattys,Krommer,Route de Touty 33370 Pompignac,44.8578483,-0.4463516,PHYSICS_CHEMISTRY,TERMINALE
-7a1d8a8f-9834-4799-a870-ed6af12ae1fa,phes17@yahoo.fr,Marwa,Bengliz,52 boulevard du président wilson 51100 Reims,49.2410844,4.0186905,PHYSICS_CHEMISTRY,TERMINALE
+ab09580b-7bb9-4956-a23d-2a42ea9457e4,dalila.raini2000@yahoo.com,Rabah,Raini,Centre de loisir Les coquelicots,48.643595,2.506157,PHYSICS_CHEMISTRY,TERMINALE
 223412d1-8801-43e7-afdd-d841a194c2f9,audebartho@hotmail.com,Quentin,Joly,12 impasse de Cambalu 37150 Francueil,47.3142911,1.0618923,PHYSICS_CHEMISTRY,TERMINALE
 9c93ece9-cecf-41b0-b5f6-6533ec916891,malika.challal@wanadoo.fr,Elwan,Elwan,21 rue de bel air 63530 sayat,45.8321803,3.0530195,PHYSICS_CHEMISTRY,TERMINALE
-25461134-b36b-43c9-b457-a7df94a1bf10,nathalieberkane@yahoo.fr,Sasha,Arcelin,80 ave de lattre de tassigny 06400 Cannes,43.5633541,7.0093193,PHYSICS_CHEMISTRY,TERMINALE
+7a1d8a8f-9834-4799-a870-ed6af12ae1fa,phes17@yahoo.fr,Marwa,Bengliz,52 boulevard du président wilson 51100 Reims,49.2410844,4.0186905,PHYSICS_CHEMISTRY,TERMINALE
 02f8d8e2-4fdd-4a84-b823-f21db3a7f8ef,malika.challal@wanadoo.fr,Elwan,Challal,21 rue de bel air 63530 sayat,45.8321803,3.0530195,PHYSICS_CHEMISTRY,TERMINALE
-ab09580b-7bb9-4956-a23d-2a42ea9457e4,dalila.raini2000@yahoo.com,Rabah,Raini,Centre de loisir Les coquelicots,48.643595,2.506157,PHYSICS_CHEMISTRY,TERMINALE
-a08ffc30-6363-4214-8160-29e2c95e786d,corinne2018@laposte.net,Robin,Salgueiro,Rue beranger 21000 dijon,47.341687,5.048126,PHYSICS_CHEMISTRY,TERMINALE
-47f5ae47-b452-4923-95fe-3ba351d7eb74,mahfoufsarah@me.com,maya,mahfouf,2 Rue Roger Salengro bâtiment à logement huit 33700 Mérignac,44.8385482,-0.6645663,PHYSICS_CHEMISTRY,TROISIEME
-7f5c4ad1-668e-4863-9e57-4c94ca257266,s.lajoinie@wanadoo.fr,Maya,Maya,122 rue president.kennedy,49.4318484,1.0637302,PHYSICS_CHEMISTRY,TROISIEME
 29963be1-57f2-4127-8eb5-f69574f38595,mawazini.reem@gmail.com,Mariam,Nayf,7 Avenue de Normandie,43.7048607,7.1334913,PHYSICS_CHEMISTRY,TROISIEME
 30546d8d-ba30-416e-a4df-bbfacb8d0049,dpigneau@aol.com,Laura,PIGNEAU,"2, rue d’Alsace Lorraine 06000 NICE",43.7042521,7.2653501,PHYSICS_CHEMISTRY,TROISIEME
+47f5ae47-b452-4923-95fe-3ba351d7eb74,mahfoufsarah@me.com,maya,mahfouf,2 Rue Roger Salengro bâtiment à logement huit 33700 Mérignac,44.8385482,-0.6645663,PHYSICS_CHEMISTRY,TROISIEME
+7f5c4ad1-668e-4863-9e57-4c94ca257266,s.lajoinie@wanadoo.fr,Maya,Maya,122 rue president.kennedy,49.4318484,1.0637302,PHYSICS_CHEMISTRY,TROISIEME
 19ae6132-38a7-4e54-96d8-7e88dc83277a,kabdellali21@gmail.com,Ahmed,Ketroussi,2 rue marie-rose gineste appt A3-42 étage 4ème  31300 toulouse,43.6017938,1.4085134,PHYSICS_CHEMISTRY,TROISIEME
 5bf75d71-aee4-43e9-9602-de380b932aa2,dalila.raini2000@yahoo.com,Rabah,Raini,Centre de loisir Les coquelicots,48.643595,2.506157,SI,TERMINALE
 3012dc39-f6d6-4917-8612-1c9ecc2171f9,florencemathieu2a@hotmail.fr,Emma,MARQUES ALEXANDRE,École Collège du Sacré-Cœur,48.725107,2.418142,SPANISH,QUATRIEME
