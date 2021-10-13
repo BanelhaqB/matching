@@ -225,7 +225,7 @@ const scrapData = async (url, prenom, nom, tel, id) => {
         lat: $(
           '#profile-map > div > div > div > section > div.col-md-10.main.col-xs-16 > div > google-map'
         ).attr(':latitude'),
-        lgt: $(
+        lng: $(
           '#profile-map > div > div > div > section > div.col-md-10.main.col-xs-16 > div > google-map'
         ).attr(':longitude'),
         ville: $('#breadcrumb > li:nth-child(3) > a')

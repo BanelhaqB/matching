@@ -18,7 +18,12 @@ const filterTeachers = (s, teachers, distLimit, yoopies) => {
     teachersNear = _.without(teachersNear, undefined);
   } else {
     teachersNear = _.map(teachers, function (t) {
-      if (t.dist <= distLimit && t.subjects.includes(s.subject)) return t;
+      if (
+        t.dist <= distLimit &&
+        t.subjects.includes(s.subject) &&
+        t.tel !== 'Téléphone cahché'
+      )
+        return t;
     });
 
     teachersNear = _.without(teachersNear, undefined);
@@ -76,11 +81,11 @@ const teachersNear = async (s, teachersType, distLimit) => {
   }
 
   teachers.map((t, idx) => {
-    console.log(t);
-    console.log(s.lat, s.lng, t.lat * 1, t.lng * 1);
+    // console.log(t);
+    // console.log(s.lat, s.lng, t.lat * 1, t.lng * 1);
     t.dist = utils.distanceBetween(s.lat, s.lng, t.lat * 1, t.lng * 1);
   });
-  console.log(s);
+  // console.log(s);
   teachers.map(async (t, idx) => {
     // console.log({ slug: t.slug });
     // // courses = _.filter(courses, { slug: t.slug });
@@ -106,7 +111,7 @@ const teachersNear = async (s, teachersType, distLimit) => {
 
 exports.addTeacherNear = async (s, teachersType, distLimit) => {
   const teachers = await teachersNear(s, teachersType, distLimit);
-  // console.log('s', s);
+  // console.log(teachers[0]);
   const data = {};
 
   if (teachersType !== 'yoopies') {
@@ -171,51 +176,48 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
       (t) => `${t.slug},${t.firstname},${t.email}`
     ).join(';')}`;
   } else {
-    data[`liste-${teachersType}`] = `${teachers.length} profs: ${_.orderBy(
-      teachers,
-      ['dist']
-    )
+    data[`liste`] = `${teachers.length} profs: ${_.orderBy(teachers, ['dist'])
       .map((t) => `${t.id} - ${Math.floor(t.dist * 100) / 100}km`)
       .join(' | ')}`;
-    data[`liste-${teachersType}-1-slug`] = _.orderBy(teachers, ['dist'])[0]
+    data[`slug-1`] = _.orderBy(teachers, ['dist'])[0]
       ? _.orderBy(teachers, ['dist'])[0].id
       : '--';
-    data[`liste-${teachersType}-1-firstname`] = _.orderBy(teachers, ['dist'])[0]
-      ? _.orderBy(teachers, ['dist'])[0].firstname
+    data[`firstname-1`] = _.orderBy(teachers, ['dist'])[0]
+      ? _.orderBy(teachers, ['dist'])[0].prenom
       : '--';
-    data[`liste-${teachersType}-1-phone`] = _.orderBy(teachers, ['dist'])[0]
-      ? _.orderBy(teachers, ['dist'])[0].phone_number
+    data[`phone-1`] = _.orderBy(teachers, ['dist'])[0]
+      ? _.orderBy(teachers, ['dist'])[0].tel
       : '--';
-    data[`liste-${teachersType}-1-url`] = _.orderBy(teachers, ['dist'])[0]
+    data[`url-1`] = _.orderBy(teachers, ['dist'])[0]
       ? _.orderBy(teachers, ['dist'])[0].url
       : '--';
-    data[`liste-${teachersType}-2-slug`] = _.orderBy(teachers, ['dist'])[1]
+    data[`slug-2`] = _.orderBy(teachers, ['dist'])[1]
       ? _.orderBy(teachers, ['dist'])[1].id
       : '--';
-    data[`liste-${teachersType}-2-firstname`] = _.orderBy(teachers, ['dist'])[1]
-      ? _.orderBy(teachers, ['dist'])[1].firstname
+    data[`firstname-2`] = _.orderBy(teachers, ['dist'])[1]
+      ? _.orderBy(teachers, ['dist'])[1].prenom
       : '--';
-    data[`liste-${teachersType}-2-phone`] = _.orderBy(teachers, ['dist'])[1]
-      ? _.orderBy(teachers, ['dist'])[1].phone_number
+    data[`phone-2`] = _.orderBy(teachers, ['dist'])[1]
+      ? _.orderBy(teachers, ['dist'])[1].tel
       : '--';
-    data[`liste-${teachersType}-2-url`] = _.orderBy(teachers, ['dist'])[1]
+    data[`url-2`] = _.orderBy(teachers, ['dist'])[1]
       ? _.orderBy(teachers, ['dist'])[1].url
       : '--';
-    data[`liste-${teachersType}-3-slug`] = _.orderBy(teachers, ['dist'])[2]
+    data[`slug-3`] = _.orderBy(teachers, ['dist'])[2]
       ? _.orderBy(teachers, ['dist'])[2].id
       : '--';
-    data[`liste-${teachersType}-3-firstname`] = _.orderBy(teachers, ['dist'])[2]
-      ? _.orderBy(teachers, ['dist'])[2].firstname
+    data[`firstname-3`] = _.orderBy(teachers, ['dist'])[2]
+      ? _.orderBy(teachers, ['dist'])[2].prenom
       : '--';
-    data[`liste-${teachersType}-3-phone`] = _.orderBy(teachers, ['dist'])[2]
-      ? _.orderBy(teachers, ['dist'])[2].phone_number
+    data[`phone-3`] = _.orderBy(teachers, ['dist'])[2]
+      ? _.orderBy(teachers, ['dist'])[2].tel
       : '--';
-    data[`liste-${teachersType}-3-url`] = _.orderBy(teachers, ['dist'])[2]
+    data[`url-3`] = _.orderBy(teachers, ['dist'])[2]
       ? _.orderBy(teachers, ['dist'])[2].url
       : '--';
     data[`allprofs`] = `${_.map(
       _.orderBy(teachers, ['dist']),
-      (t) => `${t.id},${t.firstname},${t.phone_number}`
+      (t) => `${t.id},${t.prenom},${t.tel}`
     ).join(';')}`;
   }
 
