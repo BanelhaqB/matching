@@ -367,4 +367,4 @@ exports.update = async (plateforme, action) => {
   }
 };
 
-update('yoopies', process.env.ACTION);
+// update('yoopies', process.env.ACTION);

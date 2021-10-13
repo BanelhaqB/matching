@@ -131,7 +131,7 @@ exports.getAllKPI = async (req, res, next) => {
   console.log(req.params.teacherType);
 
   let data = -1;
-  const kpis = [];
+  let kpis = [];
   const allFiles = fs_sync.readdirSync(
     `data/${req.params.teacherType}/data/kpi/`
   );
@@ -141,13 +141,25 @@ exports.getAllKPI = async (req, res, next) => {
       data = JSON.parse(
         await fs.readFile(`data/${req.params.teacherType}/data/kpi/${file}`)
       );
+      // console.log(data, data.date);
+      data.date = `${data.date.split(':')[0]}/${data.date.split(':')[1]}/${
+        data.date.split(':')[2]
+      }`;
+
+      data.dateISO = new Date(
+        `${data.date.split('/')[1] * 1 - 1}/${
+          data.date.split('/')[0] * 1 + 1
+        }/${data.date.split('/')[2]}`
+      );
+
       kpis.push(data);
     } catch (error) {
       console.log(error);
     }
   }
 
-  console.log(kpis);
+  kpis = _.orderBy(kpis, 'dateISO', 'desc');
+  // console.log(kpis);
   res.status(200).json({
     status: 'success',
     data: kpis,
