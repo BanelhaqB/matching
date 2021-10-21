@@ -242,7 +242,7 @@ exports.listTeachers = async (s, teachersType, distLimit) => {
       };
     });
   } else {
-    console.log(teachersType);
+    // console.log(teachersType);
     data = teachers.map(function (t) {
       return {
         slug: t.id,
@@ -254,10 +254,11 @@ exports.listTeachers = async (s, teachersType, distLimit) => {
         url: t.url,
       };
     });
+
     // console.log(teachers, data);
   }
 
-  return data;
+  return _.orderBy(data, ['dist'], ['asc']);
 };
 
 const isMatchable = (s, g, teachers) => {
