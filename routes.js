@@ -10,6 +10,7 @@ router.get('/newKPI/:teacherType', controller.getNewKPI);
 router.get('/allKPI/:teacherType', controller.getAllKPI);
 router.get('/allNewFiles/:teacherType', controller.getAllNewFiles);
 
+router.post('/liste/:teacherType/:distMax', controller.listTeachers);
 router.post('/:teacherType/:distMax', controller.teachersNear);
 // router.patch('/:plateforme', controller.update);
 

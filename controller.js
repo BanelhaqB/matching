@@ -8,7 +8,6 @@ const fs = require('fs').promises;
 // console.log(matching.addTeacherNear);
 
 exports.teachersNear = async (req, res, next) => {
-  console.log(req.params.teacherType);
   const data = await matching.addTeacherNear(
     req.body,
     req.params.teacherType,
@@ -16,7 +15,21 @@ exports.teachersNear = async (req, res, next) => {
   );
 
   console.log(data);
-  console.log(req.body);
+
+  res.status(200).json({
+    status: 'success',
+    data,
+  });
+};
+
+exports.listTeachers = async (req, res, next) => {
+  const data = await matching.listTeachers(
+    req.body,
+    req.params.teacherType,
+    req.params.distMax * 1
+  );
+
+  console.log(data);
 
   res.status(200).json({
     status: 'success',

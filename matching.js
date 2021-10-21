@@ -224,6 +224,42 @@ exports.addTeacherNear = async (s, teachersType, distLimit) => {
   return data;
 };
 
+exports.listTeachers = async (s, teachersType, distLimit) => {
+  const teachers = await teachersNear(s, teachersType, distLimit);
+  // console.log(teachers);
+  let data = {};
+
+  if (teachersType !== 'yoopies') {
+    data = teachers.map(function (t) {
+      return {
+        slug: t.slug,
+        prenom: t.firstname,
+        nom: t.lastname,
+        dist: Math.floor(t.dist * 100) / 100,
+        tel: t.phone_number,
+        email: t.email,
+        url: `https://meetinclass.com/${t.slug}`,
+      };
+    });
+  } else {
+    console.log(teachersType);
+    data = teachers.map(function (t) {
+      return {
+        slug: t.id,
+        prenom: t.prenom,
+        nom: t.nom,
+        dist: Math.floor(t.dist * 100) / 100,
+        tel: t.tel,
+        email: '',
+        url: t.url,
+      };
+    });
+    // console.log(teachers, data);
+  }
+
+  return data;
+};
+
 const isMatchable = (s, g, teachers) => {
   let teacherOk = false;
   teachers.forEach((t) => {
