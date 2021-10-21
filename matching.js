@@ -243,6 +243,7 @@ exports.listTeachers = async (s, teachersType, distLimit) => {
         status: t.status,
         presentiel: t.locations.includes('TEACHER_S_PLACE'),
         dateInscritpion: t.registered_at,
+        quiz: t.Quiz,
       };
     });
   } else {
@@ -260,6 +261,7 @@ exports.listTeachers = async (s, teachersType, distLimit) => {
         status: '',
         presentiel: '',
         dateInscritpion: '',
+        quiz: '',
       };
     });
 
