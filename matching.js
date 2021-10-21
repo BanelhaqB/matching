@@ -239,6 +239,10 @@ exports.listTeachers = async (s, teachersType, distLimit) => {
         tel: t.phone_number,
         email: t.email,
         url: `https://meetinclass.com/${t.slug}`,
+        Certification: t.Certification,
+        status: t.status,
+        presentiel: t.locations.includes('TEACHER_S_PLACE'),
+        dateInscritpion: t.registered_at,
       };
     });
   } else {
@@ -252,6 +256,10 @@ exports.listTeachers = async (s, teachersType, distLimit) => {
         tel: t.tel,
         email: '',
         url: t.url,
+        Certification: '',
+        status: '',
+        presentiel: '',
+        dateInscritpion: '',
       };
     });
 
