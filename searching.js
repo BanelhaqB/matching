@@ -107,7 +107,7 @@ exports.raw = async (student, teachersType, distMax) => {
   if (teachers[1]) {
     data['prof-2-slug'] =
       teachersType === 'yoopies' ? teachers[1].id : teachers[1].slug;
-    data['prof-1-tel'] =
+    data['prof-2-tel'] =
       teachersType === 'yoopies' ? teachers[1].tel : teachers[1].phone_number;
     data['prof-2-dist'] = Math.floor(teachers[1].dist * 100) / 100;
     data['prof-2-presentiel'] =
@@ -122,7 +122,7 @@ exports.raw = async (student, teachersType, distMax) => {
   if (teachers[2]) {
     data['prof-3-slug'] =
       teachersType === 'yoopies' ? teachers[2].id : teachers[2].slug;
-    data['prof-1-tel'] =
+    data['prof-3-tel'] =
       teachersType === 'yoopies' ? teachers[2].tel : teachers[2].phone_number;
     data['prof-3-dist'] = Math.floor(teachers[2].dist * 100) / 100;
     data['prof-3-presentiel'] =
