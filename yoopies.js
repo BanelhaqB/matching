@@ -109,7 +109,10 @@ const getNew = async () => {
 
   const urls = await utils.readCSV(`data/yoopies/urls/urls-yoopies.csv`, ',');
   let oldURLS = await utils.readCSV(`data/yoopies/data-yoopies.csv`, ',');
-  let errorURLS = await utils.readCSV(`data/yoopies/errors-yoopies.csv`, ',');
+  let errorURLS = await utils.readCSV(
+    `data/yoopies/errors/errors-yoopies.csv`,
+    ','
+  );
 
   oldURLS = oldURLS.map((e) => {
     return { url: e.url, id: e.id };
