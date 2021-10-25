@@ -88,39 +88,52 @@ exports.raw = async (student, teachersType, distMax) => {
     nbTeachers: teachers.length,
   };
 
-  data['prof-1-slug'] =
-    teachersType === 'yoopies' ? teachers[0].id : teachers[0].slug;
-  data['prof-1-dist'] = Math.floor(teachers[0].dist * 100) / 100;
-  data['prof-1-presentiel'] =
-    teachersType === 'yoopies'
-      ? ''
-      : teachers[0].locations.includes('TEACHER_S_PLACE');
-  data['prof-1-url'] =
-    teachersType === 'yoopies'
-      ? teachers[0].url
-      : `https://meetinclass.com/${teachers[0].slug}`;
-  data['prof-2-slug'] =
-    teachersType === 'yoopies' ? teachers[1].id : teachers[1].slug;
-  data['prof-2-dist'] = Math.floor(teachers[1].dist * 100) / 100;
-  data['prof-2-presentiel'] =
-    teachersType === 'yoopies'
-      ? ''
-      : teachers[1].locations.includes('TEACHER_S_PLACE');
-  data['prof-2-url'] =
-    teachersType === 'yoopies'
-      ? teachers[1].url
-      : `https://meetinclass.com/${teachers[1].slug}`;
-  data['prof-3-slug'] =
-    teachersType === 'yoopies' ? teachers[2].id : teachers[2].slug;
-  data['prof-3-dist'] = Math.floor(teachers[2].dist * 100) / 100;
-  data['prof-3-presentiel'] =
-    teachersType === 'yoopies'
-      ? ''
-      : teachers[2].locations.includes('TEACHER_S_PLACE');
-  data['prof-3-url'] =
-    teachersType === 'yoopies'
-      ? teachers[2].url
-      : `https://meetinclass.com/${teachers[2].slug}`;
+  // console.log(teachers);
+  if (teachers[0]) {
+    data['prof-1-slug'] =
+      teachersType === 'yoopies' ? teachers[0].id : teachers[0].slug;
+    data['prof-1-tel'] =
+      teachersType === 'yoopies' ? teachers[0].tel : teachers[0].phone_number;
+    data['prof-1-dist'] = Math.floor(teachers[0].dist * 100) / 100;
+    data['prof-1-presentiel'] =
+      teachersType === 'yoopies'
+        ? ''
+        : teachers[0].locations.includes('TEACHER_S_PLACE');
+    data['prof-1-url'] =
+      teachersType === 'yoopies'
+        ? teachers[0].url
+        : `https://meetinclass.com/${teachers[0].slug}`;
+  }
+  if (teachers[1]) {
+    data['prof-2-slug'] =
+      teachersType === 'yoopies' ? teachers[1].id : teachers[1].slug;
+    data['prof-1-tel'] =
+      teachersType === 'yoopies' ? teachers[1].tel : teachers[1].phone_number;
+    data['prof-2-dist'] = Math.floor(teachers[1].dist * 100) / 100;
+    data['prof-2-presentiel'] =
+      teachersType === 'yoopies'
+        ? ''
+        : teachers[1].locations.includes('TEACHER_S_PLACE');
+    data['prof-2-url'] =
+      teachersType === 'yoopies'
+        ? teachers[1].url
+        : `https://meetinclass.com/${teachers[1].slug}`;
+  }
+  if (teachers[2]) {
+    data['prof-3-slug'] =
+      teachersType === 'yoopies' ? teachers[2].id : teachers[2].slug;
+    data['prof-1-tel'] =
+      teachersType === 'yoopies' ? teachers[2].tel : teachers[2].phone_number;
+    data['prof-3-dist'] = Math.floor(teachers[2].dist * 100) / 100;
+    data['prof-3-presentiel'] =
+      teachersType === 'yoopies'
+        ? ''
+        : teachers[2].locations.includes('TEACHER_S_PLACE');
+    data['prof-3-url'] =
+      teachersType === 'yoopies'
+        ? teachers[2].url
+        : `https://meetinclass.com/${teachers[2].slug}`;
+  }
   data['all'] = `${_.map(
     teachers,
     (t) =>
