@@ -1,8 +1,8 @@
 const utils = require('./utils/utils');
-const scraping = require('./scraping');
+const voscours = require('./voscours');
 
 const update = async (a) => {
-  await scraping.update('yoopies', a);
+  await voscours.update(a);
 };
 
 update(process.env.A);

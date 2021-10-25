@@ -278,7 +278,7 @@ const getData = async (url) => {
     url.url,
     dataPhone.firstName,
     dataPhone.lastName,
-    dataPhone.phoneE164 ? dataPhone.phoneE164 : 'Téléphone cahché',
+    dataPhone.phoneE164 ? dataPhone.phoneE164 : 'Téléphone caché',
     url.id
   );
 
@@ -310,13 +310,13 @@ const getKPIs = async (plateforme) => {
   );
   const newPhoneNumbers = _.filter(
     newTeachers,
-    (e) => e.tel !== 'Téléphone cahché'
+    (e) => e.tel !== 'Téléphone caché'
   );
   const kpi = {
     date: utils.getDayToday(),
     profs: newTeachers.length,
     phones:
-      newTeachers.length - _.countBy(newTeachers, 'tel')['Téléphone cahché'],
+      newTeachers.length - _.countBy(newTeachers, 'tel')['Téléphone caché'],
     science: _.countBy(newPhoneNumbers, 'science')['1'] * 1,
     langues: _.countBy(newPhoneNumbers, 'langues')['1'] * 1,
     info: _.countBy(newPhoneNumbers, 'info')['1'] * 1,
@@ -357,10 +357,18 @@ const update = async (plateforme) => {
 exports.update = async (plateforme, action) => {
   switch (action) {
     case 'sitemap':
-      await scrapXML(plateforme);
+      await getAllUrls(plateforme);
+      await cleanUrls(plateforme);
+      console.log(`${plateforme} : All stiemaps are clean 🎉`);
       break;
     case 'data':
-      await update(plateforme);
+      console.log(`${plateforme} : counting new acounts 🛠`);
+      await getNew(plateforme);
+      await scrapAllNew(plateforme);
+      console.log(`${plateforme} : All new accounts are scraped 🎉`);
+      const kpi = await getKPIs();
+      console.log(kpi);
+      console.log(`${plateforme} : ${kpi.phones} new phone numbers scraped 🎉`);
       break;
     default:
       break;

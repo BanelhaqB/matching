@@ -3,15 +3,17 @@ const controller = require('./controller');
 
 const router = express.Router();
 
-router.get('/allData/:teacherType', controller.getAllData);
-router.get('/allContact/:teacherType', controller.getAllContact);
-router.get('/newContact/:teacherType', controller.getNewContact);
-router.get('/newKPI/:teacherType', controller.getNewKPI);
-router.get('/allKPI/:teacherType', controller.getAllKPI);
-router.get('/allNewFiles/:teacherType', controller.getAllNewFiles);
+router.get('/allData', controller.getAllData);
+router.get('/yoopies/allContact', controller.getAllContactYoopies);
+router.get('/yoopies/newContact', controller.getAllContactYoopies);
+router.get('/voscours/allContact', controller.getAllContactVoscours);
+router.get('/voscours/newContact', controller.getNewContactVoscours);
+router.get('/newKPI', controller.getNewKPI);
+router.get('/allKPI', controller.getAllKPI);
+router.get('/allNewFiles', controller.getAllNewFiles);
 
-router.post('/liste/:teacherType/:distMax', controller.listTeachers);
-router.post('/:teacherType/:distMax', controller.teachersNear);
+router.post('/search/list/:teacherType/:distMax', controller.list);
+router.post('/search/raw/:teacherType/:distMax', controller.raw);
 // router.patch('/:plateforme', controller.update);
 
 module.exports = router;

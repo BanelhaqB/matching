@@ -1,106 +1,8 @@
 const utils = require('./utils/utils');
-const scraping = require('./scraping');
-const _ = require('lodash');
+const yoopies = require('./yoopies');
+const voscours = require('./voscours');
+const dataclips = require('./dataclips');
 const Cron = require('cron').CronJob;
-
-// const appCron = async (type, startMin) => {
-//   var dataclipsJob = new Cron(
-//     `${startMin} * * * *`,
-//     async () => {
-//       console.log('-----------------------');
-//       console.log('prospects...');
-//       await utils.dataclip('prospects');
-//       console.log('prospects OK!');
-
-//       console.log('teachers...');
-//       await utils.dataclip('teachers');
-//       console.log('teachers OK!');
-
-//       console.log('cours...');
-//       await utils.dataclip('cours');
-//       console.log('cours OK!');
-
-//       console.log('waiting...');
-//       await utils.dataclip('waiting');
-//       console.log('waiting OK!');
-//       console.log('-----------------------');
-//       console.log("-- Everthing's OK 👌 --");
-//       const date = new Date()
-//         .toISOString()
-//         .replace('T', ' ')
-//         .replace('.', ' |');
-//       console.log(date);
-//       console.log('-----------------------');
-//     },
-//     null,
-//     true,
-//     'Europe/Paris'
-//   );
-
-//   var XMLJob = new Cron(
-//     `${startMin} 20 * * 2`,
-//     async () => {
-//       console.log('-----------------------');
-//       await scraping.update('yoopies', 'sitemap');
-//       console.log('-----------------------');
-//       console.log('-- Sitemaps update OK 👌 --');
-
-//       const date = new Date()
-//         .toISOString()
-//         .replace('T', ' ')
-//         .replace('.', ' |');
-//       console.log(date);
-//       console.log('-----------------------');
-//     },
-//     null,
-//     true,
-//     'Europe/Paris'
-//   );
-
-//   var updateYoopiesJob = new Cron(
-//     `${startMin} 10 * * 1`,
-//     async () => {
-//       console.log('-----------------------');
-//       await scraping.update('yoopies', 'data');
-//       console.log('-----------------------');
-//       console.log('-- New Data scraped 🎉 --');
-
-//       const date = new Date()
-//         .toISOString()
-//         .replace('T', ' ')
-//         .replace('.', ' |');
-//       console.log(date);
-//       console.log('-----------------------');
-//     },
-//     null,
-//     true,
-//     'Europe/Paris'
-//   );
-
-//   switch (type) {
-//     case 'dataclips':
-//       dataclipsJob.start();
-//       console.log(
-//         `Cron : ${process.env.CRON} - ON - Running every hours at ${process.env.START}min`
-//       );
-//       break;
-//     case 'sitemap':
-//       XMLJob.start();
-//       console.log(
-//         `Cron : ${process.env.CRON} - ON - Running every hours at ${process.env.START}min`
-//       );
-//       break;
-//     case 'data':
-//       updateYoopiesJob.start();
-//       console.log(
-//         `Cron : ${process.env.CRON} - ON - Running every hours at ${process.env.START}min`
-//       );
-//       break;
-//     default:
-//       console.log('Aucun cron pour cette fonctionnalité pour le moment');
-//       break;
-//   }
-// };
 
 const appCron = async (type, startMin) => {
   switch (type) {
@@ -110,19 +12,19 @@ const appCron = async (type, startMin) => {
         async () => {
           console.log('-----------------------');
           console.log('prospects...');
-          await utils.dataclip('prospects');
+          await dataclips.getDataclip('prospects');
           console.log('prospects OK!');
 
           console.log('teachers...');
-          await utils.dataclip('teachers');
+          await dataclips.getDataclip('teachers');
           console.log('teachers OK!');
 
           console.log('cours...');
-          await utils.dataclip('cours');
+          await dataclips.getDataclip('cours');
           console.log('cours OK!');
 
           console.log('waiting...');
-          await utils.dataclip('waiting');
+          await dataclips.getDataclip('waiting');
           console.log('waiting OK!');
           console.log('-----------------------');
           console.log("-- Everthing's OK 👌 --");
@@ -142,12 +44,12 @@ const appCron = async (type, startMin) => {
         `Cron : ${process.env.CRON} - ON - Running every hours at ${process.env.START}min`
       );
       break;
-    case 'sitemap':
+    case 'sitemap-yoopies':
       new Cron(
         `${startMin} 2 * * 1`,
         async () => {
           console.log('-----------------------');
-          await scraping.update('yoopies', 'sitemap');
+          await yoopies.update('sitemap');
           console.log('-----------------------');
           console.log('-- Sitemaps update OK 👌 --');
 
@@ -155,6 +57,7 @@ const appCron = async (type, startMin) => {
             .toISOString()
             .replace('T', ' ')
             .replace('.', ' |');
+
           console.log(date);
           console.log('-----------------------');
         },
@@ -165,12 +68,12 @@ const appCron = async (type, startMin) => {
       console.log(`Cron : ${process.env.CRON} - ON ✅`);
       console.log(`Running every Monday at : 2h${process.env.START}min`);
       break;
-    case 'data':
+    case 'data-yoopies':
       new Cron(
         `${startMin} 3 * * 1`,
         async () => {
           console.log('-----------------------');
-          await scraping.update('yoopies', 'data');
+          await yoopies.update('data');
           console.log('-----------------------');
           console.log('-- New Data scraped 🎉 --');
 
@@ -178,6 +81,7 @@ const appCron = async (type, startMin) => {
             .toISOString()
             .replace('T', ' ')
             .replace('.', ' |');
+
           console.log(date);
           console.log('-----------------------');
         },
@@ -188,8 +92,80 @@ const appCron = async (type, startMin) => {
       console.log(`Cron : ${process.env.CRON} - ON ✅`);
       console.log(`Running every Monday at : 10h${process.env.START}min`);
       break;
+    case 'sitemap-voscours':
+      new Cron(
+        `${startMin} 4 * * 1`,
+        async () => {
+          console.log('-----------------------');
+          await voscours.update('sitemap');
+          console.log('-----------------------');
+          console.log('-- Sitemaps update OK 👌 --');
+
+          const date = new Date()
+            .toISOString()
+            .replace('T', ' ')
+            .replace('.', ' |');
+
+          console.log(date);
+          console.log('-----------------------');
+        },
+        null,
+        true,
+        'Europe/Paris'
+      );
+      console.log(`Cron : ${process.env.CRON} - ON ✅`);
+      console.log(`Running every Monday at : 4h${process.env.START}min`);
+      break;
+    case 'contact-voscours':
+      new Cron(
+        `${startMin} 7 * * 1`,
+        async () => {
+          console.log('-----------------------');
+          await voscours.update('contact');
+          console.log('-----------------------');
+          console.log('-- New profils contacted 🎉 --');
+
+          const date = new Date()
+            .toISOString()
+            .replace('T', ' ')
+            .replace('.', ' |');
+
+          console.log(date);
+          console.log('-----------------------');
+        },
+        null,
+        true,
+        'Europe/Paris'
+      );
+      console.log(`Cron : ${process.env.CRON} - ON ✅`);
+      console.log(`Running every Monday at : 7h${process.env.START}min`);
+      break;
+    case 'messagerie-voscours':
+      new Cron(
+        `${startMin} 3 * * 2`,
+        async () => {
+          console.log('-----------------------');
+          await voscours.update('messagerie');
+          console.log('-----------------------');
+          console.log('-- Emails scraped 🎉 --');
+
+          const date = new Date()
+            .toISOString()
+            .replace('T', ' ')
+            .replace('.', ' |');
+
+          console.log(date);
+          console.log('-----------------------');
+        },
+        null,
+        true,
+        'Europe/Paris'
+      );
+      console.log(`Cron : ${process.env.CRON} - ON ✅`);
+      console.log(`Running every Tuesday at : 3h${process.env.START}min`);
+      break;
     default:
-      console.log('Aucun cron pour cette fonctionnalité pour le moment');
+      console.log('Aucun cron pour cette fonctionnalité');
       break;
   }
 };

@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 // 3- ROUTES *****************************************************
 // app.use('/', viewRouter);
 
-app.use('/api/v1/matching', router);
+app.use('/api/v1', router);
 
 // app.use(globalErrorHandler);
 

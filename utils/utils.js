@@ -39,7 +39,7 @@ exports.readCSV = async (path, separator) => {
   });
 };
 
-exports.scrapTemplate = async (url, fct, resolve, config) => {
+exports.scrapTemplate = async (url, fct, resolve, reject, config) => {
   scrap.get({
     url,
     referer: url,
@@ -47,10 +47,10 @@ exports.scrapTemplate = async (url, fct, resolve, config) => {
     onSuccess: async ($, response, html, config) => {
       if (response.statusCode !== 200) {
         console.error(
-          `loading of ${config.url} failed, response code= ${response.statusCode} ${response}`
+          `loading of ${config.url} failed, response code= ${response.statusCode}`
         );
-        console.log(response.error, response.stack);
-        resolve();
+        // console.log(response.error, response.stack);
+        reject(response.statusCode);
         return;
       }
 
@@ -81,15 +81,23 @@ exports.sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-exports.converstYoopiesSubject = (s, l, i, m, hh) => {
-  const val = [];
-  if (s === 1) val.push('MATHS,PHYSICS_CHEMISTRY,BIOLOGY,SI');
-  if (l === 1) val.push('LITTERATURE,ENGLISH');
-  if (hh === 1) val.push('HOMEWORK_HELP');
+exports.getDayToday = (full) => {
+  const dateObj = new Date();
+  const month = dateObj.getUTCMonth() + 1; //months from 1-12
+  const day = dateObj.getUTCDate();
+  const year = dateObj.getUTCFullYear();
 
-  // console.log(val.join(','));
-  return `[${val.join(',')}]`;
+  const hour = dateObj.getHours();
+  const min = dateObj.getMinutes();
+  const sec = dateObj.getSeconds();
+
+  const hms = full ? `-${hour}:${min}:${sec}` : '';
+
+  return `${day}:${month}:${year}${hms}`;
 };
+// -----------------------------------------------------------------------
+// --------------------------   MEETINCLASS   ----------------------------
+// -----------------------------------------------------------------------
 
 exports.convertSubject = (sub) => {
   let val = '';
@@ -336,50 +344,6 @@ exports.distanceBetween = (lat1, lng1, lat2, lng2) => {
     );
   // console.log(dist);
   return dist;
-};
-
-exports.dataclip = async (type) => {
-  return new Promise(async (resolve) => {
-    const fct = async ($, response, html, config, dataArr) => {
-      await fs.writeFile(`data/dataclips/dataclip-${type}.csv`, html, (err) => {
-        if (err) throw err;
-      });
-      // console.log(typeof html);
-      resolve();
-    };
-    let idDataclip = '';
-    switch (type) {
-      case 'teachers':
-        idDataclip = 'uxipvjjzpyuvvrguqnvmhvigmjpm';
-        break;
-      case 'cours':
-        idDataclip = 'vumzpfstskwebkddnssfscydgwyj';
-        break;
-      case 'waiting':
-        idDataclip = 'clsfedrroholiywgbvmjooabwjtw';
-        break;
-      case 'prospects':
-        idDataclip = 'kqamppsccburqtvgllvyorprfukt';
-        break;
-      default:
-        break;
-    }
-
-    await this.scrapTemplate(
-      `https://data.heroku.com/dataclips/${idDataclip}.csv`,
-      fct,
-      resolve
-    );
-  });
-};
-
-exports.getDayToday = () => {
-  const dateObj = new Date();
-  const month = dateObj.getUTCMonth() + 1; //months from 1-12
-  const day = dateObj.getUTCDate();
-  const year = dateObj.getUTCFullYear();
-
-  return `${day}:${month}:${year}`;
 };
 
 // -----------------------------------------------------------------------

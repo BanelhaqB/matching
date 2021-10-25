@@ -21,7 +21,7 @@ const filterTeachers = (s, teachers, distLimit, yoopies) => {
       if (
         t.dist <= distLimit &&
         t.subjects.includes(s.subject) &&
-        t.tel !== 'Téléphone cahché'
+        t.tel !== 'Téléphone caché'
       )
         return t;
     });
