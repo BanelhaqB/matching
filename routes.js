@@ -10,7 +10,7 @@ router.get('/voscours/allContact', controller.getAllContactVoscours);
 router.get('/voscours/newContact', controller.getNewContactVoscours);
 router.get('/newKPI', controller.getNewKPI);
 router.get('/allKPI', controller.getAllKPI);
-router.get('/allNewFiles', controller.getAllNewFiles);
+router.get('/allNewFiles/:plateforme', controller.getAllNewFiles);
 
 router.post('/search/list/:teacherType/:distMax', controller.list);
 router.post('/search/raw/:teacherType/:distMax', controller.raw);
