@@ -175,6 +175,115 @@ exports.convertDay = (day) => {
   return val;
 };
 
+exports.convertDisposTeaacher = (availablities) => {
+  let val = '';
+  const dispos = JSON.parse(availablities);
+
+  for (let k = 0; k < dispos.length; k++) {
+    if (
+      dispos[k].start_time.split(':')[0] * 1 < 12 &&
+      dispos[k].end_time.split(':')[0] * 1 < 13
+    )
+      val += `${dispos[k].day.substr(0, 3)}_M, `;
+    if (
+      dispos[k].start_time.split(':')[0] * 1 < 12 &&
+      dispos[k].end_time.split(':')[0] * 1 <= 16
+    )
+      val += `${dispos[k].day.substr(0, 3)}_M, ${dispos[k].day.substr(
+        0,
+        3
+      )}_A, `;
+    if (
+      dispos[k].start_time.split(':')[0] * 1 < 12 &&
+      dispos[k].end_time.split(':')[0] * 1 > 16
+    )
+      val += `${dispos[k].day.substr(0, 3)}_M, ${dispos[k].day.substr(
+        0,
+        3
+      )}_A, ${dispos[k].day.substr(0, 3)}_E, `;
+    if (
+      dispos[k].start_time.split(':')[0] * 1 >= 12 &&
+      dispos[k].end_time.split(':')[0] * 1 <= 16
+    )
+      val += `${dispos[k].day.substr(0, 3)}_A, `;
+    if (
+      dispos[k].start_time.split(':')[0] * 1 >= 12 &&
+      dispos[k].start_time.split(':')[0] * 1 < 16 &&
+      dispos[k].end_time.split(':')[0] * 1 > 16
+    )
+      val += `${dispos[k].day.substr(0, 3)}_A, ${dispos[k].day.substr(
+        0,
+        3
+      )}_E, `;
+
+    if (dispos[k].start_time.split(':')[0] * 1 >= 16)
+      val += `${dispos[k].day.substr(0, 3)}_E, `;
+  }
+
+  console.log(dispos);
+  console.log(val);
+  return val;
+};
+
+exports.convertDayStudent = (day) => {
+  let val = day
+    .replace('Les lundis soir', 'MON_E')
+    .replace('Les mardis soir', 'TUE_E')
+    .replace('Les mercredis après-midi', 'WED_A')
+    .replace('Les mercredis soir', 'WED_E')
+    .replace('Les jeudis soir', 'THU_E')
+    .replace('Les vendredis soir', 'FRI_E')
+    .replace('Les samedis matin', 'SAT_M')
+    .replace('Les samedis après-midi', 'SAT_A')
+    .replace('Les samedis soir', 'SAT_E')
+    .replace('Les dimanches matin', 'SUN_M')
+    .replace('Les dimanches après-midi', 'SUN_A')
+    .replace('Les dimanches soir', 'SUN_E');
+
+  // switch (day) {
+  //   case 'Les lundis soir':
+  //     val = 'MON_E';
+  //     break;
+  //   case 'Les mardis soir':
+  //     val = 'TUE_E';
+  //     break;
+  //   case 'Les mercredis après-midi':
+  //     val = 'WED_A';
+  //     break;
+  //   case 'Les mercredis soir':
+  //     val = 'WED_E';
+  //     break;
+  //   case 'Les jeudis soir':
+  //     val = 'THU_E';
+  //     break;
+  //   case 'Les  soir':
+  //     val = 'FRI_E';
+  //     break;
+  //   case 'Les samedis matin':
+  //     val = 'SAT_M';
+  //     break;
+  //   case 'Les samedis après-midi':
+  //     val = 'SAT_A';
+  //     break;
+  //   case 'Les samedis soir':
+  //     val = 'SAT_E';
+  //     break;
+  //   case 'Les dimanches matin':
+  //     val = 'SUN_M';
+  //     break;
+  //   case 'Les dimanches après-midi':
+  //     val = 'SUN_A';
+  //     break;
+  //   case 'Les dimanches soir':
+  //     val = 'SUN_E';
+  //     break;
+  //   default:
+  //     break;
+  // }
+
+  return val;
+};
+
 exports.convertdispoNumber = (dispo) => {
   let val = '';
   if (dispo.includes('undi')) {
@@ -255,6 +364,52 @@ exports.convertLevel = (lvl) => {
       break;
     case 'TERMINALE_L':
       val = '2-1-T';
+      break;
+    default:
+      break;
+  }
+
+  return val;
+};
+
+exports.convertLevelStudent = (lvl) => {
+  let val = '';
+  switch (lvl) {
+    case 'CP':
+      val = 'HH';
+      break;
+    case 'CE1':
+      val = 'HH';
+      break;
+    case 'CE2':
+      val = 'HH';
+      break;
+    case 'CM1':
+      val = 'HH';
+      break;
+    case 'CM2':
+      val = 'HH';
+      break;
+    case '6ème':
+      val = 'SIXIEME';
+      break;
+    case '5ème':
+      val = 'CINQUIEME';
+      break;
+    case '4ème':
+      val = 'QUATRIEME';
+      break;
+    case '3ème':
+      val = 'TROISIEME';
+      break;
+    case 'Seconde':
+      val = 'SECONDE';
+      break;
+    case 'Première':
+      val = 'PREMIERE';
+      break;
+    case 'Terminale':
+      val = 'TERMINALE';
       break;
     default:
       break;
