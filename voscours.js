@@ -307,32 +307,6 @@ const sendMsg = (referer) => {
             } else {
               console.log(`Sending message to ${name} 🛠`);
 
-              // await fetch(
-              //   'https://www.voscours.fr/contact-user.aspx?an=2939112',
-              //   {
-              //     credentials: 'include',
-              //     headers: {
-              //       'User-Agent':
-              //         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:93.0) Gecko/20100101 Firefox/93.0',
-              //       Accept:
-              //         'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-              //       'Accept-Language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
-              //       'Content-Type': 'application/x-www-form-urlencoded',
-              //       'Upgrade-Insecure-Requests': '1',
-              //       'Sec-Fetch-Dest': 'document',
-              //       'Sec-Fetch-Mode': 'navigate',
-              //       'Sec-Fetch-Site': 'same-origin',
-              //       'Sec-Fetch-User': '?1',
-              //       Pragma: 'no-cache',
-              //       'Cache-Control': 'no-cache',
-              //     },
-              //     referrer:
-              //       'https://www.voscours.fr/contact-user.aspx?an=2939112',
-              //     body: '__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUJNDgyODgwODYzD2QWAmYPZBYEZg9kFhACAw8WAh4EVGV4dAUuPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJub2luZGV4LGZvbGxvdyIvPmQCBA8WAh8AZWQCBQ8WAh8AZWQCBg8WAh8AZWQCBw8WAh8AZWQCCA8WAh8AZWQCCw8WAh8ABWg8bWV0YSBwcm9wZXJ0eT0ib2c6SW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vZDFyZWFuYTQ4NTE2MXYuY2xvdWRmcm9udC5uZXQvL2kvdm9zY291cnNfMTIwMHg2MzBfZmZmLnBuZyIvPmQCDQ8WAh8ABXE8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2Nzcy9jb250YWN0LXVzZXIuY3NzP3Y9MTExNiIvPmQCAQ9kFhACAg9kFgJmDxYCHgdWaXNpYmxlaGQCAw8WAh8BaGQCBA9kFhICAQ8WAh4EaHJlZgVZL3Byb2YtcGFydGljdWxpZXItdHJvbmNlbnMvZW5zZWlnbmFudGUtaGF0aGEteW9nYS1mZWRlcmF0aW9uLWZyYW5jYWlzZS1oYXRoYS15b2dhLTI5MzkxMTJkAgIPFgIfAWdkAgMPFgIfAAUzRmFpdGVzIHZvdHJlIGRlbWFuZGUgZGUgY291cnMgw6AgVnVpbGxpb21lbmV0IFNvbmlhZAIEDxYCHgNzcmMFbWh0dHBzOi8vZDEzMW9lanJ5eXdoajcuY2xvdWRmcm9udC5uZXQvcC9hcGkvdXN1YXJpby9kdXAvNGJtUmtLbXcyVWcyNm0wSUZGaVFUb2tGSVJ2VkcxY2YwLmpwZy8xOTB4MTkwY3V0Lz9zPWxkAgUPFgIfAWdkAgYPFgIfAAUSVnVpbGxpb21lbmV0IFNvbmlhZAIHDxYCHwFoZAIKD2QWAmYPFgIfAAUbUsOpcG9uZCBlbiBxdWVscXVlcyBtaW51dGVzZAIMD2QWCAIBDxYCHwAFKUV4cGxpcXVleiBjZSBxdWUgdm91cyBzb3VoYWl0ZXogYXBwcmVuZHJlZAIDDxYEHgtwbGFjZWhvbGRlcgXFAUJvbmpvdXIgVnVpbGxpb21lbmV0IFNvbmlhLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgWW9nYSBldCBqJ2FpIHJlbWFycXXDqSB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0w7R0LiBQb3V2ZXotdm91cyBwcmVuZHJlIGNvbnRhY3QgYXZlYyBtb2kgYWZpbiBxdWUgbCdvbiBlbiBwYXJsZSA%2FHglpbm5lcmh0bWwF1QFCb25qb3VyIFZ1aWxsaW9tZW5ldCBTb25pYSwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIFlvZ2EgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPZBYGZg8WAh8BaBYEZg8WAh8EBQdQcsOpbm9tZAIBDxYCHwQFBkUtbWFpbGQCAQ9kFgJmDxYCHwQFDTA2NzggOTEgMjMgNDVkAgIPFgIfAWhkAgkPZBYCAgEPFgIfAAUJQ29udGFjdGVyZAIGDw8WAh8BaGQWAmYPFgIfAAUINDA1wqA5MTVkAgsPFgIfAGVkAgwPFgIfAGVkAhAPDxYCHwFoZGQCEQ8WAh8AZGRkH%2FLOfXYFNTae0fpVUiS2olyo7Zour5LygDGRpbACWL4%3D&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAATJx32MoI980uu8S7P%2FsVMVU3hu%2BZOOwuE4ovy7z6O0nHk4io3nhNS4%2BibOR41B5giERIRjjAQaeedLySsM1hRn9%2FUw8lA0NHXDYdaClLVGiJK9JMbQDOsyQoSlbtKjJjc%3D&ctl00%24m%24input_textarea=Bonjour+Vuilliomenet+Sonia%2C++Je+recherche+un+professeur+de+Yoga+et+j%27ai+remarqu%C3%A9+votre+profil.+Je+souhaiterais+commencer+au+plus+t%C3%B4t.+Pouvez-vous+prendre+contact+avec+moi+afin+que+l%27on+parle+%3F&ctl00%24m%24input_telefono=',
-              //     method: 'POST',
-              //     mode: 'cors',
-              //   }
-              // );
               await fetch(
                 `https://www.voscours.fr/contact-user.aspx?an=${id}`,
                 {
