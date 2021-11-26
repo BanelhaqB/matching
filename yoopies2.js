@@ -395,4 +395,80 @@ const update = async (action) => {
   }
 };
 
-update('data');
+// update('data');
+
+const coursProche = async (p) => {
+  let cours = await utils.readCSV(`cours_gps.csv`, ',');
+
+  cours = _.uniqBy(cours, 'slug');
+  cours = _.map(cours, (e) => {
+    return {
+      slug: e.slug,
+      adresse: e.Adresse,
+      lat: e.lat.replace(',', '.') * 1,
+      lng: e.lng.replace(',', '.') * 1,
+      dist: utils.distanceBetween(
+        p.lat * 1,
+        p.lng * 1,
+        e.lat.replace(',', '.') * 1,
+        e.lng.replace(',', '.') * 1
+      ),
+    };
+  });
+  // cours.map((c) => {
+  //   c.dist = utils.distanceBetween(p.lat, p.lng, c.lat * 1, c.lng * 1);
+  // });
+  // console.log(cours, cours.length);
+  cours = _.filter(cours, (c) => c.dist <= 5);
+  // console.log(cours, cours.length);
+
+  return cours;
+};
+
+const profilClosekpi2 = async () => {
+  const allData = await utils.readCSV(`data/yoopies/data-yoopies2.csv`, ',');
+
+  let dataFiltred = _.filter(
+    allData,
+    (d) =>
+      d.tel.length == 12 &&
+      (d.tel.substring(0, 4) === '+336' || d.tel.substring(0, 4) === '+337') &&
+      d.age >= 40 &&
+      d.age <= 55
+  );
+
+  let idx = 0;
+  for await (profil of dataFiltred) {
+    const coursProches = await coursProche(profil);
+    console.log(idx++, ':', dataFiltred.length);
+    console.log('Cours proches : ', coursProches.length);
+    profil.metier = profil.url.split('/')[3];
+    profil.isNear = coursProches.length > 0;
+  }
+
+  // console.log(1);
+  dataFiltred = _.filter(dataFiltred, (d) => d.isNear);
+
+  console.log(dataFiltred, dataFiltred.length);
+  await utils.convertToCSV(dataFiltred, `contact_maman_yoopies.csv`, false);
+  const kpi = {
+    contacts: allData.length,
+    french: _.filter(allData, (d) => d.tel.substring(0, 3) === '+33').length,
+    maman: _.filter(
+      allData,
+      (d) =>
+        d.tel.length == 12 &&
+        (d.tel.substring(0, 4) === '+336' ||
+          d.tel.substring(0, 4) === '+337') &&
+        d.age >= 40 &&
+        d.age <= 55
+    ).length,
+    nearCours: dataFiltred.length,
+  };
+
+  // console.log(allData[38]);
+  // console.log(await profilClose(allData[38]));
+  console.log(kpi);
+};
+
+profilClosekpi2();

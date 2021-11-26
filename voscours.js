@@ -72,7 +72,7 @@ const cleanSitemap = async () => {
 // ---- Scrap all sitemap
 const scrapAllSitemap = async () => {
   console.log(`voscours : Update sitemaps starting... 🛠`);
-  // await downloadSitemap();
+  await downloadSitemap();
   await cleanSitemap();
 
   console.log(`voscours : Sitemap is clean 🎉`);
@@ -306,31 +306,61 @@ const sendMsg = (referer) => {
               resolve();
             } else {
               console.log(`Sending message to ${name} 🛠`);
-              fetch(`https://www.voscours.fr/contact-user.aspx?an=${id}`, {
-                headers: {
-                  accept:
-                    'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-                  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7',
-                  'cache-control': 'max-age=0',
-                  'content-type': 'application/x-www-form-urlencoded',
-                  'sec-ch-ua':
-                    '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
-                  'sec-ch-ua-mobile': '?0',
-                  'sec-fetch-dest': 'document',
-                  'sec-fetch-mode': 'navigate',
-                  'sec-fetch-site': 'same-origin',
-                  'sec-fetch-user': '?1',
-                  'upgrade-insecure-requests': '1',
-                  Cookie:
-                    '_ga_TTK4WVFXY0=GS1.1.1634845357.4.1.1634845451.60; _ga=GA1.1.1797286146.1634223297; UU=11211014161858; cfg2=20; G_ENABLED_IDPS=google; TCP_UI=E=pauline.perinp@gmail.com&N=Pauline&U=3391642&CPI=9&TK=RdiuwreN2UgpQ40hsMRYSZJdY_TWYyC_0; TCP_Auth=400d7e1e-d2bd-4fef-98dd-4efa825078b6; pp=1; AWSALBTG=Kz3ZYQzBjVoL1z6I3T9kffJgZ4jdXFRbRygwTbHlQbFC6QP9pf3cuHFwwT4GQhw7e1ZP4iOqDoqccRocBk2Xkl/15KksggQvuMXVlYuZNtN/7E0TVzN1s0eJ/VfSRgswjzHWoXkckN8BYitXMmTdRtdxb4l0iqmiPJGFR6cr0LKw; AWSALBTGCORS=Kz3ZYQzBjVoL1z6I3T9kffJgZ4jdXFRbRygwTbHlQbFC6QP9pf3cuHFwwT4GQhw7e1ZP4iOqDoqccRocBk2Xkl/15KksggQvuMXVlYuZNtN/7E0TVzN1s0eJ/VfSRgswjzHWoXkckN8BYitXMmTdRtdxb4l0iqmiPJGFR6cr0LKw; ua=0; ASP.NET_SessionId=lfeezxcgzeellgp53rkedlbi; _gid=GA1.2.330205917.1634845358; G_AUTHUSER_H=0',
-                },
-                referrer: `https://www.voscours.fr/contact-user.aspx?an=${id}`,
-                referrerPolicy: 'strict-origin-when-cross-origin',
-                body: `__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUKMTIzOTIzMzE2MA9kFgJmD2QWBGYPZBYQAgMPFgIeBFRleHQFLjxtZXRhIG5hbWU9InJvYm90cyIgY29udGVudD0ibm9pbmRleCxmb2xsb3ciLz5kAgQPFgIfAGVkAgUPFgIfAGVkAgYPFgIfAGVkAgcPFgIfAGVkAggPFgIfAGVkAgsPFgIfAAVoPG1ldGEgcHJvcGVydHk9Im9nOkltYWdlIiBjb250ZW50PSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0Ly9pL3Zvc2NvdXJzXzEyMDB4NjMwX2ZmZi5wbmciLz5kAg0PFgIfAAVxPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaHR0cHM6Ly9kMXJlYW5hNDg1MTYxdi5jbG91ZGZyb250Lm5ldC9jc3MvY29udGFjdC11c2VyLmNzcz92PTExMDAiLz5kAgEPZBYOAgIPZBYCZg8WAh4HVmlzaWJsZWhkAgMPFgIfAWhkAgQPZBYQAgEPFgIeBGhyZWYFZC9jb3Vycy1tYXRoZW1hdGlxdWVzL2V0dWRpYW50LWVjb2xlLWluZ2VuaWV1ci1kb25uZS1jb3Vycy1tYXRoZW1hdGlxdWVzLWx5Y2VlLXRvdXRlLWZpbGllcmVzLTE2Njk2ODZkAgIPFgIfAAUkRmFpdGVzIHZvdHJlIGRlbWFuZGUgZGUgY291cnMgw6AgQmlsZAIDDxYCHgNzcmMFP2h0dHBzOi8vZDFyZWFuYTQ4NTE2MXYuY2xvdWRmcm9udC5uZXQvaW1nL2NvbW1vbi9hdmF0YXJfMF8zLnN2Z2QCBQ8WAh8ABQNCaWxkAgYPFgIfAAUfPHN0cm9uZz48Yj4yMDwvYj7igqw8L3N0cm9uZz4vaGQCCQ9kFgJmDxYCHwAFG1LDqXBvbmQgZW4gcXVlbHF1ZXMgbWludXRlc2QCCg8WAh8BZxYCZg8WAh8ABThQbHVzIGRlIDIwIMOpbMOodmVzIG9udCBjb250YWN0w6kgQmlsIGxlcyBkZXJuaWVycyBqb3Vyc2QCCw9kFggCAQ8WAh8ABSlFeHBsaXF1ZXogY2UgcXVlIHZvdXMgc291aGFpdGV6IGFwcHJlbmRyZWQCAw8WBB4LcGxhY2Vob2xkZXIFtwFCb25qb3VyIEJpbCwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIE1hdGhzIGV0IGonYWkgcmVtYXJxdcOpIHZvdHJlIHByb2ZpbC4gSmUgc291aGFpdGVyYWlzIGNvbW1lbmNlciBhdSBwbHVzIHTDtHQuIFBvdXZlei12b3VzIHByZW5kcmUgY29udGFjdCBhdmVjIG1vaSBhZmluIHF1ZSBsJ29uIGVuIHBhcmxlID8eCWlubmVyaHRtbAXHAUJvbmpvdXIgQmlsLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgTWF0aHMgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPZBYGZg8WAh8BaBYEZg8WAh8EBQdQcsOpbm9tZAIBDxYCHwQFBkUtbWFpbGQCAQ9kFgJmDxYCHwQFDTA2NzggOTEgMjMgNDVkAgIPFgIfAWhkAgkPZBYCAgEPFgIfAAUJQ29udGFjdGVyZAIGDw8WAh8BaGQWAmYPFgIfAAUIMzk4wqA0NjhkAgsPFgIfAGVkAgwPFgIfAGVkAhEPFgIfAGRkZG8vn8%2BJa4zqoZcgPAznAqhKCb8nCyO35ID9W02oICwU&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAASCIxKFpBqlGoC5rzEAzSy%2BU3hu%2BZOOwuE4ovy7z6O0nHk4io3nhNS4%2BibOR41B5giERIRjjAQaeedLySsM1hRnjdpB5yMoZ4mnjhnX8ZX97m0vE8oiDFtEOCT%2BTWqmlw0%3D&ctl00%24m%24input_textarea=Bonjour+${name}%2C%0D%0A%0D%0ANous+recherchons+un+professeur+particulier+pour+donner+cours+en+petit+groupe.+Seriez-vous+disponible+pour+en+discuter+%3F+N%27h%C3%A9sitez+pas+%C3%A0+me+communiquer+votre+email+pour+que+je+puisse+vous+envoyer+la+brochure+ainsi+que+votre+num%C3%A9ro+de+t%C3%A9l%C3%A9phone+afin+d%27en+discuter+de+vive-voix.+J%27esp%C3%A8re+pouvoir+%C3%A9changer+avec+vous+tr%C3%A8s+prochainement+%21%0D%0A%0D%0AEn+vous+souhaitant+une+bonne+journ%C3%A9e%2C%0D%0ABien+%C3%A0+vous.%0D%0APauline&ctl00%24m%24input_telefono=`,
-                method: 'POST',
-                mode: 'cors',
-                credentials: 'include',
-              })
+
+              // await fetch(
+              //   'https://www.voscours.fr/contact-user.aspx?an=2939112',
+              //   {
+              //     credentials: 'include',
+              //     headers: {
+              //       'User-Agent':
+              //         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:93.0) Gecko/20100101 Firefox/93.0',
+              //       Accept:
+              //         'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+              //       'Accept-Language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+              //       'Content-Type': 'application/x-www-form-urlencoded',
+              //       'Upgrade-Insecure-Requests': '1',
+              //       'Sec-Fetch-Dest': 'document',
+              //       'Sec-Fetch-Mode': 'navigate',
+              //       'Sec-Fetch-Site': 'same-origin',
+              //       'Sec-Fetch-User': '?1',
+              //       Pragma: 'no-cache',
+              //       'Cache-Control': 'no-cache',
+              //     },
+              //     referrer:
+              //       'https://www.voscours.fr/contact-user.aspx?an=2939112',
+              //     body: '__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUJNDgyODgwODYzD2QWAmYPZBYEZg9kFhACAw8WAh4EVGV4dAUuPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJub2luZGV4LGZvbGxvdyIvPmQCBA8WAh8AZWQCBQ8WAh8AZWQCBg8WAh8AZWQCBw8WAh8AZWQCCA8WAh8AZWQCCw8WAh8ABWg8bWV0YSBwcm9wZXJ0eT0ib2c6SW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vZDFyZWFuYTQ4NTE2MXYuY2xvdWRmcm9udC5uZXQvL2kvdm9zY291cnNfMTIwMHg2MzBfZmZmLnBuZyIvPmQCDQ8WAh8ABXE8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2Nzcy9jb250YWN0LXVzZXIuY3NzP3Y9MTExNiIvPmQCAQ9kFhACAg9kFgJmDxYCHgdWaXNpYmxlaGQCAw8WAh8BaGQCBA9kFhICAQ8WAh4EaHJlZgVZL3Byb2YtcGFydGljdWxpZXItdHJvbmNlbnMvZW5zZWlnbmFudGUtaGF0aGEteW9nYS1mZWRlcmF0aW9uLWZyYW5jYWlzZS1oYXRoYS15b2dhLTI5MzkxMTJkAgIPFgIfAWdkAgMPFgIfAAUzRmFpdGVzIHZvdHJlIGRlbWFuZGUgZGUgY291cnMgw6AgVnVpbGxpb21lbmV0IFNvbmlhZAIEDxYCHgNzcmMFbWh0dHBzOi8vZDEzMW9lanJ5eXdoajcuY2xvdWRmcm9udC5uZXQvcC9hcGkvdXN1YXJpby9kdXAvNGJtUmtLbXcyVWcyNm0wSUZGaVFUb2tGSVJ2VkcxY2YwLmpwZy8xOTB4MTkwY3V0Lz9zPWxkAgUPFgIfAWdkAgYPFgIfAAUSVnVpbGxpb21lbmV0IFNvbmlhZAIHDxYCHwFoZAIKD2QWAmYPFgIfAAUbUsOpcG9uZCBlbiBxdWVscXVlcyBtaW51dGVzZAIMD2QWCAIBDxYCHwAFKUV4cGxpcXVleiBjZSBxdWUgdm91cyBzb3VoYWl0ZXogYXBwcmVuZHJlZAIDDxYEHgtwbGFjZWhvbGRlcgXFAUJvbmpvdXIgVnVpbGxpb21lbmV0IFNvbmlhLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgWW9nYSBldCBqJ2FpIHJlbWFycXXDqSB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0w7R0LiBQb3V2ZXotdm91cyBwcmVuZHJlIGNvbnRhY3QgYXZlYyBtb2kgYWZpbiBxdWUgbCdvbiBlbiBwYXJsZSA%2FHglpbm5lcmh0bWwF1QFCb25qb3VyIFZ1aWxsaW9tZW5ldCBTb25pYSwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIFlvZ2EgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPZBYGZg8WAh8BaBYEZg8WAh8EBQdQcsOpbm9tZAIBDxYCHwQFBkUtbWFpbGQCAQ9kFgJmDxYCHwQFDTA2NzggOTEgMjMgNDVkAgIPFgIfAWhkAgkPZBYCAgEPFgIfAAUJQ29udGFjdGVyZAIGDw8WAh8BaGQWAmYPFgIfAAUINDA1wqA5MTVkAgsPFgIfAGVkAgwPFgIfAGVkAhAPDxYCHwFoZGQCEQ8WAh8AZGRkH%2FLOfXYFNTae0fpVUiS2olyo7Zour5LygDGRpbACWL4%3D&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAATJx32MoI980uu8S7P%2FsVMVU3hu%2BZOOwuE4ovy7z6O0nHk4io3nhNS4%2BibOR41B5giERIRjjAQaeedLySsM1hRn9%2FUw8lA0NHXDYdaClLVGiJK9JMbQDOsyQoSlbtKjJjc%3D&ctl00%24m%24input_textarea=Bonjour+Vuilliomenet+Sonia%2C++Je+recherche+un+professeur+de+Yoga+et+j%27ai+remarqu%C3%A9+votre+profil.+Je+souhaiterais+commencer+au+plus+t%C3%B4t.+Pouvez-vous+prendre+contact+avec+moi+afin+que+l%27on+parle+%3F&ctl00%24m%24input_telefono=',
+              //     method: 'POST',
+              //     mode: 'cors',
+              //   }
+              // );
+              await fetch(
+                `https://www.voscours.fr/contact-user.aspx?an=${id}`,
+                {
+                  headers: {
+                    accept:
+                      'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7',
+                    'cache-control': 'max-age=0',
+                    'content-type': 'application/x-www-form-urlencoded',
+                    'sec-ch-ua':
+                      '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
+                    'sec-ch-ua-mobile': '?0',
+                    'sec-fetch-dest': 'document',
+                    'sec-fetch-mode': 'navigate',
+                    'sec-fetch-site': 'same-origin',
+                    'sec-fetch-user': '?1',
+                    'upgrade-insecure-requests': '1',
+                    Cookie:
+                      'UU=1121090217860; pp=1; G_ENABLED_IDPS=google; _fbp=fb.1.1636038159049.1856644300; _ga_TTK4WVFXY0=GS1.1.1636037949.14.1.1636038708.36; _ga=GA1.2.205134897.1630596478; cfg2=20; ASP.NET_SessionId=ig1mhlypgxp5rue4zx30umj0; _gid=GA1.2.1034530324.1637935046; ua=0; G_AUTHUSER_H=1; g_state={"i_l":0}; TCP_UI=E=pauline.perinp@gmail.com&N=Pauline&U=3391642&CPI=9&TK=RdiuwreN2UgpQ40hsMRYSZJdY_TWYyC_0; TCP_ms=5A6D3E99254634CE; TCP_Auth=120088fe-aec3-477e-8668-26791717d223; TCP_got=true; Co_Merchant_Order=0; _gat=1; AWSALBTG=Aofo1tkC2ce0GXRovNUQq1frN/NIdR+X+AznpznWdL+MS//mDYEMrO9ySQYavHNkwo9zyrwbUWUAmcIW6+P31xHrDQPiTrgPv4Bscmf4NSzUVTuB8MJRzBxqzcvLjjssLU6giczYu8Qua8wHn1RuEzoG6qVUZ8d0PsLm1cU6VUYj; AWSALBTGCORS=Aofo1tkC2ce0GXRovNUQq1frN/NIdR+X+AznpznWdL+MS//mDYEMrO9ySQYavHNkwo9zyrwbUWUAmcIW6+P31xHrDQPiTrgPv4Bscmf4NSzUVTuB8MJRzBxqzcvLjjssLU6giczYu8Qua8wHn1RuEzoG6qVUZ8d0PsLm1cU6VUYj',
+                  },
+                  referrer: `https://www.voscours.fr/contact-user.aspx?an=${id}`,
+                  referrerPolicy: 'strict-origin-when-cross-origin',
+                  body: '__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUJNDgyODgwODYzD2QWAmYPZBYEZg9kFhACAw8WAh4EVGV4dAUuPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJub2luZGV4LGZvbGxvdyIvPmQCBA8WAh8AZWQCBQ8WAh8AZWQCBg8WAh8AZWQCBw8WAh8AZWQCCA8WAh8AZWQCCw8WAh8ABWg8bWV0YSBwcm9wZXJ0eT0ib2c6SW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vZDFyZWFuYTQ4NTE2MXYuY2xvdWRmcm9udC5uZXQvL2kvdm9zY291cnNfMTIwMHg2MzBfZmZmLnBuZyIvPmQCDQ8WAh8ABXE8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2Nzcy9jb250YWN0LXVzZXIuY3NzP3Y9MTExNiIvPmQCAQ9kFhACAg9kFgJmDxYCHgdWaXNpYmxlaGQCAw8WAh8BaGQCBA9kFhICAQ8WAh4EaHJlZgVZL3Byb2YtcGFydGljdWxpZXItdHJvbmNlbnMvZW5zZWlnbmFudGUtaGF0aGEteW9nYS1mZWRlcmF0aW9uLWZyYW5jYWlzZS1oYXRoYS15b2dhLTI5MzkxMTJkAgIPFgIfAWdkAgMPFgIfAAUzRmFpdGVzIHZvdHJlIGRlbWFuZGUgZGUgY291cnMgw6AgVnVpbGxpb21lbmV0IFNvbmlhZAIEDxYCHgNzcmMFbWh0dHBzOi8vZDEzMW9lanJ5eXdoajcuY2xvdWRmcm9udC5uZXQvcC9hcGkvdXN1YXJpby9kdXAvNGJtUmtLbXcyVWcyNm0wSUZGaVFUb2tGSVJ2VkcxY2YwLmpwZy8xOTB4MTkwY3V0Lz9zPWxkAgUPFgIfAWdkAgYPFgIfAAUSVnVpbGxpb21lbmV0IFNvbmlhZAIHDxYCHwFoZAIKD2QWAmYPFgIfAAUbUsOpcG9uZCBlbiBxdWVscXVlcyBtaW51dGVzZAIMD2QWCAIBDxYCHwAFKUV4cGxpcXVleiBjZSBxdWUgdm91cyBzb3VoYWl0ZXogYXBwcmVuZHJlZAIDDxYEHgtwbGFjZWhvbGRlcgXFAUJvbmpvdXIgVnVpbGxpb21lbmV0IFNvbmlhLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgWW9nYSBldCBqJ2FpIHJlbWFycXXDqSB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0w7R0LiBQb3V2ZXotdm91cyBwcmVuZHJlIGNvbnRhY3QgYXZlYyBtb2kgYWZpbiBxdWUgbCdvbiBlbiBwYXJsZSA%2FHglpbm5lcmh0bWwF1QFCb25qb3VyIFZ1aWxsaW9tZW5ldCBTb25pYSwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIFlvZ2EgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPZBYGZg8WAh8BaBYEZg8WAh8EBQdQcsOpbm9tZAIBDxYCHwQFBkUtbWFpbGQCAQ9kFgJmDxYCHwQFDTA2NzggOTEgMjMgNDVkAgIPFgIfAWhkAgkPZBYCAgEPFgIfAAUJQ29udGFjdGVyZAIGDw8WAh8BaGQWAmYPFgIfAAUINDA1wqA5MTVkAgsPFgIfAGVkAgwPFgIfAGVkAhAPDxYCHwFoZGQCEQ8WAh8AZGRkH%2FLOfXYFNTae0fpVUiS2olyo7Zour5LygDGRpbACWL4%3D&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAATJx32MoI980uu8S7P%2FsVMVU3hu%2BZOOwuE4ovy7z6O0nHk4io3nhNS4%2BibOR41B5giERIRjjAQaeedLySsM1hRn9%2FUw8lA0NHXDYdaClLVGiJK9JMbQDOsyQoSlbtKjJjc%3D&ctl00%24m%24input_textarea=Bonjour+%2C++Je+recherche+un+professeur+de+Yoga+et+j%27ai+remarqu%C3%A9+votre+profil.+Je+souhaiterais+commencer+au+plus+t%C3%B4t.+Pouvez-vous+prendre+contact+avec+moi+afin+que+l%27on+en+parle+%3F&ctl00%24m%24input_telefono=',
+                  method: 'POST',
+                  mode: 'cors',
+                  credentials: 'include',
+                }
+              )
                 .then((response) => response.text())
                 .then(async (text) => {
                   try {
@@ -418,6 +448,7 @@ exports.update = async (action) => {
       await contactNew();
       break;
     case 'messagerie':
+      // console.log(1);
       await getEmails();
       break;
     default:
