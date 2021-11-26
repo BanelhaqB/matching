@@ -162,22 +162,25 @@ exports.getAllKPI = async (req, res, next) => {
 };
 
 exports.getAllNewFiles = async (req, res, next) => {
-  let allFiles = fs_sync.readdirSync(`data/yoopies/kpi/`).map((e) => {
-    return {
-      date: `${e.split('-')[1].split('.')[0].split(':')[0]}/${
-        e.split('-')[1].split('.')[0].split(':')[1]
-      }/${e.split('-')[1].split('.')[0].split(':')[2]}`,
-      dateISO: new Date(
-        `${e.split('-')[1].split('.')[0].split(':')[1] * 1 - 1}/${
-          e.split('-')[1].split('.')[0].split(':')[0] * 1 + 1
-        }/${e.split('-')[1].split('.')[0].split(':')[2]}`
-      ),
-    };
-  });
+  let allFiles = fs_sync
+    .readdirSync(`data/${req.params.plateforme}/new/`)
+    .map((e) => {
+      console.log(e);
+      return {
+        date: `${e.split('-')[2].split('.')[0].split(':')[0]}/${
+          e.split('-')[2].split('.')[0].split(':')[1]
+        }/${e.split('-')[2].split('.')[0].split(':')[2]}`,
+        dateISO: new Date(
+          `${e.split('-')[2].split('.')[0].split(':')[1] * 1 - 1}/${
+            e.split('-')[2].split('.')[0].split(':')[0] * 1 + 1
+          }/${e.split('-')[2].split('.')[0].split(':')[2]}`
+        ),
+      };
+    });
 
   allFiles = _.orderBy(allFiles, 'dateISO', 'desc');
 
-  // console.log(allFiles);
+  console.log(req.params, allFiles);
   res.status(200).json({
     status: 'success',
     data: allFiles,
