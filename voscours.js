@@ -261,7 +261,7 @@ const getEmails = async () => {
   // console.log(data, data.length, page);
 };
 
-const sendMsg = (referer) => {
+const sendMsg = async (referer) => {
   return new Promise((resolve, reject) => {
     scrap.get({
       url: referer,
