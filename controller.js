@@ -1,8 +1,29 @@
 const searching = require('./searching');
+const sql_search = require('./connectSQL');
 const utils = require('./utils/utils');
 const _ = require('lodash');
 const fs_sync = require('fs');
 const fs = require('fs').promises;
+
+exports.sql_search = async (req, res, next) => {
+  const data = await sql_search.search(
+    req.query.level,
+    req.query.subject,
+    req.query.dispos,
+    req.query.lat,
+    req.query.lng,
+    req.query.type,
+    req.query.distance * 1,
+    pool
+  );
+
+  // console.log(data);
+
+  res.status(200).json({
+    status: 'success',
+    data,
+  });
+};
 
 exports.raw = async (req, res, next) => {
   const data = await searching.raw(

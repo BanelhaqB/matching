@@ -14,6 +14,8 @@ router.get('/allNewFiles/:plateforme', controller.getAllNewFiles);
 
 router.post('/search/list/:teacherType/:distMax', controller.list);
 router.post('/search/raw/:teacherType/:distMax', controller.raw);
+
+router.post('/searchSQL', controller.sql_search);
 // router.patch('/:plateforme', controller.update);
 
 module.exports = router;
