@@ -11,7 +11,7 @@ const randomUA = require('random-fake-useragent');
 
 // Download sitemap
 const downloadSitemap = async () => {
-  return new Promise(async (resolve) => {
+  return new Promise(async (resolve, reject) => {
     const fct = async ($, response, html, config, dataArr) => {
       await fs.writeFile(
         `data/voscours/sitemaps/sitemap-voscours.xml`,
@@ -28,7 +28,8 @@ const downloadSitemap = async () => {
     await utils.scrapTemplate(
       `https://www.voscours.fr/sitemap-anuncios.aspx?tipo=Profesores`,
       fct,
-      resolve
+      resolve,
+      reject
     );
   });
 };
@@ -431,11 +432,11 @@ const getUserId = async (an) => {
         ).text(),
       };
 
-      console.log(annonce);
+      // console.log(annonce);
       await utils.convertToCSV([annonce], 'data/voscours/urls-user-id.csv');
     };
 
-    utils.scrapTemplate(an.url, fct, resolve);
+    utils.scrapTemplate(an.url, fct, resolve, reject);
   });
 };
 
@@ -444,7 +445,11 @@ const getAllUsersIds = async () => {
 
   let idx = 0;
   for await (const an of urls) {
-    await getUserId(an);
+    try {
+      await getUserId(an);
+    } catch (e) {
+      console.log(e);
+    }
     idx++;
     utils.logProgress(idx, urls.length, 'Anonces', '0');
   }
@@ -472,7 +477,7 @@ const update = async (action) => {
   // await update('messagerie');
   await getAllUsersIds();
   // await getUserId({
-  //   idAn: 1408488,
-  //   url: 'https://www.voscours.fr/prof-particulier-colmar/dessin-peinture-tous-niveaux-colmar-1408488',
+  //   idAn: 2960632,
+  //   url: 'https://www.voscours.fr/prof-particulier-villetaneuse/soutien-scolaire-mathematiques-lycee-2960632',
   // });
 })();
