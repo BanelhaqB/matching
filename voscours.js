@@ -415,7 +415,42 @@ const contactNew = async () => {
   console.log(`voscours : All new profils are contacted 🎉`);
 };
 
-exports.update = async (action) => {
+const getUserId = async (an) => {
+  return new Promise((resolve, reject) => {
+    const fct = async ($, response, html, config, dataArr) => {
+      const annonce = {
+        idAn: an.idAn,
+        url: an.url,
+        idUser: $('#iduser').attr('value') * 1,
+        city:
+          $('#line_location > span').text() === 'En ligne'
+            ? 'online'
+            : $('#item_places > div.txt > div:nth-child(2)').text(),
+        prenom: $(
+          '#cph > section > div.profile.tc-stickybar-toggler > div.tc-wrapper.tc-grid > div.tc-col.d-8.ds-9.t-8.m-12 > div.info > div.line1 > span'
+        ).text(),
+      };
+
+      console.log(annonce);
+      await utils.convertToCSV([annonce], 'data/voscours/urls-user-id.csv');
+    };
+
+    utils.scrapTemplate(an.url, fct, resolve);
+  });
+};
+
+const getAllUsersIds = async () => {
+  const urls = await utils.readCSV('data/voscours/urls-sept-2k22.csv', ',');
+
+  let idx = 0;
+  for await (const an of urls) {
+    await getUserId(an);
+    idx++;
+    utils.logProgress(idx, urls.length, 'Anonces', '0');
+  }
+};
+
+const update = async (action) => {
   switch (action) {
     case 'sitemap':
       await scrapAllSitemap();
@@ -432,3 +467,12 @@ exports.update = async (action) => {
       break;
   }
 };
+
+(async () => {
+  // await update('messagerie');
+  await getAllUsersIds();
+  // await getUserId({
+  //   idAn: 1408488,
+  //   url: 'https://www.voscours.fr/prof-particulier-colmar/dessin-peinture-tous-niveaux-colmar-1408488',
+  // });
+})();
