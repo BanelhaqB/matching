@@ -6,6 +6,7 @@ const _ = require('lodash');
 const fs = require('fs').promises;
 const scrap = require('./scrap');
 const randomUA = require('random-fake-useragent');
+const { exec } = require('child_process');
 
 // ------- SITEMAPS ---------
 
@@ -193,7 +194,7 @@ const getURL = async (idTeacher) => {
   });
 };
 
-const runThroughPage = async (page, data) => {
+const runThroughPage = async (page, data, allTeachers) => {
   const headers = {
     'User-Agent': randomUA.getRandom(),
   };
@@ -212,27 +213,87 @@ const runThroughPage = async (page, data) => {
   // console.log(conversations);
 
   for await (conv of conversations.Conversations) {
-    console.log(conv);
-    let email = /\b([^\s]+@[^\s]+)\b/gi.exec(conv.LastMessage);
-    let phone = /(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/gim.exec(
-      conv.LastMessage
-    );
+    // console.log(conv);
+    let messages = [];
+    let phone = null;
+    const teacherData =
+      conv.Participants[0].Photo == ''
+        ? {}
+        : _.find(
+            allTeachers,
+            (t) =>
+              t.img == conv.Participants[0].Photo.split('/')[7].split('.')[0]
+          );
 
-    const name = conv.Participants[0].Name;
-    const title = conv.AnuncioTitle;
-    const idTeacher = conv.Id;
+    await fetch(
+      `https://www.tusclases.com/api_common/api/messages/gdlg?ucid=${compte.id}&upt=${compte.upt}&gid=${conv.Id}&l=fr&tzo=-120&tcpcid=0&ch=EF6744F07881A437281B274B4055D4848ED2CA96E41729E3E989ED1647072646588E368E3C17BB57FA9AFE8748D3087C375D5BDC457CDC987F8396EF290210C2`,
+      {
+        referrer: `https://www.voscours.fr/account/messaging/${conv.Id}`,
+        method: 'GET',
+      }
+    )
+      .then((response) => response.text())
+      .then(async (json) => {
+        console.log(JSON.parse(json));
+        messages = JSON.parse(json).Messages;
+      });
+
+    await fetch('https://www.voscours.fr/api/api/messaging/gcpp', {
+      headers: {
+        accept: 'application/json, text/javascript, */*; q=0.01',
+        'accept-language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'sec-ch-ua':
+          '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"macOS"',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+        'x-requested-with': 'XMLHttpRequest',
+      },
+      referrer: `https://www.voscours.fr/account/messaging/${conv.Id}`,
+      referrerPolicy: 'strict-origin-when-cross-origin',
+      body: `out=${conv.Participants[0].Id}&po=9&uid=3831641`,
+      method: 'POST',
+      mode: 'cors',
+      credentials: 'include',
+    })
+      .then((response) => response.text())
+      .then(async (json) => {
+        phone = JSON.parse(json).PhoneNumber;
+      });
+
+    const messagesText = _.map(messages, (m) => `${m.Content}`).join(' ');
+
+    let email = /\b([^\s]+@[^\s]+)\b/gi.exec(messagesText);
+    phone = /(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/gim.exec(messagesText)
+      ? /(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/gim.exec(messagesText)[0]
+      : phone;
+
     if (email || phone) {
-      const url = await getURL(idTeacher);
+      const name = conv.Participants[0].Name;
+      const title = conv.AnuncioTitle;
+      const idTeacher = conv.Participants[0].Id;
+      const idAn = messages[1].RefAdId;
+      const idUser = teacherData ? teacherData.idUser : null;
+      const city = teacherData ? teacherData.city : null;
+      const url = teacherData ? teacherData.url : null;
 
-      console.log(url);
-      phone = phone ? phone[0] : null;
       email = email
         ? email[0].replace('mail:', '').replace(`${phone}.`, '')
         : null;
-      // const url = profil.OtherUser.ProfilUrl;
-
-      console.log({ name, email, phone, title, url });
-      data.push({ name, email, phone, title, url });
+      data.push({
+        name,
+        email,
+        phone,
+        title,
+        idAn,
+        idUser,
+        city,
+        idTeacher,
+        url,
+      });
     } else {
       const nbUnreadMessage = conv.NUnreadMessages;
       if (nbUnreadMessage > 1) {
@@ -247,23 +308,27 @@ const runThroughPage = async (page, data) => {
   return hasNextConv;
 };
 
-const runThroughAllPages = async (page, data) => {
-  const hasNextConv = await runThroughPage(page, data);
+const runThroughAllPages = async (page, data, allTeachers) => {
+  const hasNextConv = await runThroughPage(page, data, allTeachers);
   if (hasNextConv) {
     page++;
-    data = await runThroughAllPages(page, data);
+    data = await runThroughAllPages(page, data, allTeachers);
   }
   return data;
 };
 
 const getEmails = async () => {
+  const allTeachers = await utils.readCSV(
+    'data/voscours/urls-user-img.csv',
+    ','
+  );
   let data = [];
-  data = await runThroughAllPages(0, data);
-  // await utils.convertToCSV(
-  //   data,
-  //   `data/voscours/new/new-data-${utils.getDayToday(false)}.csv`
-  // );
-  // await utils.convertToCSV(data, `data/voscours/data-voscours.csv`);
+  data = await runThroughAllPages(0, data, allTeachers);
+  await utils.convertToCSV(
+    data,
+    `data/voscours/new/new-data-${utils.getDayToday(false)}.csv`
+  );
+  await utils.convertToCSV(data, `data/voscours/data-voscours-1.csv`);
 
   console.log(data, data.length);
 };
@@ -313,45 +378,12 @@ const sendMsg = async (referer) => {
               resolve();
             } else {
               console.log(`Sending message to ${name} 🛠`);
-
-              await fetch(
-                `https://www.voscours.fr/contact-user.aspx?an=${id}`,
-                {
-                  headers: {
-                    accept:
-                      'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-                    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7',
-                    'cache-control': 'max-age=0',
-                    'content-type': 'application/x-www-form-urlencoded',
-                    'sec-ch-ua':
-                      '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
-                    'sec-ch-ua-mobile': '?0',
-                    'sec-fetch-dest': 'document',
-                    'sec-fetch-mode': 'navigate',
-                    'sec-fetch-site': 'same-origin',
-                    'sec-fetch-user': '?1',
-                    'upgrade-insecure-requests': '1',
-                    Cookie:
-                      'UU=1121090217860; pp=1; G_ENABLED_IDPS=google; _fbp=fb.1.1636038159049.1856644300; _ga_TTK4WVFXY0=GS1.1.1636037949.14.1.1636038708.36; _ga=GA1.2.205134897.1630596478; cfg2=20; ASP.NET_SessionId=ig1mhlypgxp5rue4zx30umj0; _gid=GA1.2.1034530324.1637935046; ua=0; G_AUTHUSER_H=1; g_state={"i_l":0}; TCP_UI=E=pauline.perinp@gmail.com&N=Pauline&U=3391642&CPI=9&TK=RdiuwreN2UgpQ40hsMRYSZJdY_TWYyC_0; TCP_ms=5A6D3E99254634CE; TCP_Auth=120088fe-aec3-477e-8668-26791717d223; TCP_got=true; Co_Merchant_Order=0; _gat=1; AWSALBTG=Aofo1tkC2ce0GXRovNUQq1frN/NIdR+X+AznpznWdL+MS//mDYEMrO9ySQYavHNkwo9zyrwbUWUAmcIW6+P31xHrDQPiTrgPv4Bscmf4NSzUVTuB8MJRzBxqzcvLjjssLU6giczYu8Qua8wHn1RuEzoG6qVUZ8d0PsLm1cU6VUYj; AWSALBTGCORS=Aofo1tkC2ce0GXRovNUQq1frN/NIdR+X+AznpznWdL+MS//mDYEMrO9ySQYavHNkwo9zyrwbUWUAmcIW6+P31xHrDQPiTrgPv4Bscmf4NSzUVTuB8MJRzBxqzcvLjjssLU6giczYu8Qua8wHn1RuEzoG6qVUZ8d0PsLm1cU6VUYj',
-                  },
-                  referrer: `https://www.voscours.fr/contact-user.aspx?an=${id}`,
-                  referrerPolicy: 'strict-origin-when-cross-origin',
-                  body:
-                    '__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUJNDgyODgwODYzD2QWAmYPZBYEZg9kFhACAw8WAh4EVGV4dAUuPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJub2luZGV4LGZvbGxvdyIvPmQCBA8WAh8AZWQCBQ8WAh8AZWQCBg8WAh8AZWQCBw8WAh8AZWQCCA8WAh8AZWQCCw8WAh8ABWg8bWV0YSBwcm9wZXJ0eT0ib2c6SW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vZDFyZWFuYTQ4NTE2MXYuY2xvdWRmcm9udC5uZXQvL2kvdm9zY291cnNfMTIwMHg2MzBfZmZmLnBuZyIvPmQCDQ8WAh8ABXE8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2Nzcy9jb250YWN0LXVzZXIuY3NzP3Y9MTExNiIvPmQCAQ9kFhACAg9kFgJmDxYCHgdWaXNpYmxlaGQCAw8WAh8BaGQCBA9kFhICAQ8WAh4EaHJlZgVZL3Byb2YtcGFydGljdWxpZXItdHJvbmNlbnMvZW5zZWlnbmFudGUtaGF0aGEteW9nYS1mZWRlcmF0aW9uLWZyYW5jYWlzZS1oYXRoYS15b2dhLTI5MzkxMTJkAgIPFgIfAWdkAgMPFgIfAAUzRmFpdGVzIHZvdHJlIGRlbWFuZGUgZGUgY291cnMgw6AgVnVpbGxpb21lbmV0IFNvbmlhZAIEDxYCHgNzcmMFbWh0dHBzOi8vZDEzMW9lanJ5eXdoajcuY2xvdWRmcm9udC5uZXQvcC9hcGkvdXN1YXJpby9kdXAvNGJtUmtLbXcyVWcyNm0wSUZGaVFUb2tGSVJ2VkcxY2YwLmpwZy8xOTB4MTkwY3V0Lz9zPWxkAgUPFgIfAWdkAgYPFgIfAAUSVnVpbGxpb21lbmV0IFNvbmlhZAIHDxYCHwFoZAIKD2QWAmYPFgIfAAUbUsOpcG9uZCBlbiBxdWVscXVlcyBtaW51dGVzZAIMD2QWCAIBDxYCHwAFKUV4cGxpcXVleiBjZSBxdWUgdm91cyBzb3VoYWl0ZXogYXBwcmVuZHJlZAIDDxYEHgtwbGFjZWhvbGRlcgXFAUJvbmpvdXIgVnVpbGxpb21lbmV0IFNvbmlhLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgWW9nYSBldCBqJ2FpIHJlbWFycXXDqSB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0w7R0LiBQb3V2ZXotdm91cyBwcmVuZHJlIGNvbnRhY3QgYXZlYyBtb2kgYWZpbiBxdWUgbCdvbiBlbiBwYXJsZSA%2FHglpbm5lcmh0bWwF1QFCb25qb3VyIFZ1aWxsaW9tZW5ldCBTb25pYSwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIFlvZ2EgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPZBYGZg8WAh8BaBYEZg8WAh8EBQdQcsOpbm9tZAIBDxYCHwQFBkUtbWFpbGQCAQ9kFgJmDxYCHwQFDTA2NzggOTEgMjMgNDVkAgIPFgIfAWhkAgkPZBYCAgEPFgIfAAUJQ29udGFjdGVyZAIGDw8WAh8BaGQWAmYPFgIfAAUINDA1wqA5MTVkAgsPFgIfAGVkAgwPFgIfAGVkAhAPDxYCHwFoZGQCEQ8WAh8AZGRkH%2FLOfXYFNTae0fpVUiS2olyo7Zour5LygDGRpbACWL4%3D&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAATJx32MoI980uu8S7P%2FsVMVU3hu%2BZOOwuE4ovy7z6O0nHk4io3nhNS4%2BibOR41B5giERIRjjAQaeedLySsM1hRn9%2FUw8lA0NHXDYdaClLVGiJK9JMbQDOsyQoSlbtKjJjc%3D&ctl00%24m%24input_textarea=Bonjour+' +
-                    name +
-                    '%2C%0D%0A%0D%0ANous+recherchons+un+professeur+particulier+pour+donner+cours+en+petit+groupe.+Seriez-vous+disponible+pour+en+discuter+%3F+N%27h%C3%A9sitez+pas+%C3%A0+me+communiquer+votre+email+pour+que+je+puisse+vous+envoyer+la+brochure+ainsi+que+votre+num%C3%A9ro+de+t%C3%A9l%C3%A9phone+afin+d%27en+discuter+de+vive-voix.+J%27esp%C3%A8re+pouvoir+%C3%A9changer+avec+vous+tr%C3%A8s+prochainement+%21%0D%0A%0D%0AEn+vous+souhaitant+une+bonne+journ%C3%A9e%2C%0D%0ABien+%C3%A0+vous.%0D%0APauline&ctl00%24m%24input_telefono=',
-                  method: 'POST',
-                  mode: 'cors',
-                  credentials: 'include',
-                }
-              )
-                .then((response) => response.text())
-                .then(async (text) => {
-                  try {
-                    console.log(`voscours : Teacher ${id} is contacted ✅ `);
-                    resolve();
-                  } catch (e) {
-                    // console.error(e);
+              for (let index = 0; index < 2; index++) {
+                exec(
+                  `curl 'https://www.voscours.fr/contact-user.aspx?an=${id}' -X POST -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' -H 'Accept-Language: fr-FR,en-US;q=0.7,en;q=0.3' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Origin: https://www.voscours.fr' -H 'Connection: keep-alive' -H 'Referer: https://www.voscours.fr/contact-user.aspx?an=3058021' -H 'Cookie: UU=11220504151323; pp={"analiticas": {"All":true,"_ga":true,"source":true,"_gid":true,"_gat":true}, "funcionales": {"All":true,"g_state":true,"lastsearch":true,"TCP_ms":true,"TCP_UI":true,"classgap_apt":true,"applus2":true}, "publicidad": {"All":true,"__gads":true,"datr_usida":true}, "fecha": 1651672122029}; g_state={"i_p":1651686127455,"i_l":1}; G_ENABLED_IDPS=google; cfg2=21; AWSALBTG=6LJB4xCgMemznY8M1p+TahJ25ILjAmqyuGC2lg/3LUN0iZstvDaWoIfceb4J6WTxA4KvOtxqAFmLRhDqAXoPB/eNHPAF6Fyaw5xYIDPBj+yGo0HMAozKPpB2+IecUBfEvQgGDqj5xv7NANtFeGl5AC0zljFvU0RDmyFWPs+WdW/3; AWSALBTGCORS=6LJB4xCgMemznY8M1p+TahJ25ILjAmqyuGC2lg/3LUN0iZstvDaWoIfceb4J6WTxA4KvOtxqAFmLRhDqAXoPB/eNHPAF6Fyaw5xYIDPBj+yGo0HMAozKPpB2+IecUBfEvQgGDqj5xv7NANtFeGl5AC0zljFvU0RDmyFWPs+WdW/3; ua=0; ASP.NET_SessionId=quq4cllqp0y3rawetvbhyrbj; lastsearch={"ADomicilio":0,"Adultos":0,"Bachillerato":0,"CategoriaId":0,"ClienteId":0,"ESO":0,"InCompany":0,"KeywordId":0,"LastSearchDate":"\/Date(1657734540111)\/","LocalidadId":0,"NivelIdiomaAlto":0,"NivelIdiomaBajo":0,"NivelIdiomaIniciacion":0,"NivelIdiomaMedio":0,"NumPagina":1,"Online":0,"Preescolar":0,"Presenciales":0,"Primaria":0,"ProvinciaId":0,"RegionId":0,"SubCategoriaId":0,"Universidad":0,"origenLocalidad":0}; G_AUTHUSER_H=0; TC_OR={"a":19,"o":0}; Co_Merchant_Order=0; TCP_UI=E=camillebouyerm@gmail.com&N=Camille&P=065654728&U=3831641&CPI=9&TK=oTR5_cxk2khmZ11lREegS6QjxO4SNuEJ0&CTS=1; TCP_Auth=09f2f740-d57a-4b33-8fe7-cc391efd1217' -H 'Upgrade-Insecure-Requests: 1' -H 'Sec-Fetch-Dest: document' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-User: ?1' -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' -H 'TE: trailers' --data-raw '__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUJNDgyODgwODYzD2QWAmYPZBYEZg9kFhQCAw8WAh4EVGV4dAUuPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJub2luZGV4LGZvbGxvdyIvPmQCBA8WAh8AZWQCBQ8WAh8ABVQ8bWV0YSBuYW1lPSJmYWNlYm9vay1kb21haW4tdmVyaWZpY2F0aW9uIiBjb250ZW50PSI4MTF4eGFvZnFwbnF4cDFrMjlzaG10dno2bG5qb3IiLz5kAgYPFgIfAGVkAgcPFgIfAGVkAggPFgIfAGVkAgkPFgIfAGVkAgwPFgIfAAVnPG1ldGEgcHJvcGVydHk9Im9nOkltYWdlIiBjb250ZW50PSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2kvdm9zY291cnNfMTIwMHg2MzBfZmZmLnBuZyIvPmQCDg8WAh8ABXE8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2Nzcy9jb250YWN0LXVzZXIuY3NzP3Y9MTIzNSIvPmQCEw8WAh8ABV08bGluayByZWw9Imljb24iIHR5cGU9ImltYWdlL3BuZyIgaHJlZj0iaHR0cHM6Ly9kMXJlYW5hNDg1MTYxdi5jbG91ZGZyb250Lm5ldC9pL2Zhdmljb24ucG5nIj5kAgEPFgIeBWNsYXNzBRdkZXNrIGZvb3RlcjIgY291bnRyeV9mchYSAgIPZBYCZg8WAh4HVmlzaWJsZWhkAgMPFgIfAmhkAgQPZBYOAgEPFgIeBGhyZWYFRC9wcm9mLXBhcnRpY3VsaWVyLW5hbmN5L2luZ2VuaWV1ci1maW5hbmNpZXItcG9seXZhbGVudC1uYW5jeS0zMDU4MDIxZAIDDxYCHwAFJkZhaXRlcyB2b3RyZSBkZW1hbmRlIGRlIGNvdXJzIMOgIE1vcnNpZAIEDxYCHgNzcmMFbWh0dHBzOi8vZDEzMW9lanJ5eXdoajcuY2xvdWRmcm9udC5uZXQvcC9hcGkvdXN1YXJpby9kdXAvU2RPRXh0bjIyVWo0WklTX3lJcHhUS1praG1mUFJ1WUwwLmpwZy8xOTB4MTkwY3V0Lz9zPWxkAgYPFgIfAAUFTW9yc2lkAgcPFgIfAAUePHN0cm9uZz48Yj45PC9iPuKCrDwvc3Ryb25nPi9oZAIKD2QWAmYPFgIfAAUaUsOpcG9uZCBlbiBxdWVscXVlcyBoZXVyZXNkAgwPZBYIAgEPFgIfAAUpRXhwbGlxdWV6IGNlIHF1ZSB2b3VzIHNvdWhhaXRleiBhcHByZW5kcmVkAgMPFgQeC3BsYWNlaG9sZGVyBdsBQm9uam91ciBNb3JzaSwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIE1hdGjDqW1hdGlxdWVzIGV0IGRpcmVjdGlvbiBmaW5hbmNpw6hyZSBldCBqJ2FpIHJlbWFycXXDqSB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0w7R0LiBQb3V2ZXotdm91cyBwcmVuZHJlIGNvbnRhY3QgYXZlYyBtb2kgYWZpbiBxdWUgbCdvbiBlbiBwYXJsZSA%2FHglpbm5lcmh0bWwF8wFCb25qb3VyIE1vcnNpLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgTWF0aCYjMjMzO21hdGlxdWVzIGV0IGRpcmVjdGlvbiBmaW5hbmNpJiMyMzI7cmUgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPFgIfAmgWBmYPFgIfAmgWBGYPFgIfBQUHUHLDqW5vbWQCAQ8WAh8FBQZFLW1haWxkAgEPFgIfAmgWAmYPFgIfBQUNMDY3OCA5MSAyMyA0NWQCAg8WAh8CaGQCCQ9kFgICAQ8WAh8ABQlDb250YWN0ZXJkAgYPDxYCHwJoZBYEAgEPFgIfAAU4PGEgY2xhc3M9J2xhdW5jaGNvb2tpZXBhbmVsJz5QYXJhbcOodHJlcyBkZXMgY29va2llczwvYT5kAgIPZBYCZg8WAh8ABQg0NTHCoDcyN2QCCw8WAh8AZWQCDA8WAh8AZWQCEA8PFgIfAmhkZAISDxYCHwBkZAIUD2QWAmYPFgIfAAWeBA0KICAgICAgICAgICAgPHNjcmlwdD4NCiAgICAgICAgICAgICAgICAoZnVuY3Rpb24oaCxvLHQsaixhLHIpew0KICAgICAgICAgICAgICAgICAgICBoLmhqPWguaGp8fGZ1bmN0aW9uKCl7KGguaGoucT1oLmhqLnF8fFtdKS5wdXNoKGFyZ3VtZW50cyl9Ow0KICAgICAgICAgICAgICAgICAgICBoLl9oalNldHRpbmdzPXtoamlkOjI4ODU0MTIsaGpzdjo2fTsNCiAgICAgICAgICAgICAgICAgICAgYT1vLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdoZWFkJylbMF07DQogICAgICAgICAgICAgICAgICAgIHI9by5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTtyLmFzeW5jPTE7DQogICAgICAgICAgICAgICAgICAgIHIuc3JjPXQraC5faGpTZXR0aW5ncy5oamlkK2oraC5faGpTZXR0aW5ncy5oanN2Ow0KICAgICAgICAgICAgICAgICAgICBhLmFwcGVuZENoaWxkKHIpOw0KICAgICAgICAgICAgICAgIH0pKHdpbmRvdyxkb2N1bWVudCwnaHR0cHM6Ly9zdGF0aWMuaG90amFyLmNvbS9jL2hvdGphci0nLCcuanM%2Fc3Y9Jyk7DQogICAgICAgICAgICA8L3NjcmlwdD4NCgkJZGRYUm5Z4s0bQJDf6NG%2FlEG5EOSBQstwWAD6cYa%2BJjRDCw%3D%3D&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAAOAwqiWhGWxaMVpXrGkDetBU3hu%2BZOOwuE4ovy7z6O0nIREhGOMBBp550vJKwzWFGcrE%2B8a8v8hbBCApf0DdWpFAwGyb5%2Fvh67Z7RsL376Ftw%3D%3D&ctl00%24m%24input_textarea=Bonjour+${name}%2C++Je+recherche+un+professeur+de+Math%C3%A9matiques+et+direction+financi%C3%A8re+et+j%27ai+remarqu%C3%A9+votre+profil.+Je+souhaiterais+commencer+au+plus+t%C3%B4t.+Pouvez-vous+prendre+contact+avec+moi+afin+que+l%27on+en+parle+%3F'`,
+                  (error, stdout, stderr) => {
+                    if (error) {
+                      console.error(e);
                     prof = {
                       url: referer,
                       code: 'jsonMalForme',
@@ -362,9 +394,68 @@ const sendMsg = async (referer) => {
                       false
                     );
                     // logError(config.url, 'jsonMalForme');
-                    resolve();
+                      return;
+                    }
+                    if (stderr) {
+                      console.log(`stderr: ${stderr}`);
+                      return;
+                    }
+                    console.log(`voscours : Teacher ${name} is contacted ✅ `);
                   }
-                });
+                );
+              }
+
+              // await fetch(
+              //   `https://www.voscours.fr/contact-user.aspx?an=${id}`,
+              //   {
+              //     headers: {
+              //       accept:
+              //         'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+              //       'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7',
+              //       'cache-control': 'max-age=0',
+              //       'content-type': 'application/x-www-form-urlencoded',
+              //       'sec-ch-ua':
+              //         '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
+              //       'sec-ch-ua-mobile': '?0',
+              //       'sec-fetch-dest': 'document',
+              //       'sec-fetch-mode': 'navigate',
+              //       'sec-fetch-site': 'same-origin',
+              //       'sec-fetch-user': '?1',
+              //       'upgrade-insecure-requests': '1',
+              //       Cookie:
+              //         'UU=1121090217860; pp=1; G_ENABLED_IDPS=google; _fbp=fb.1.1636038159049.1856644300; _ga_TTK4WVFXY0=GS1.1.1636037949.14.1.1636038708.36; _ga=GA1.2.205134897.1630596478; cfg2=20; ASP.NET_SessionId=ig1mhlypgxp5rue4zx30umj0; _gid=GA1.2.1034530324.1637935046; ua=0; G_AUTHUSER_H=1; g_state={"i_l":0}; TCP_UI=E=pauline.perinp@gmail.com&N=Pauline&U=3391642&CPI=9&TK=RdiuwreN2UgpQ40hsMRYSZJdY_TWYyC_0; TCP_ms=5A6D3E99254634CE; TCP_Auth=120088fe-aec3-477e-8668-26791717d223; TCP_got=true; Co_Merchant_Order=0; _gat=1; AWSALBTG=Aofo1tkC2ce0GXRovNUQq1frN/NIdR+X+AznpznWdL+MS//mDYEMrO9ySQYavHNkwo9zyrwbUWUAmcIW6+P31xHrDQPiTrgPv4Bscmf4NSzUVTuB8MJRzBxqzcvLjjssLU6giczYu8Qua8wHn1RuEzoG6qVUZ8d0PsLm1cU6VUYj; AWSALBTGCORS=Aofo1tkC2ce0GXRovNUQq1frN/NIdR+X+AznpznWdL+MS//mDYEMrO9ySQYavHNkwo9zyrwbUWUAmcIW6+P31xHrDQPiTrgPv4Bscmf4NSzUVTuB8MJRzBxqzcvLjjssLU6giczYu8Qua8wHn1RuEzoG6qVUZ8d0PsLm1cU6VUYj',
+              //     },
+              //     referrer: `https://www.voscours.fr/contact-user.aspx?an=${id}`,
+              //     referrerPolicy: 'strict-origin-when-cross-origin',
+              //     body:
+              //       '__EVENTTARGET=ctl00%24m%24link_siguiente&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUJNDgyODgwODYzD2QWAmYPZBYEZg9kFhACAw8WAh4EVGV4dAUuPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJub2luZGV4LGZvbGxvdyIvPmQCBA8WAh8AZWQCBQ8WAh8AZWQCBg8WAh8AZWQCBw8WAh8AZWQCCA8WAh8AZWQCCw8WAh8ABWg8bWV0YSBwcm9wZXJ0eT0ib2c6SW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vZDFyZWFuYTQ4NTE2MXYuY2xvdWRmcm9udC5uZXQvL2kvdm9zY291cnNfMTIwMHg2MzBfZmZmLnBuZyIvPmQCDQ8WAh8ABXE8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL2QxcmVhbmE0ODUxNjF2LmNsb3VkZnJvbnQubmV0L2Nzcy9jb250YWN0LXVzZXIuY3NzP3Y9MTExNiIvPmQCAQ9kFhACAg9kFgJmDxYCHgdWaXNpYmxlaGQCAw8WAh8BaGQCBA9kFhICAQ8WAh4EaHJlZgVZL3Byb2YtcGFydGljdWxpZXItdHJvbmNlbnMvZW5zZWlnbmFudGUtaGF0aGEteW9nYS1mZWRlcmF0aW9uLWZyYW5jYWlzZS1oYXRoYS15b2dhLTI5MzkxMTJkAgIPFgIfAWdkAgMPFgIfAAUzRmFpdGVzIHZvdHJlIGRlbWFuZGUgZGUgY291cnMgw6AgVnVpbGxpb21lbmV0IFNvbmlhZAIEDxYCHgNzcmMFbWh0dHBzOi8vZDEzMW9lanJ5eXdoajcuY2xvdWRmcm9udC5uZXQvcC9hcGkvdXN1YXJpby9kdXAvNGJtUmtLbXcyVWcyNm0wSUZGaVFUb2tGSVJ2VkcxY2YwLmpwZy8xOTB4MTkwY3V0Lz9zPWxkAgUPFgIfAWdkAgYPFgIfAAUSVnVpbGxpb21lbmV0IFNvbmlhZAIHDxYCHwFoZAIKD2QWAmYPFgIfAAUbUsOpcG9uZCBlbiBxdWVscXVlcyBtaW51dGVzZAIMD2QWCAIBDxYCHwAFKUV4cGxpcXVleiBjZSBxdWUgdm91cyBzb3VoYWl0ZXogYXBwcmVuZHJlZAIDDxYEHgtwbGFjZWhvbGRlcgXFAUJvbmpvdXIgVnVpbGxpb21lbmV0IFNvbmlhLCAgSmUgcmVjaGVyY2hlIHVuIHByb2Zlc3NldXIgZGUgWW9nYSBldCBqJ2FpIHJlbWFycXXDqSB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0w7R0LiBQb3V2ZXotdm91cyBwcmVuZHJlIGNvbnRhY3QgYXZlYyBtb2kgYWZpbiBxdWUgbCdvbiBlbiBwYXJsZSA%2FHglpbm5lcmh0bWwF1QFCb25qb3VyIFZ1aWxsaW9tZW5ldCBTb25pYSwgIEplIHJlY2hlcmNoZSB1biBwcm9mZXNzZXVyIGRlIFlvZ2EgZXQgaiYjMzk7YWkgcmVtYXJxdSYjMjMzOyB2b3RyZSBwcm9maWwuIEplIHNvdWhhaXRlcmFpcyBjb21tZW5jZXIgYXUgcGx1cyB0JiMyNDQ7dC4gUG91dmV6LXZvdXMgcHJlbmRyZSBjb250YWN0IGF2ZWMgbW9pIGFmaW4gcXVlIGwmIzM5O29uIGVuIHBhcmxlID9kAgUPZBYGZg8WAh8BaBYEZg8WAh8EBQdQcsOpbm9tZAIBDxYCHwQFBkUtbWFpbGQCAQ9kFgJmDxYCHwQFDTA2NzggOTEgMjMgNDVkAgIPFgIfAWhkAgkPZBYCAgEPFgIfAAUJQ29udGFjdGVyZAIGDw8WAh8BaGQWAmYPFgIfAAUINDA1wqA5MTVkAgsPFgIfAGVkAgwPFgIfAGVkAhAPDxYCHwFoZGQCEQ8WAh8AZGRkH%2FLOfXYFNTae0fpVUiS2olyo7Zour5LygDGRpbACWL4%3D&__VIEWSTATEGENERATOR=4A8FAB36&__EVENTVALIDATION=%2FwEdAATJx32MoI980uu8S7P%2FsVMVU3hu%2BZOOwuE4ovy7z6O0nHk4io3nhNS4%2BibOR41B5giERIRjjAQaeedLySsM1hRn9%2FUw8lA0NHXDYdaClLVGiJK9JMbQDOsyQoSlbtKjJjc%3D&ctl00%24m%24input_textarea=Bonjour+' +
+              //       name +
+              //       '%2C%0D%0A%0D%0ANous+recherchons+un+professeur+particulier+pour+donner+cours+en+petit+groupe.+Seriez-vous+disponible+pour+en+discuter+%3F+N%27h%C3%A9sitez+pas+%C3%A0+me+communiquer+votre+email+pour+que+je+puisse+vous+envoyer+la+brochure+ainsi+que+votre+num%C3%A9ro+de+t%C3%A9l%C3%A9phone+afin+d%27en+discuter+de+vive-voix.+J%27esp%C3%A8re+pouvoir+%C3%A9changer+avec+vous+tr%C3%A8s+prochainement+%21%0D%0A%0D%0AEn+vous+souhaitant+une+bonne+journ%C3%A9e%2C%0D%0ABien+%C3%A0+vous.%0D%0APauline&ctl00%24m%24input_telefono=',
+              //     method: 'POST',
+              //     mode: 'cors',
+              //     credentials: 'include',
+              //   }
+              // )
+              //   .then((response) => response.text())
+              //   .then(async (text) => {
+              //     try {
+              //       console.log(`voscours : Teacher ${id} is contacted ✅ `);
+              //       resolve();
+              //     } catch (e) {
+              //       // console.error(e);
+              //       prof = {
+              //         url: referer,
+              //         code: 'jsonMalForme',
+              //       };
+              //       await utils.convertToCSV(
+              //         [prof],
+              //         `data/voscours/errors/errors-voscours.csv`,
+              //         false
+              //       );
+              //       // logError(config.url, 'jsonMalForme');
+              //       resolve();
+              //     }
+              //   });
             }
           } else {
             prof = {
@@ -456,6 +547,34 @@ const getUserId = async (an) => {
   });
 };
 
+const contact = async (annonce) => {
+  await sendMsg(annonce.url);
+};
+
+const contactAllTeacher = async () => {
+  const allT = await utils.readCSV('data/voscours/urls-user-img.csv', ',');
+
+  let idx = 0;
+  let dI = 0;
+  for await (const t of allT) {
+    if (utils.instances(idx, process.env.I * 1, process.env.T * 1, allT.length))
+      try {
+        await contact(t);
+        dI++;
+        utils.logProgress(dI, allT.length / process.env.T, 'Success', '');
+      } catch (e) {
+        console.log(e);
+        dI++;
+        utils.logProgress(dI, allT.length / process.env.T, 'Erreur', '');
+      }
+    idx++;
+  }
+
+  for await (const t of [allT[0]]) {
+    await contact(t);
+  }
+};
+
 const getAllUsersIds = async () => {
   const urls = await utils.readCSV('data/voscours/urls-uniq-user-id.csv', ',');
 
@@ -485,6 +604,15 @@ const getUniqUser = async () => {
   console.log(users.length, '-->', usersFiltred.length);
 };
 
+const tmp = async () => {
+  const allT = await utils.readCSV('data/voscours/urls-user-img.csv', ',');
+
+  console.log({
+    yes: _.countBy(allT, (t) => t.img == -1),
+    no: _.countBy(allT, (t) => t.img != -1),
+  });
+};
+
 const update = async (action) => {
   switch (action) {
     case 'sitemap':
@@ -505,8 +633,10 @@ const update = async (action) => {
 
 (async () => {
   // await update('messagerie');
+  await contactAllTeacher();
+  // await tmp();
   // await getUniqUser();
-  await getAllUsersIds();
+  // await getAllUsersIds();
   // await getUserId({
   //   idAn: 3103126,
   //   url: 'https://www.voscours.fr/prof-particulier-albi/aide-devoirs-soutien-scolaire-albi-3103126',
