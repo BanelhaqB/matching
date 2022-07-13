@@ -124,8 +124,12 @@ const getNew = async () => {
 // dotenv.config({ path: './config.env' });
 
 const compte = {
-  id: '6165e4072da5452890cab892',
-  upt: 'RdiuwreN2UgpQ40hsMRYSZJdY_TWYyC_0',
+  // Pauline
+  // id: '6165e4072da5452890cab892',
+  // upt: 'RdiuwreN2UgpQ40hsMRYSZJdY_TWYyC_0',
+  // Camille
+  id: '62cebd712da5453a4c596710',
+  upt: 'oTR5_cxk2khmZ11lREegS6QjxO4SNuEJ0',
 };
 
 const checkInOneConv = async (headers, email, phone, data, name, title) => {
@@ -205,8 +209,10 @@ const runThroughPage = async (page, data) => {
   //
 
   const conversations = await conversationsPromise.json();
+  // console.log(conversations);
 
   for await (conv of conversations.Conversations) {
+    console.log(conv);
     let email = /\b([^\s]+@[^\s]+)\b/gi.exec(conv.LastMessage);
     let phone = /(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/gim.exec(
       conv.LastMessage
@@ -253,13 +259,13 @@ const runThroughAllPages = async (page, data) => {
 const getEmails = async () => {
   let data = [];
   data = await runThroughAllPages(0, data);
-  await utils.convertToCSV(
-    data,
-    `data/voscours/new/new-data-${utils.getDayToday(false)}.csv`
-  );
-  await utils.convertToCSV(data, `data/voscours/data-voscours.csv`);
+  // await utils.convertToCSV(
+  //   data,
+  //   `data/voscours/new/new-data-${utils.getDayToday(false)}.csv`
+  // );
+  // await utils.convertToCSV(data, `data/voscours/data-voscours.csv`);
 
-  // console.log(data, data.length, page);
+  console.log(data, data.length);
 };
 
 const sendMsg = async (referer) => {
@@ -422,6 +428,16 @@ const getUserId = async (an) => {
       const annonce = {
         idAn: an.idAn,
         url: an.url,
+        img: $(
+          '#cph > section > div.profile.tc-stickybar-toggler > div.tc-wrapper.tc-grid > div.tc-col.d-2.ds-3.t-4.m-0.img > img'
+        )[0].attribs['data-iurl'].split('/')[7]
+          ? $(
+              '#cph > section > div.profile.tc-stickybar-toggler > div.tc-wrapper.tc-grid > div.tc-col.d-2.ds-3.t-4.m-0.img > img'
+            )[0]
+              .attribs['data-iurl'].split('/')[7]
+              .split('.')[0]
+          : -1,
+        anTitle: $('#card_ad_title > h1').text(),
         idUser: $('#iduser').attr('value') * 1,
         city:
           $('#line_location > span').text() === 'En ligne'
@@ -433,7 +449,7 @@ const getUserId = async (an) => {
       };
 
       // console.log(annonce);
-      await utils.convertToCSV([annonce], 'data/voscours/urls-user-id.csv');
+      await utils.convertToCSV([annonce], 'data/voscours/urls-user-img.csv');
     };
 
     utils.scrapTemplate(an.url, fct, resolve, reject);
@@ -441,7 +457,7 @@ const getUserId = async (an) => {
 };
 
 const getAllUsersIds = async () => {
-  const urls = await utils.readCSV('data/voscours/urls-sept-2k22.csv', ',');
+  const urls = await utils.readCSV('data/voscours/urls-uniq-user-id.csv', ',');
 
   let idx = 0;
   for await (const an of urls) {
@@ -453,6 +469,15 @@ const getAllUsersIds = async () => {
     idx++;
     utils.logProgress(idx, urls.length, 'Anonces', '0');
   }
+};
+
+const getUniqUser = async () => {
+  const users = await utils.readCSV('data/voscours/urls-user-id.csv', ',');
+  const usersFiltred = _.unionBy(users, 'idUser');
+
+  await utils.convertToCSV(usersFiltred, 'data/voscours/urls-uniq-user-id.csv');
+
+  console.log(users.length, '-->', usersFiltred.length);
 };
 
 const update = async (action) => {
@@ -475,9 +500,10 @@ const update = async (action) => {
 
 (async () => {
   // await update('messagerie');
+  // await getUniqUser();
   await getAllUsersIds();
   // await getUserId({
-  //   idAn: 2960632,
-  //   url: 'https://www.voscours.fr/prof-particulier-villetaneuse/soutien-scolaire-mathematiques-lycee-2960632',
+  //   idAn: 3103126,
+  //   url: 'https://www.voscours.fr/prof-particulier-albi/aide-devoirs-soutien-scolaire-albi-3103126',
   // });
 })();
