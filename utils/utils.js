@@ -25,6 +25,9 @@ exports.convertToCSVUpdate = async (obj, path) => {
   await csv.toDisk(path, { append: false });
 };
 
+exports.instances = (i, n, nb, max) =>
+  i >= (max / nb) * n && i < (max / nb) * (n + 1);
+
 exports.readCSV = async (path, separator) => {
   return new Promise((resolve) => {
     const results = [];

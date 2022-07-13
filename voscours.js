@@ -460,14 +460,19 @@ const getAllUsersIds = async () => {
   const urls = await utils.readCSV('data/voscours/urls-uniq-user-id.csv', ',');
 
   let idx = 0;
+  let dI = 0;
   for await (const an of urls) {
-    try {
-      await getUserId(an);
-    } catch (e) {
-      console.log(e);
-    }
+    if (utils.instances(idx, process.env.I * 1, process.env.T * 1, urls.length))
+      try {
+        await getUserId(an);
+        dI++;
+        utils.logProgress(dI, urls.length / process.env.T, 'Success', '');
+      } catch (e) {
+        console.log(e);
+        dI++;
+        utils.logProgress(dI, urls.length / process.env.T, 'Erreur', '');
+      }
     idx++;
-    utils.logProgress(idx, urls.length, 'Anonces', '0');
   }
 };
 
